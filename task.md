@@ -83,18 +83,18 @@ Items marked **Owner input** need a business decision before changing.
 
 ### 🟡 Typos & Content
 
-- [ ] **Typos**
+- [x] **Typos** *(Done 2026-10-09)*
   - `giant-jenga.html:182` (+FAQ schema) "adult and kids" → "adults and kids"
   - `table-decor.html:364` "centrepieces … creates" → "create"
   - `index.html:660` "became reality" → "became a reality"
   - `index.html:193–195` missing punctuation in "…your vision refined, memorable"
-- [ ] **"Whatsapp Us" → "WhatsApp Us"** on the floating button (93 pages).
+- [x] **"Whatsapp Us" → "WhatsApp Us"** *(Done 2026-10-09)* on the floating button (93 pages).
 - [x] **Brand name in footer** *(Done 2026-10-09 — copyright line was hidden by `display:none` in footer.css; now visible as "© 2026 GPL Events & Hire | All rights reserved | Made with love by pixelsinframe.com". Lowercase "copyright" heading removed; designer link now goes to pixelsinframe.com; mobile WhatsApp bar no longer covers it.)* — "GPL Events and Hire" (82 pages) / "GPL events and Hire" (12) → "GPL Events & Hire".
   Footer heading "copyright" → "Copyright".
-- [ ] **UK spelling** — `bespoke-gifting.html`: personalized ×7, Personalization ×2, customized ×2,
+- [x] **UK spelling** *(Done 2026-10-09 — standardised on "Mom-to-Be")* — `bespoke-gifting.html`: personalized ×7, Personalization ×2, customized ×2,
   customization, "Party favors" → -ise/-isation/favours. `index.html`: "Specializing" (JSON-LD :62),
   "centerpiece(s)" alt text (:542, :570). Mom vs Mum mixed on bespoke-gifting (356–402) — pick one.
-- [ ] **Décor accent** — `index.html:220, 288, 565` "decor" → "décor" (288 also "Hire Midrand" → "Hire in Midrand").
+- [x] **Décor accent** *(Done 2026-10-09)* — `index.html:220, 288, 565` "decor" → "décor" (288 also "Hire Midrand" → "Hire in Midrand").
 - [ ] **Delivery contradiction** — **Owner input.** All category pages + hire-full say "Delivery, setup and
   collection are included"; ~54 item pages say "quoted separately"; `correx-welcome-board.html:187` vs `:191`
   contradict on the same page. Confirm the real policy, then make it one sentence everywhere.
