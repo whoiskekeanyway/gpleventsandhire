@@ -574,58 +574,6 @@
     align-items: center;
 }
 
-/* Testimonials Section */
-.testimonials {
-    padding: 6rem 0;
-    background: white;
-}
-
-.testimonials-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 2rem;
-}
-
-.testimonial-card {
-    background: #f8f9ff;
-    padding: 2.5rem;
-    border-radius: 20px;
-    text-align: center;
-    border-left: 5px solid var(--clr-accent-red);
-    transition: all 0.3s ease;
-}
-
-.testimonial-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
-}
-
-.testimonial-rating {
-    color: var(--clr-accent-red);
-    font-size: 1.2rem;
-    margin-bottom: 1.5rem;
-}
-
-.testimonial-card p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: #333;
-    margin-bottom: 1.5rem;
-    font-style: italic;
-}
-
-.testimonial-author strong {
-    color: #1a237e;
-    font-weight: 600;
-}
-
-.testimonial-author span {
-    color: #666;
-    font-size: 0.9rem;
-    display: block;
-    margin-top: 0.25rem;
-}
-
 /* Contact Section */
 
 .contact {
@@ -962,70 +910,7 @@
         padding: 2rem 1.5rem;
     }
 
-    .testimonial-card {
-        padding: 2rem 1.5rem;
-    }
 
-    /* Mobile testimonial carousel */
-    .testimonials-grid {
-        display: flex;
-        overflow-x: auto;
-        scroll-snap-type: x mandatory;
-        scroll-behavior: smooth;
-        gap: 1rem;
-        padding: 0.5rem 1.25rem 0.5rem;
-        -webkit-overflow-scrolling: touch;
-        scrollbar-width: none;
-        /* Negative margin to allow cards to scroll edge-to-edge */
-        margin: 0 -1rem;
-    }
-
-    .testimonials-grid::-webkit-scrollbar {
-        display: none;
-    }
-
-    .testimonial-card {
-        flex: 0 0 82%;
-        max-width: 340px;
-        scroll-snap-align: start;
-        padding: 1.75rem 1.5rem;
-        /* Disable the translateY hover on touch devices */
-        transform: none !important;
-    }
-
-    /* Dot indicators — only visible on mobile */
-    .testimonial-dots {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 0.5rem;
-        margin-top: 1.25rem;
-    }
-}
-
-/* Dot indicators — hidden by default (desktop) */
-.testimonial-dots {
-    display: none;
-}
-
-/* 8px visible dot inside a 24px tap area (padding + background-clip) */
-.dot {
-    width: 8px;
-    height: 8px;
-    box-sizing: content-box;
-    padding: 8px;
-    background-clip: content-box;
-    border-radius: 50%;
-    border: none;
-    background-color: rgba(26, 35, 126, 0.2);
-    cursor: pointer;
-    transition: width 0.25s ease, background 0.25s ease, border-radius 0.25s ease;
-}
-
-.dot--active {
-    background-color: var(--clr-primary-navy);
-    width: 22px;
-    border-radius: 4px;
 }
 
 /* Smooth scrolling */
@@ -1142,38 +1027,6 @@
     body:has(.sticky-whatsapp) {
         padding-bottom: 54px;
     }
-}
-
-/* Testimonial date */
-.testimonial-date {
-    display: block;
-    margin-top: 0.25rem;
-    font-size: 0.8rem;
-    color: #999;
-    font-style: italic;
-}
-
-/* Google Reviews link in testimonials header */
-.google-reviews-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.4rem;
-    margin-top: 0.75rem;
-    font-family: var(--ff-primary);
-    font-size: 0.9rem;
-    font-weight: 600;
-    color: var(--clr-primary-navy);
-    text-decoration: none;
-    border-bottom: 1px solid transparent;
-    transition: border-color 0.2s ease;
-}
-
-.google-reviews-link:hover {
-    border-bottom-color: var(--clr-primary-navy);
-}
-
-.google-reviews-link .fab {
-    color: #ea4335;
 }
 
 /* Contact map section */

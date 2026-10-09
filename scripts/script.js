@@ -141,38 +141,6 @@ function formatPhoneNumber(input) {
   input.value = value;
 }
 
-// Testimonial carousel dot indicators
-function setupTestimonialCarousel() {
-  const grid = document.querySelector(".testimonials-grid");
-  const dots = document.querySelectorAll(".dot");
-  if (!grid || !dots.length) return;
-
-  function updateDots() {
-    const cards = grid.querySelectorAll(".testimonial-card");
-    if (!cards.length) return;
-    const cardWidth = cards[0].offsetWidth;
-    const gap = 16; // matches 1rem gap
-    const active = Math.min(
-      Math.round(grid.scrollLeft / (cardWidth + gap)),
-      dots.length - 1
-    );
-    dots.forEach((dot, i) => dot.classList.toggle("dot--active", i === active));
-  }
-
-  // Update dots while scrolling
-  grid.addEventListener("scroll", updateDots, { passive: true });
-
-  // Click a dot to scroll to that card
-  dots.forEach((dot, i) => {
-    dot.addEventListener("click", () => {
-      const cards = grid.querySelectorAll(".testimonial-card");
-      const cardWidth = cards[0]?.offsetWidth || 0;
-      const gap = 16;
-      grid.scrollTo({ left: i * (cardWidth + gap), behavior: "smooth" });
-    });
-  });
-}
-
 // Initialize when DOM is loaded
 document.addEventListener("DOMContentLoaded", function () {
   // Setup scroll listener
@@ -181,8 +149,6 @@ document.addEventListener("DOMContentLoaded", function () {
   // Setup animations
   setupAnimations();
 
-  // Setup testimonial carousel
-  setupTestimonialCarousel();
 
   // Setup phone formatting
   const phoneInput = document.querySelector('input[name="phone"]');

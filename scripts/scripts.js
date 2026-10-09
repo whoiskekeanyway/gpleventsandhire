@@ -97,38 +97,3 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
-
-document.addEventListener("DOMContentLoaded", function () {
-  const track = document.querySelector(".testimonial-track");
-  const container = document.querySelector(".testimonial-container");
-  if (!track) return;
-
-  // Respect "reduce motion": no auto-scroll, let people swipe the strip instead
-  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-    if (container) container.style.overflowX = "auto";
-    return;
-  }
-
-  const images = Array.from(track.children);
-
-  // Duplicate images for seamless scroll (hidden from screen readers)
-  images.forEach((img) => {
-    const clone = img.cloneNode(true);
-    clone.setAttribute("aria-hidden", "true");
-    track.appendChild(clone);
-  });
-
-  let scrollAmount = 0;
-  const speed = 1; // pixels per frame, adjust for speed
-
-  function animate() {
-    scrollAmount += speed;
-    if (scrollAmount >= track.scrollWidth / 2) {
-      scrollAmount = 0;
-    }
-    track.style.transform = `translateX(-${scrollAmount}px)`;
-    requestAnimationFrame(animate);
-  }
-
-  animate();
-});
