@@ -69,7 +69,7 @@ Items marked **Owner input** need a business decision before changing.
 - [ ] **Social share image** *(Owner confirmed 2026-10-09: the `dhvalxorx` Cloudinary account is theirs — image is fine. Still worth giving item pages their own product photo.)* — 82 pages use a Cloudinary image from a different account
   (`dhvalxorx/.../Giftspeoplelove/Asset_1_nbjykf.png`). **Owner input:** confirm it's the GPL brand image.
   Item pages should use their own product photo.
-- [ ] **Align FAQ schema with visible FAQ text** (31 mismatched questions; some schema-only questions on
+- [x] **Align FAQ schema with visible FAQ text** *(Done 2026-10-09 — FAQPage schema rebuilt from the visible FAQs on 17 pages (41 differences); visible FAQ sections added to gold-balloon-flower-arch + white-carpet, which had schema only.)* (31 mismatched questions; some schema-only questions on
   bespoke-gifting, contact, event-packages, hire-full, and 4 item pages).
 - [ ] **LocalBusiness schema on location pages** — each claims its suburb as `addressLocality`, implying
   branches. Use the real Midrand address + `areaServed` for the suburb. (Links to locationpagestask.md Phase 2.)
