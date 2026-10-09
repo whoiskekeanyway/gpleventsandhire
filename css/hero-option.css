@@ -9,7 +9,7 @@
 .hero-options {
     height: 70vh;
     padding-block: 3rem;
-    background: url('https://res.cloudinary.com/dp24kap9x/image/upload/f_auto,q_auto/v1759646924/IMG_3259_mysmrz.jpg') center/cover no-repeat;
+    background: url('https://res.cloudinary.com/dp24kap9x/image/upload/f_auto,q_auto,w_1920/v1759646924/IMG_3259_mysmrz.jpg') center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -112,5 +112,11 @@
 
     .packages-container {
         padding: 1rem;
+    }
+}
+/* Smaller hero photo on phones */
+@media (max-width: 768px) {
+    .hero-options {
+        background-image: url('https://res.cloudinary.com/dp24kap9x/image/upload/f_auto,q_auto,w_900/v1759646924/IMG_3259_mysmrz.jpg');
     }
 }

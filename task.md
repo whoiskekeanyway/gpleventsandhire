@@ -77,7 +77,7 @@ Items marked **Owner input** need a business decision before changing.
   - Move Google Fonts from `@import` in `base.css:1` to `<link>` + preconnect in each page `<head>` (preconnect is only on index today)
   - Load Font Awesome non-blocking, or only the icons used
   - Add `defer` to scripts
-- [ ] **Add `width`/`height` to `<img>` tags** (483 missing) — prevents layout shift (CLS).
+- [x] **Add `width`/`height` to `<img>` tags** (483 missing) — prevents layout shift (CLS). *(Done 2026-10-09 — 483 tags, real intrinsic sizes. Also: navbar logo was an 8493px PNG on every page → Cloudinary `w_1000` (116 KB → 8 KB); footer logo → `w_1600` (110 KB → 12 KB); hero photo 1.9 MB → `w_1920` (480 KB) desktop / `w_900` (130 KB) mobile. **Broken:** homepage gallery "Corporate Event" image (`md-duran-…_vdcbiv.jpg`) returns 404 from Cloudinary — owner to re-upload/replace.)*
 - [ ] **Low:** add apple-touch-icon; twitter tags use `property=` instead of `name=`; footer logo alt
   empty on bespoke-gifting:629, event-packages:460, hire-full:450; standardise phone display to `064 931 8467`.
 
