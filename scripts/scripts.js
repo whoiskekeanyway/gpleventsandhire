@@ -81,6 +81,7 @@ document.addEventListener('DOMContentLoaded', function () {
 document.addEventListener("DOMContentLoaded", function () {
   const track = document.querySelector(".testimonial-track");
   const container = document.querySelector(".testimonial-container");
+  if (!track) return;
   const images = Array.from(track.children);
 
   // Duplicate images for seamless scroll

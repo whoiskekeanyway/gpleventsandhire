@@ -6,9 +6,12 @@ function scrollToContact() {
 }
 
 function scrollToForm() {
-  document.getElementById("contact-form").scrollIntoView({
-    behavior: "smooth",
-  });
+  const form = document.getElementById("contact-form");
+  if (form) {
+    form.scrollIntoView({ behavior: "smooth" });
+  } else {
+    window.location.href = "/contact.html";
+  }
 }
 
 // Form submission handler
@@ -80,12 +83,12 @@ function handleFormSubmit(event) {
     "success"
   );
   form.reset();
-  console.log("Form submitted with data:", data);
 }
 
 // Header scroll effect
 function handleScroll() {
   const header = document.querySelector(".header");
+  if (!header) return;
   if (window.scrollY > 100) {
     header.style.background = "rgba(255, 255, 255, 0.98)";
     header.style.boxShadow = "0 2px 30px rgba(0, 0, 0, 0.15)";
@@ -197,23 +200,6 @@ document.addEventListener("DOMContentLoaded", function () {
     tomorrow.setDate(tomorrow.getDate() + 1);
     dateInput.min = tomorrow.toISOString().split("T")[0];
   }
-
-  // Add click tracking for analytics (placeholder)
-  document
-    .querySelectorAll("button, .cta-primary, .cta-secondary")
-    .forEach((element) => {
-      element.addEventListener("click", function () {
-        // In real implementation, send to analytics
-        console.log("CTA clicked:", this.textContent.trim());
-      });
-    });
 });
 
-// Contact method click handlers
-document.addEventListener("click", function (e) {
-  if (e.target.matches(".nav-phone, .cta-call")) {
-    // Track phone clicks
-    console.log("Phone call initiated");
-  }
-});
 

@@ -13,26 +13,29 @@ Audit of all 98 pages: SEO, technical SEO, typos/content, design, fonts, accessi
 The site already converts — these are polish + fixes, no redesign. Ordered by impact within each group.
 Items marked **Owner input** need a business decision before changing.
 
-### 🔴 Fix first (broken things)
+### 🔴 Fix first (broken things) — ✅ all fixed 2026-10-09
 
-- [ ] **Two item pages are cut off mid-footer** — `hire/items/marry-me-marquee-set.html` and
+> Year: restored the original `.year` snippet (same as AirMarine `scripts/style.js`) at the top of
+> `scripts/backtotop.js`, which every page loads. `scrollToForm()` now falls back to `/contact.html`.
+
+- [x] **Two item pages are cut off mid-footer** — `hire/items/marry-me-marquee-set.html` and
   `hire/items/md-marquee-set.html` end at line 186 (no `</footer>`, `</body>`, scripts). Menu,
   option buttons and WhatsApp bar don't work. Rebuild the footer + scripts from a sibling item page.
-- [ ] **Wrong canonical on `event-packages.html:22`** — points to `/packages.html` (doesn't exist).
+- [x] **Wrong canonical on `event-packages.html:22`** — points to `/packages.html` (doesn't exist).
   Google may not index the packages page. Change to `/event-packages.html`.
-- [ ] **`event-packages.html` mobile menu doesn't work** — only loads `script.js` (line 548); missing
+- [x] **`event-packages.html` mobile menu doesn't work** — only loads `script.js` (line 548); missing
   `navbar.js`, `backtotop.js`, `scripts.js`. Also "Get Quote" (`:151`) calls `scrollToForm()` but the
   page has no form → JS error. Point it to `contact.html` or WhatsApp instead.
-- [ ] **Footer copyright year is blank on every page** — `<span class="year"> </span>` is empty and no
+- [x] **Footer copyright year is blank on every page** — `<span class="year"> </span>` is empty and no
   script fills it. Renders as "© | GPL…". Add a one-line `getFullYear()` script or hard-code 2026.
-- [ ] **JS errors on every page** — `scripts/script.js:88` queries `.header` (doesn't exist) on every
+- [x] **JS errors on every page** — `scripts/script.js:88` queries `.header` (doesn't exist) on every
   scroll; `scripts/scripts.js:84` reads `.testimonial-track` (only on index) with no null check.
   Add null guards. Remove leftover `console.log` (`script.js:83,207,216`).
-- [ ] **Footer "Services" links → `#ourservices`** on 86 pages — that anchor only exists on index.
+- [x] **Footer "Services" links → `#ourservices`** on 86 pages — that anchor only exists on index.
   Change to `/index.html#ourservices` (or link to `event-packages.html`).
-- [ ] **Broken link** `hire/items/charger-side-plate-combo.html:229` → `about.html` (doesn't exist).
+- [x] **Broken link** `hire/items/charger-side-plate-combo.html:229` → `about.html` (doesn't exist).
   That page's footer has drifted — replace with the standard footer.
-- [ ] **`event-packages.html:183`** "View Our Package Options" button has `href=""`.
+- [x] **`event-packages.html:183`** "View Our Package Options" button has `href=""`.
 
 ### 🟠 SEO & Technical SEO
 
