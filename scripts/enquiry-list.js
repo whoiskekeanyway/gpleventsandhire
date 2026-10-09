@@ -1,6 +1,6 @@
-// Enquiry list — lets visitors collect several hire items (across pages) and
-// send them in one pre-filled WhatsApp message. Loaded on hire.html, the hire
-// category pages and the item pages.
+// Enquiry list — lets visitors collect several hire items and packages (across
+// pages) and send them in one pre-filled WhatsApp message. Loaded on hire.html,
+// the hire category and item pages, event-packages.html and bespoke-gifting.html.
 (function () {
   const STORAGE_KEY = "gplEnquiryList";
   const WHATSAPP = "https://wa.me/27649318467?text=";
@@ -29,10 +29,10 @@
 
   // Read name / option / price / link from a card or an item page
   function readItem(container) {
-    const nameEl = container.querySelector(".hire-item-name") || container.querySelector("h2");
+    const nameEl = container.querySelector(".hire-item-name") || container.querySelector(".pkg-name") || container.querySelector("h2");
     const link = container.querySelector(".hire-item-name a");
     const option = container.querySelector(".option-btn.active");
-    const price = container.querySelector(".hire-item-price");
+    const price = container.querySelector(".hire-item-price") || container.querySelector(".pkg-price");
     const name = nameEl.textContent.trim();
     const size = option ? option.dataset.size || option.textContent.trim() : "";
     return {
@@ -76,14 +76,14 @@
 
   // ----- Add buttons on cards / item page -----
 
-  const containers = Array.from(document.querySelectorAll(".hire-item-card .hire-item-body, .hire-item-detail-info"))
+  const containers = Array.from(document.querySelectorAll(".hire-item-card .hire-item-body, .hire-item-detail-info, .pkg-card .pkg-body"))
     .filter((el) => !el.closest('[style*="display:none"]'));
 
   containers.forEach((container) => {
     const btn = document.createElement("button");
     btn.type = "button";
     btn.className = "enquiry-add";
-    const cta = container.querySelector(".cta-secondary");
+    const cta = container.querySelector(".cta-secondary") || container.querySelector(".pkg-cta");
     if (cta) cta.insertAdjacentElement("afterend", btn);
     else container.appendChild(btn);
     btn.addEventListener("click", () => toggle(readItem(container)));

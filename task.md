@@ -465,6 +465,64 @@ Client-side JSON search on `hire.html` (the hire hub) — no backend, no depende
 
 ---
 
+## Event Packages + Bespoke Gifting Rebuild — 2026-10-09
+
+Both pages rebuilt with **Essential · Signature · Luxe** tiers (Signature = "Most popular"), category tabs,
+mobile swipe-to-compare cards, "From R…" pricing, booking/ordering steps, enquiry-list buttons and updated FAQs.
+**All package content lives in `tools/packages-data.json`** — edit it, then run `python3 tools/build-packages.py`.
+
+Owner policies applied: event setup included, delivery & collection charged (usually ~R1,600 most Gauteng venues);
+70% deposit secures the date, balance a week before; refundable/transferable with enough notice; security deposit
+may apply (often waived). Gifting: full payment upfront by EFT; free delivery Midrand, Waterfall, Carlswald, Kyalami,
+Fourways; R150 flat rate elsewhere in Gauteng; 3–5 / 7–10 business days; fresh bouquets same day before 12:00;
+corporate: no minimum, branding available, bulk discounts.
+
+### Owner to fine-tune
+- [ ] **Review package inclusions** — drafted from the hire stock; adjust wording/items in `tools/packages-data.json`
+- [ ] **Review prices** — event prices raised (Birthday from R3,500 / R6,500 / R12,000; Baby shower R4,000 / R7,500 / R13,000;
+  Wedding R12,000 / R22,000 / R38,000; Corporate R5,000 / R10,000 / R20,000). Gifting raised ~15%. Bouquets R450 / R850 / R1,500.
+- [ ] **Review guest guides** per tier (e.g. Birthday: up to 30 / 30–80 / 80–150)
+- [x] Homepage FAQs, contact FAQ and the 7 location pages updated to the new prices/terms
+
+### Photos needed (30) — placeholders show "Photo coming soon" until added
+Size: **1200 × 900 px (4:3)**, WebP or JPG, real setups/gifts. To add one: save it at the path below, set
+`"photo": "assets/packages/<file>"` on that tier in `tools/packages-data.json`, run `python3 tools/build-packages.py`.
+
+| Category | Tier | Package | File |
+|---|---|---|---|
+| Birthday | Essential | Essential Birthday | `assets/packages/birthday-essential.webp` |
+| Birthday | Signature | Signature Birthday | `assets/packages/birthday-signature.webp` |
+| Birthday | Luxe | Luxe Birthday | `assets/packages/birthday-luxe.webp` |
+| Baby Shower | Essential | Essential Baby Shower | `assets/packages/baby-shower-essential.webp` |
+| Baby Shower | Signature | Signature Baby Shower | `assets/packages/baby-shower-signature.webp` |
+| Baby Shower | Luxe | Luxe Baby Shower | `assets/packages/baby-shower-luxe.webp` |
+| Wedding | Essential | Essential Wedding | `assets/packages/wedding-essential.webp` |
+| Wedding | Signature | Signature Wedding | `assets/packages/wedding-signature.webp` |
+| Wedding | Luxe | Luxe Wedding | `assets/packages/wedding-luxe.webp` |
+| Corporate | Essential | Essential Corporate | `assets/packages/corporate-essential.webp` |
+| Corporate | Signature | Signature Corporate | `assets/packages/corporate-signature.webp` |
+| Corporate | Luxe | Luxe Corporate | `assets/packages/corporate-luxe.webp` |
+| For Him | Essential | Classic Gentleman's Hamper | `assets/packages/him-essential.webp` |
+| For Him | Signature | Executive Gift Set | `assets/packages/him-signature.webp` |
+| For Him | Luxe | Sports & Wellness Hamper | `assets/packages/him-luxe.webp` |
+| For Her | Essential | Classic Pamper Hamper | `assets/packages/her-essential.webp` |
+| For Her | Signature | Gourmet & Luxury Gift Box | `assets/packages/her-signature.webp` |
+| For Her | Luxe | Luxury All-In-One Gift | `assets/packages/her-luxe.webp` |
+| Mom-to-Be | Essential | Expecting Mom Comfort Bundle | `assets/packages/mom-to-be-essential.webp` |
+| Mom-to-Be | Signature | Mom-to-Be Celebration Pack | `assets/packages/mom-to-be-signature.webp` |
+| Mom-to-Be | Luxe | Complete Mom-to-Be Experience | `assets/packages/mom-to-be-luxe.webp` |
+| Birthday | Essential | Birthday Celebration Hamper | `assets/packages/birthday-gifts-essential.webp` |
+| Birthday | Signature | Birthday Experience Box | `assets/packages/birthday-gifts-signature.webp` |
+| Birthday | Luxe | Milestone Birthday Edition | `assets/packages/birthday-gifts-luxe.webp` |
+| Flowers | Essential | Essential Bouquet | `assets/packages/flowers-essential.webp` |
+| Flowers | Signature | Signature Bouquet | `assets/packages/flowers-signature.webp` |
+| Flowers | Luxe | Luxe Flower Box | `assets/packages/flowers-luxe.webp` |
+| Corporate | Essential | Thank You & Appreciation Gift | `assets/packages/corporate-gifts-essential.webp` |
+| Corporate | Signature | Congratulations & Milestone Gift | `assets/packages/corporate-gifts-signature.webp` |
+| Corporate | Luxe | Custom Corporate Gift Solution | `assets/packages/corporate-gifts-luxe.webp` |
+
+---
+
 ## Future Category Pages — From Competitor Research (2026-06-20)
 
 Ideas sourced from Backdrop & Decor Hub and Cherri Hire. Not yet built — log here for future sprints.

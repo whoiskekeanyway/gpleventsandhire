@@ -1,0 +1,377 @@
+{
+  "_readme": "Edit names, prices, guests and inclusions here, then run: python3 tools/build-packages.py. Photos: put the file at the 'photo' path and set it here (e.g. \"photo\": \"assets/packages/birthday-essential.webp\"); leave it empty to show the 'Photo coming soon' placeholder.",
+
+  "events": {
+    "facts": [
+      ["fa-wand-magic-sparkles", "Setup included in every package"],
+      ["fa-truck", "Delivery & collection usually around R1,600 for most Gauteng venues"],
+      ["fa-calendar-check", "70% deposit secures your date — balance a week before"],
+      ["fa-building-columns", "Pay by EFT"]
+    ],
+    "categories": [
+      {
+        "id": "birthday",
+        "tab": "Birthday",
+        "title": "Birthday Packages",
+        "intro": "From intimate gatherings to milestone parties — styled in your colours and theme.",
+        "tiers": [
+          {
+            "tier": "Essential",
+            "name": "Essential Birthday",
+            "price": "R3,500",
+            "guests": "Up to 30 guests",
+            "guestsMax": 30,
+            "desc": "A beautiful, simple setup for intimate birthdays.",
+            "includes": [
+              "Balloon garland on a round arch or panel backdrop",
+              "A1 printed welcome board on an easel",
+              "Styled cake & dessert table (runner, candles, cake plinth)",
+              "Setup on the day by our team"
+            ],
+            "photo": ""
+          },
+          {
+            "tier": "Signature",
+            "name": "Signature Birthday",
+            "price": "R6,500",
+            "guests": "30–80 guests",
+            "guestsMax": 80,
+            "desc": "A fully styled look for bigger celebrations.",
+            "plus": "Everything in Essential, plus:",
+            "includes": [
+              "Larger balloon installation with floral accents",
+              "2 marquee numbers (e.g. 21, 30, 40)",
+              "3-piece acrylic plinth set for cake & treats",
+              "Table décor for up to 5 guest tables"
+            ],
+            "photo": ""
+          },
+          {
+            "tier": "Luxe",
+            "name": "Luxe Birthday",
+            "price": "R12,000",
+            "guests": "80–150 guests",
+            "guestsMax": 150,
+            "desc": "A full themed transformation for milestone birthdays.",
+            "plus": "Everything in Signature, plus:",
+            "includes": [
+              "Themed backdrop installation with balloons & florals",
+              "Up to 4 marquee letters or numbers",
+              "Champagne wall",
+              "Red or white carpet entrance with gold stanchions",
+              "Centrepieces for up to 10 guest tables",
+              "Styling consultation to plan your theme"
+            ],
+            "photo": ""
+          }
+        ]
+      },
+      {
+        "id": "baby-shower",
+        "tab": "Baby Shower",
+        "title": "Baby Shower Packages",
+        "intro": "Soft, elegant setups to celebrate the mom-to-be.",
+        "tiers": [
+          {
+            "tier": "Essential",
+            "name": "Essential Baby Shower",
+            "price": "R4,000",
+            "guests": "Up to 30 guests",
+            "guestsMax": 30,
+            "desc": "A sweet, simple setup for intimate showers.",
+            "includes": [
+              "Arch backdrop with balloon garland",
+              "Personalised welcome board",
+              "Styled dessert & gift table",
+              "Setup on the day by our team"
+            ],
+            "photo": ""
+          },
+          {
+            "tier": "Signature",
+            "name": "Signature Baby Shower",
+            "price": "R7,500",
+            "guests": "30–60 guests",
+            "guestsMax": 60,
+            "desc": "A themed, photo-ready shower setup.",
+            "plus": "Everything in Essential, plus:",
+            "includes": [
+              "Themed balloon installation",
+              "BABY marquee letters",
+              "Plinth set for cake & treats",
+              "Table décor for up to 5 guest tables"
+            ],
+            "photo": ""
+          },
+          {
+            "tier": "Luxe",
+            "name": "Luxe Baby Shower",
+            "price": "R13,000",
+            "guests": "60+ guests",
+            "guestsMax": 100,
+            "desc": "The full luxury experience for the mom-to-be.",
+            "plus": "Everything in Signature, plus:",
+            "includes": [
+              "Floral styling throughout",
+              "Welcome flower box at the entrance",
+              "Champagne or drinks display",
+              "Centrepieces for up to 10 guest tables",
+              "Styling consultation to plan your theme"
+            ],
+            "photo": ""
+          }
+        ]
+      },
+      {
+        "id": "wedding",
+        "tab": "Wedding",
+        "title": "Wedding Packages",
+        "intro": "Ceremony and reception styling, from intimate to grand.",
+        "tiers": [
+          {
+            "tier": "Essential",
+            "name": "Essential Wedding",
+            "price": "R12,000",
+            "guests": "Up to 50 guests",
+            "guestsMax": 50,
+            "desc": "Elegant styling for intimate ceremonies and receptions.",
+            "includes": [
+              "Floral ceremony arch",
+              "Welcome board on an easel",
+              "Aisle décor accents",
+              "Couple's table styling",
+              "Centrepieces for 5 guest tables",
+              "Setup on the day by our team"
+            ],
+            "photo": ""
+          },
+          {
+            "tier": "Signature",
+            "name": "Signature Wedding",
+            "price": "R22,000",
+            "guests": "50–120 guests",
+            "guestsMax": 120,
+            "desc": "A complete, cohesive look from ceremony to reception.",
+            "plus": "Everything in Essential, plus:",
+            "includes": [
+              "Reception backdrop behind the couple's table",
+              "MR & MRS marquee letters",
+              "Centrepieces for up to 10 tables",
+              "Table runners, votives & table numbers",
+              "Champagne wall"
+            ],
+            "photo": ""
+          },
+          {
+            "tier": "Luxe",
+            "name": "Luxe Wedding",
+            "price": "R38,000",
+            "guests": "120+ guests",
+            "guestsMax": 200,
+            "desc": "Full venue styling for a truly grand celebration.",
+            "plus": "Everything in Signature, plus:",
+            "includes": [
+              "Full ceremony + reception venue styling",
+              "Premium floral installations",
+              "Carpet entrance with gold stanchions",
+              "Gold-rim glassware for the bridal table",
+              "Centrepieces for 15+ tables",
+              "Planning & styling consultation"
+            ],
+            "photo": ""
+          }
+        ]
+      },
+      {
+        "id": "corporate",
+        "tab": "Corporate",
+        "title": "Corporate Event Packages",
+        "intro": "Polished, on-brand styling for launches, year-end functions and team events.",
+        "tiers": [
+          {
+            "tier": "Essential",
+            "name": "Essential Corporate",
+            "price": "R5,000",
+            "guests": "Up to 50 guests",
+            "guestsMax": 50,
+            "desc": "A professional, branded welcome for your guests.",
+            "includes": [
+              "Branded welcome board on an easel",
+              "Styled entrance or registration area",
+              "Panel photo backdrop",
+              "Setup before your guests arrive"
+            ],
+            "photo": ""
+          },
+          {
+            "tier": "Signature",
+            "name": "Signature Corporate",
+            "price": "R10,000",
+            "guests": "50–150 guests",
+            "guestsMax": 150,
+            "desc": "A VIP experience in your brand colours.",
+            "plus": "Everything in Essential, plus:",
+            "includes": [
+              "VIP red carpet with gold stanchions",
+              "Balloon arch in your brand colours",
+              "Table décor for up to 10 tables"
+            ],
+            "photo": ""
+          },
+          {
+            "tier": "Luxe",
+            "name": "Luxe Corporate",
+            "price": "R20,000",
+            "guests": "150+ guests",
+            "guestsMax": 300,
+            "desc": "Full brand-themed styling for major functions.",
+            "plus": "Everything in Signature, plus:",
+            "includes": [
+              "Full brand-themed venue styling",
+              "Your initials or logo letters in marquee lights (up to 4)",
+              "Champagne wall",
+              "Crockery & glassware hire",
+              "Styling consultation"
+            ],
+            "photo": ""
+          }
+        ]
+      }
+    ],
+    "steps": [
+      ["Enquire", "Choose a package or tell us your idea on WhatsApp or our form."],
+      ["Get your quote", "We confirm your styling, add-ons and delivery fee."],
+      ["Secure your date", "Pay a 70% deposit by EFT — the balance is due a week before."],
+      ["We set up", "Our team styles your venue on the day, then collects afterwards."]
+    ],
+    "addons": [
+      ["Marquee letters & numbers", "hire/marquee-letters.html"],
+      ["Champagne wall", "hire/items/champagne-wall.html"],
+      ["Arches", "hire/arches.html"],
+      ["Backdrops", "hire/backdrops.html"],
+      ["Crockery & glassware", "hire/crockery.html"],
+      ["Kids party furniture", "hire/kids.html"],
+      ["Bespoke gifts & favours", "bespoke-gifting.html"]
+    ],
+    "faqs": [
+      ["What is included in an event package?", "Every package includes the décor and hire items listed on the card, styling, and setup on the day by our team. Delivery and collection are charged separately — usually around R1,600 for most Gauteng venues — and confirmed upfront in your quote."],
+      ["How much is delivery and collection?", "Delivery and collection is usually around R1,600 for most Gauteng venues. The exact amount depends on your venue's distance from Midrand and the size of the setup, and we confirm it in your quote before you book."],
+      ["How do I secure my date?", "A 70% deposit secures your date, and the balance is due a week before your event. We accept payment by EFT."],
+      ["Can I customise a package to add or remove items?", "Absolutely — every package is a starting point. Add extras like marquee letters, a champagne wall or more balloons, or swap items to suit your theme, and we'll tailor your quote."],
+      ["Is there a security deposit?", "Some items may require a refundable security deposit, but we waive it for many bookings. We'll always tell you upfront if it applies."],
+      ["What if I need to cancel or reschedule?", "With enough notice, your deposit can be refunded or moved to a new available date. Please contact us as early as possible so we can help."],
+      ["How do I know which package suits my guest count?", "Each package shows a guest guide. If you're between sizes, use the 'Help me choose' tool above or WhatsApp us — we can scale any package up or down."],
+      ["What areas do you cover?", "We style events across Midrand, Johannesburg, Sandton, Centurion, Waterfall, Carlswald and Fourways. For venues further out, enquire and we'll confirm whether we can accommodate you."]
+    ]
+  },
+
+  "gifting": {
+    "facts": [
+      ["fa-truck", "Free delivery in Midrand, Waterfall, Carlswald, Kyalami & Fourways"],
+      ["fa-location-dot", "R150 flat-rate delivery anywhere else in Gauteng"],
+      ["fa-building-columns", "Full payment by EFT confirms your order"],
+      ["fa-clock", "Ready in 3–5 business days · bouquets same day if ordered before 12:00"]
+    ],
+    "categories": [
+      {
+        "id": "him",
+        "tab": "For Him",
+        "title": "Gifts for Him",
+        "intro": "Thoughtful hampers for partners, dads, colleagues and clients.",
+        "tiers": [
+          {"tier": "Essential", "name": "Classic Gentleman's Hamper", "price": "R1,150", "desc": "Timeless essentials for the modern man.",
+           "includes": ["Grooming essentials (beard oil, face wash, balm)", "Craft beverage selection", "Artisan snacks & biltong", "Gift box with a personalised card"], "photo": ""},
+          {"tier": "Signature", "name": "Executive Gift Set", "price": "R1,750", "desc": "Sophisticated gifts for business and celebration.",
+           "includes": ["Premium wine or spirits", "Executive desk accessories (notebook & pen)", "Gourmet chocolates & treats", "Custom branded packaging"], "photo": ""},
+          {"tier": "Luxe", "name": "Sports & Wellness Hamper", "price": "R2,900", "desc": "For the active gentleman who values wellness.",
+           "includes": ["Premium fitness accessories (bottle, towel)", "Wellness & recovery products", "Sports-themed gift items", "Personalised with his name or initials"], "photo": ""}
+        ]
+      },
+      {
+        "id": "her",
+        "tab": "For Her",
+        "title": "Gifts for Her",
+        "intro": "Pampering, gourmet and luxury gifts she'll remember.",
+        "tiers": [
+          {"tier": "Essential", "name": "Classic Pamper Hamper", "price": "R1,150", "desc": "An indulgent spa moment at home.",
+           "includes": ["Skincare favourites", "Bath & body treats", "Scented candle", "Elegant gift box with a personalised card"], "photo": ""},
+          {"tier": "Signature", "name": "Gourmet & Luxury Gift Box", "price": "R1,750", "desc": "Sophisticated tastes, beautifully curated.",
+           "includes": ["Gourmet chocolates & confectionery", "Premium coffee or tea selection", "Artisanal treats", "Designer presentation box"], "photo": ""},
+          {"tier": "Luxe", "name": "Luxury All-In-One Gift", "price": "R2,900", "desc": "The ultimate pampering and gourmet combination.",
+           "includes": ["Spa & wellness set", "Gourmet food & bubbly", "Luxury accessory or keepsake", "Fully customised to her taste"], "photo": ""}
+        ]
+      },
+      {
+        "id": "mom-to-be",
+        "tab": "Mom-to-Be",
+        "title": "Mom-to-Be Gifts",
+        "intro": "Comfort and pampering for the expecting mom.",
+        "tiers": [
+          {"tier": "Essential", "name": "Expecting Mom Comfort Bundle", "price": "R750", "desc": "Thoughtful comfort for the mom-to-be.",
+           "includes": ["Pregnancy-safe skincare", "Comfort items (socks or wrap)", "Healthy snacks & treats", "Gift box with a personalised card"], "photo": ""},
+          {"tier": "Signature", "name": "Mom-to-Be Celebration Pack", "price": "R1,400", "desc": "Premium pampering for the mom-to-be.",
+           "includes": ["Spa & relaxation set", "Maternity-safe gourmet treats", "Personalised baby keepsake", "Premium gift box"], "photo": ""},
+          {"tier": "Luxe", "name": "Complete Mom-to-Be Experience", "price": "R2,100", "desc": "Everything a mom-to-be could need — and more.",
+           "includes": ["Full pampering suite", "Gourmet food selection", "Baby essentials & keepsakes", "Luxury hamper presentation"], "photo": ""}
+        ]
+      },
+      {
+        "id": "birthday-gifts",
+        "tab": "Birthday",
+        "title": "Birthday Gifts",
+        "intro": "Celebrate them with a gift that feels personal.",
+        "tiers": [
+          {"tier": "Essential", "name": "Birthday Celebration Hamper", "price": "R700", "desc": "Fun and festive treats for their big day.",
+           "includes": ["Gourmet treats & chocolates", "Party favours & keepsakes", "Celebration essentials", "Vibrant gift presentation"], "photo": ""},
+          {"tier": "Signature", "name": "Birthday Experience Box", "price": "R1,400", "desc": "Luxury gifts tailored to their interests.",
+           "includes": ["Personalised gift items", "Premium treats & beverages", "Luxury accessory", "Custom themed packaging"], "photo": ""},
+          {"tier": "Luxe", "name": "Milestone Birthday Edition", "price": "R2,100", "desc": "Unforgettable gifts for milestone birthdays.",
+           "includes": ["Premium personalised items", "Luxury brand selections", "Exclusive gourmet treats", "Fully personalised presentation"], "photo": ""}
+        ]
+      },
+      {
+        "id": "flowers",
+        "tab": "Flowers",
+        "title": "Flower Bouquets",
+        "intro": "Fresh flowers, hand-tied by us — same-day delivery when you order before 12:00.",
+        "tiers": [
+          {"tier": "Essential", "name": "Essential Bouquet", "price": "R450", "desc": "A fresh, hand-tied bouquet of seasonal blooms.",
+           "includes": ["About 12 fresh seasonal stems", "Hand-tied and wrapped", "Personalised message card"], "photo": ""},
+          {"tier": "Signature", "name": "Signature Bouquet", "price": "R850", "desc": "Premium blooms for a statement gift.",
+           "includes": ["About 24 premium stems (roses or lisianthus)", "Luxury wrap or presentation box", "Personalised message card"], "photo": ""},
+          {"tier": "Luxe", "name": "Luxe Flower Box", "price": "R1,500", "desc": "A grand arrangement they'll never forget.",
+           "includes": ["40+ premium fresh stems", "Keepsake flower box", "Personalised message card", "Optional chocolates add-on"], "photo": ""}
+        ]
+      },
+      {
+        "id": "corporate-gifts",
+        "tab": "Corporate",
+        "title": "Corporate & Special Occasions",
+        "intro": "Client, staff and event gifting — no minimum order, branding available.",
+        "tiers": [
+          {"tier": "Essential", "name": "Thank You & Appreciation Gift", "price": "R600", "desc": "Show gratitude with a thoughtful gift.",
+           "includes": ["Artisan gourmet items", "Professional presentation", "Personalised thank-you card", "Elegant packaging"], "photo": ""},
+          {"tier": "Signature", "name": "Congratulations & Milestone Gift", "price": "R950", "desc": "Celebrate achievements with premium gifts.",
+           "includes": ["Luxury gift selection", "Premium presentation box", "Personalised message", "Logo branding available"], "photo": ""},
+          {"tier": "Luxe", "name": "Custom Corporate Gift Solution", "price": "Custom quote", "desc": "Fully tailored gifts for your team or clients.",
+           "includes": ["Tailored item selection", "Logo branding on packaging, ribbon & cards", "Bulk-order discounts", "No minimum order"], "photo": ""}
+        ]
+      }
+    ],
+    "steps": [
+      ["Choose", "Pick a package or ask us for a custom hamper."],
+      ["Personalise", "Add your message, colours or company branding."],
+      ["Confirm", "Full payment by EFT (including delivery, if applicable)."],
+      ["Delivered", "Ready in 3–5 business days — bouquets same day before 12:00."]
+    ],
+    "faqs": [
+      ["Can I fully customise the contents of a gift hamper?", "Yes — all our hampers are completely customisable. Tell us the recipient, the occasion, your budget and any preferences (dietary requirements, favourite brands, colours) and we'll curate something unique."],
+      ["How much is delivery?", "Delivery is free in Midrand, Waterfall, Carlswald, Kyalami and Fourways. Anywhere else in Gauteng is a R150 flat rate. Collection from Midrand is also available."],
+      ["How do I pay?", "Full payment by EFT confirms your order, including the delivery fee where applicable."],
+      ["What is the lead time for a gift order?", "Standard orders take 3–5 business days. Larger or highly customised orders may need 7–10 business days. Flower bouquets can be delivered the same day when ordered before 12:00."],
+      ["Are the flowers fresh?", "Yes — every bouquet is made with fresh flowers. Order before 12:00 for same-day delivery."],
+      ["Do you do corporate gifting?", "Yes — there's no minimum order, bulk-order discounts are available, and we can add your logo to packaging, ribbon and cards. Use the corporate form on this page or WhatsApp us your quantities."],
+      ["Can I add a personalised message?", "Yes — every gift includes a personalised message card at no extra charge."]
+    ]
+  }
+}
