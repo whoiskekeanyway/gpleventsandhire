@@ -479,9 +479,11 @@ corporate: no minimum, branding available, bulk discounts.
 
 ### Owner to fine-tune
 - [ ] **Review package inclusions** — drafted from the hire stock; adjust wording/items in `tools/packages-data.json`
-- [ ] **Review prices** — event prices raised (Birthday from R3,500 / R6,500 / R12,000; Baby shower R4,000 / R7,500 / R13,000;
-  Wedding R12,000 / R22,000 / R38,000; Corporate R5,000 / R10,000 / R20,000). Gifting raised ~15%. Bouquets R450 / R850 / R1,500.
-- [ ] **Review guest guides** per tier (e.g. Birthday: up to 30 / 30–80 / 80–150)
+- [ ] **Review prices** — events: Birthday R3,500 / R6,500 / R12,000; Baby shower R6,500 / R9,500 / R14,500;
+  Wedding R12,000 / R22,000 / R38,000; Corporate R5,000 / R10,000 / R20,000. Gifting (owner-set starting prices,
+  upper tiers drafted): Him/Her/Mom-to-Be R2,500 / R3,500 / R5,000; Birthday R1,800 / R2,800 / R4,000;
+  Flowers R700 / R1,200 / R2,000; Corporate R1,500 / R2,500 / custom quote.
+- [x] **Guest guides** — owner set 2026-10-09: Essential up to 20, Signature 20–50, Luxe 50–80 (all categories); table counts in inclusions scaled to match
 - [x] Homepage FAQs, contact FAQ and the 7 location pages updated to the new prices/terms
 
 ### Photos needed (30) — placeholders show "Photo coming soon" until added

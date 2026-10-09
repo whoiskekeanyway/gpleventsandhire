@@ -142,11 +142,10 @@ def events_block():
                     <div class="form-group">
                         <label for="chooser-guests">How many guests?</label>
                         <select id="chooser-guests" name="guests">
-                            <option value="30">Up to 30</option>
-                            <option value="60">31–60</option>
-                            <option value="100">61–100</option>
-                            <option value="150">101–150</option>
-                            <option value="250">150+</option>
+                            <option value="20">Up to 20</option>
+                            <option value="50">21–50</option>
+                            <option value="80">51–80</option>
+                            <option value="120">More than 80</option>
                         </select>
                     </div>
                     <button type="submit" class="pkg-chooser-btn">Show my package</button>

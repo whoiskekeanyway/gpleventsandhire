@@ -73,6 +73,9 @@
     result.innerHTML =
       "<p>We recommend the <strong>" + name + "</strong> — " + price +
       (guide ? " (" + guide.textContent.trim().toLowerCase() + ")" : "") + ".</p>" +
+      (guests > parseInt(pick.dataset.guestsMax, 10)
+        ? "<p>For more than " + pick.dataset.guestsMax + " guests we'll scale it up and tailor a custom quote.</p>"
+        : "") +
       '<div class="pkg-result-actions">' +
       '<a class="pkg-result-view" href="#' + panel.id + '">See the package</a>' +
       '<a class="pkg-cta" href="' + wa + '" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp" aria-hidden="true"></i> Request it on WhatsApp</a>' +
