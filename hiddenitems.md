@@ -78,6 +78,18 @@ Everything hidden with `style="display:none"` — ready to re-enable when needed
 
 ---
 
+## Hidden from Google (noindex + removed from sitemap)
+
+Pages that still exist but are kept out of search until the item is in stock.
+
+| Page | Reason | To re-enable |
+|---|---|---|
+| `hire/selfie-mirrors.html` | No selfie mirror in stock yet (2026-10-09) | Change robots meta to `index, follow`, add back to `sitemap.xml`, un-hide hub tile in `hire.html` |
+| `hire/items/led-selfie-mirror-station.html` | Same | Change robots meta to `index, follow`, add back to `sitemap.xml` |
+| `hire/items/magic-mirror-photo-booth.html` | Same | Change robots meta to `index, follow`, add back to `sitemap.xml` |
+
+---
+
 ## Notes
 
 - `hire/easels.html` still exists but its hub tile is hidden — the page content was merged into `welcome-board-stands.html`

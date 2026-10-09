@@ -115,11 +115,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.gpleventsandhire.co.za/hire/selfie-mirrors.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://www.gpleventsandhire.co.za/hire/signs.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -164,8 +159,6 @@
   <url><loc>https://www.gpleventsandhire.co.za/hire/items/golden-pattern-underplate.html</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://www.gpleventsandhire.co.za/hire/items/kids-chair.html</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://www.gpleventsandhire.co.za/hire/items/kids-table.html</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.gpleventsandhire.co.za/hire/items/led-selfie-mirror-station.html</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.gpleventsandhire.co.za/hire/items/magic-mirror-photo-booth.html</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://www.gpleventsandhire.co.za/hire/items/marquee-letters-az.html</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://www.gpleventsandhire.co.za/hire/items/marquee-numbers.html</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://www.gpleventsandhire.co.za/hire/items/marry-me-marquee-set.html</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
@@ -199,6 +192,7 @@
   <url><loc>https://www.gpleventsandhire.co.za/hire/items/wine-glasses.html</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://www.gpleventsandhire.co.za/hire/items/gold-rim-wine-glass.html</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://www.gpleventsandhire.co.za/hire/items/gold-rim-champagne-glass.html</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.gpleventsandhire.co.za/hire/items/acrylic-ice-bucket.html</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://www.gpleventsandhire.co.za/hire/items/wooden-aframe-easel.html</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
 
   <!-- Location pages -->
