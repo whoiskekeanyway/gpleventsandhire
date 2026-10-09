@@ -39,7 +39,7 @@ Items marked **Owner input** need a business decision before changing.
 
 ### 🟠 SEO & Technical SEO
 
-- [ ] **sitemap.xml cleanup** *(Mostly done 2026-10-09 — removed hire-intent.html + hire-full.html, added the 2 gold-rim glass pages. Still to do: `<lastmod>` dates.)*
+- [x] **sitemap.xml cleanup** *(Mostly done 2026-10-09 — removed hire-intent.html + hire-full.html, added the 2 gold-rim glass pages. Still to do: `<lastmod>` dates.)* *(Finished 2026-10-09 — `<lastmod>` on all 83 URLs; removed 4 empty `<url>` blocks left by earlier deletions.)*
   - Remove `hire-intent.html` (line 35 — file doesn't exist, 404 in sitemap)
   - Add missing `hire/items/gold-rim-champagne-glass.html` and `gold-rim-wine-glass.html`
   - Add `<lastmod>` dates
@@ -65,7 +65,7 @@ Items marked **Owner input** need a business decision before changing.
   - Missing price: `cutlery-set`, `golden-pattern-underplate`, `natural-mat-underplate`, `clear-acrylic-plinth`; `white-carpet` has no offer at all
   - Schema price ≠ visible price: `arch-backdrop` (800 vs R550), `square-white-backdrop` (500 vs R1,100)
   - Add `image` (missing on 65) and `priceValidUntil` (missing on all)
-- [ ] **Homepage canonical slash** — `index.html:17,23` use no trailing slash; sitemap + twitter:url use `/`. Make all `https://www.gpleventsandhire.co.za/`.
+- [x] **Homepage canonical slash** — `index.html:17,23` use no trailing slash; sitemap + twitter:url use `/`. Make all `https://www.gpleventsandhire.co.za/`. *(Done 2026-10-09)*
 - [ ] **Social share image** *(Owner confirmed 2026-10-09: the `dhvalxorx` Cloudinary account is theirs — image is fine. Still worth giving item pages their own product photo.)* — 82 pages use a Cloudinary image from a different account
   (`dhvalxorx/.../Giftspeoplelove/Asset_1_nbjykf.png`). **Owner input:** confirm it's the GPL brand image.
   Item pages should use their own product photo.
@@ -78,7 +78,7 @@ Items marked **Owner input** need a business decision before changing.
   - Load Font Awesome non-blocking, or only the icons used
   - Add `defer` to scripts
 - [x] **Add `width`/`height` to `<img>` tags** (483 missing) — prevents layout shift (CLS). *(Done 2026-10-09 — 483 tags, real intrinsic sizes. Also: navbar logo was an 8493px PNG on every page → Cloudinary `w_1000` (116 KB → 8 KB); footer logo → `w_1600` (110 KB → 12 KB); hero photo 1.9 MB → `w_1920` (480 KB) desktop / `w_900` (130 KB) mobile. **Broken:** homepage gallery "Corporate Event" image (`md-duran-…_vdcbiv.jpg`) returns 404 from Cloudinary — owner to re-upload/replace.)*
-- [ ] **Low:** add apple-touch-icon; twitter tags use `property=` instead of `name=`; footer logo alt
+- [x] **Low:** add apple-touch-icon; twitter tags use `property=` instead of `name=`; footer logo alt *(Done 2026-10-09 — apple-touch-icon on all pages, twitter tags use `name=`, footer logo alt fixed. Phone display format left as-is.)*
   empty on bespoke-gifting:629, event-packages:460, hire-full:450; standardise phone display to `064 931 8467`.
 
 ### 🟡 Typos & Content
