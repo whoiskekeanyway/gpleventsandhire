@@ -1,3 +1,10 @@
 # Netlify redirects
+# "301!" forces the redirect even though the file still exists (kept so it can be re-enabled — see hiddenitems.md)
 /hire-full.html  /hire.html  301
 /hire-full       /hire.html  301
+/hire/accessories.html  /hire/table-decor.html           301!
+/hire/accessories       /hire/table-decor.html           301!
+/hire/easels.html       /hire/welcome-board-stands.html  301!
+/hire/easels            /hire/welcome-board-stands.html  301!
+/hire/plinths.html      /hire/flower-stands.html         301!
+/hire/plinths           /hire/flower-stands.html         301!
