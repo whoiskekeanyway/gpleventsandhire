@@ -203,3 +203,28 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+
+// Enquiry tracking (GA4) — WhatsApp, phone and email taps + form submits
+function trackEnquiry(method, label) {
+  if (typeof gtag !== "function") return;
+  gtag("event", "generate_lead", {
+    method: method,
+    link_text: label,
+    page_path: window.location.pathname,
+    transport_type: "beacon",
+  });
+}
+
+document.addEventListener("click", function (e) {
+  const link = e.target.closest("a[href]");
+  if (!link) return;
+  const href = link.getAttribute("href");
+  const label = link.textContent.trim().slice(0, 100);
+  if (href.includes("wa.me")) trackEnquiry("whatsapp", label);
+  else if (href.startsWith("tel:")) trackEnquiry("phone", label);
+  else if (href.startsWith("mailto:")) trackEnquiry("email", label);
+});
+
+document.addEventListener("submit", function (e) {
+  trackEnquiry("form", e.target.getAttribute("name") || "form");
+});

@@ -56,7 +56,7 @@ Items marked **Owner input** need a business decision before changing.
   `Untitled-2-01/02.webp` 1.4/1.2 MB, `correx2.jpg` 1.3 MB. Delete unused `image.png` and `IMG_7048.jpeg`.
 - [x] **Don't lazy-load the main item image** *(Done 2026-10-09 — 31 pages now `fetchpriority="high"`.)* — 31 item pages have `loading="lazy"` on `.img-primary`
   (above the fold). Remove it / add `fetchpriority="high"` → faster LCP.
-- [ ] **Add Google Analytics to all pages** — GA only on `index.html` + `bespoke-gifting.html` (2 of 98).
+- [x] **Add Google Analytics to all pages** *(Done 2026-10-09 — G-NE46SRYXMX on all 98 pages; `generate_lead` events for WhatsApp/phone/email taps + form submits in `scripts/script.js`. In GA4: Admin → Events → mark `generate_lead` as a key event.)* — GA only on `index.html` + `bespoke-gifting.html` (2 of 98).
   You can't see which hire/location pages drive enquiries. Add GA4 + click events on `wa.me`, `tel:`, form submit.
 - [ ] **Shorten titles >60 chars** (42 pages — worst: `hire/table-decor` 98, `hire-full`/`flower-stands`/
   `welcome-board-stands` 93, `event-packages` 88, `crockery` 85, `bespoke-gifting` 84, `kids` 83, `index` 78).
