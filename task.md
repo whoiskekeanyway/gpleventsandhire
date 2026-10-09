@@ -61,7 +61,7 @@ Items marked **Owner input** need a business decision before changing.
 - [x] **Shorten titles >60 chars** *(Done 2026-10-09 — 38 titles rewritten, all ≤60.)* (42 pages — worst: `hire/table-decor` 98, `hire-full`/`flower-stands`/
   `welcome-board-stands` 93, `event-packages` 88, `crockery` 85, `bespoke-gifting` 84, `kids` 83, `index` 78).
 - [x] **Shorten meta descriptions >155 chars** *(Done 2026-10-09 — 59 rewritten, all ≤155; og/twitter descriptions synced.)* (60 pages, mostly item pages — up to 287 chars).
-- [ ] **Fix Product schema on item pages**
+- [x] **Fix Product schema on item pages** *(Done 2026-10-09 — prices fixed/added (arch-backdrop R550, square-white R1,100, cutlery R30, underplates R35/R20, white carpet R400); clear-acrylic-plinth offer removed until priced; `image` added on the 31 pages that have a photo + 2 gold-rim pages got Product schema. Remaining 36 item pages get `image` when photos are added. `priceValidUntil` skipped — optional.)*
   - Missing price: `cutlery-set`, `golden-pattern-underplate`, `natural-mat-underplate`, `clear-acrylic-plinth`; `white-carpet` has no offer at all
   - Schema price ≠ visible price: `arch-backdrop` (800 vs R550), `square-white-backdrop` (500 vs R1,100)
   - Add `image` (missing on 65) and `priceValidUntil` (missing on all)
