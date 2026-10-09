@@ -143,15 +143,15 @@
             "tier": "Essential",
             "name": "Essential Wedding",
             "price": "R12,000",
-            "guests": "Up to 20 guests",
-            "guestsMax": 20,
+            "guests": "Up to 50 guests",
+            "guestsMax": 50,
             "desc": "Elegant styling for intimate ceremonies and receptions.",
             "includes": [
               "Floral ceremony arch",
               "Welcome board on an easel",
               "Aisle décor accents",
               "Couple's table styling",
-              "Centrepieces for up to 3 guest tables",
+              "Centrepieces for up to 6 guest tables",
               "Setup on the day by our team"
             ],
             "photo": ""
@@ -160,14 +160,14 @@
             "tier": "Signature",
             "name": "Signature Wedding",
             "price": "R22,000",
-            "guests": "20–50 guests",
-            "guestsMax": 50,
+            "guests": "50–100 guests",
+            "guestsMax": 100,
             "desc": "A complete, cohesive look from ceremony to reception.",
             "plus": "Everything in Essential, plus:",
             "includes": [
               "Reception backdrop behind the couple's table",
               "MR & MRS marquee letters",
-              "Centrepieces for up to 6 guest tables",
+              "Centrepieces for up to 12 guest tables",
               "Table runners, votives & table numbers",
               "Champagne wall"
             ],
@@ -177,8 +177,8 @@
             "tier": "Luxe",
             "name": "Luxe Wedding",
             "price": "R38,000",
-            "guests": "50–80 guests",
-            "guestsMax": 80,
+            "guests": "100–150 guests",
+            "guestsMax": 150,
             "desc": "Full venue styling for a truly grand celebration.",
             "plus": "Everything in Signature, plus:",
             "includes": [
@@ -186,7 +186,7 @@
               "Premium floral installations",
               "Carpet entrance with gold stanchions",
               "Gold-rim glassware for the bridal table",
-              "Centrepieces for up to 10 guest tables",
+              "Centrepieces for up to 18 guest tables",
               "Planning & styling consultation"
             ],
             "photo": ""
@@ -203,8 +203,8 @@
             "tier": "Essential",
             "name": "Essential Corporate",
             "price": "R5,000",
-            "guests": "Up to 20 guests",
-            "guestsMax": 20,
+            "guests": "Up to 50 guests",
+            "guestsMax": 50,
             "desc": "A professional, branded welcome for your guests.",
             "includes": [
               "Branded welcome board on an easel",
@@ -218,14 +218,14 @@
             "tier": "Signature",
             "name": "Signature Corporate",
             "price": "R10,000",
-            "guests": "20–50 guests",
-            "guestsMax": 50,
+            "guests": "50–100 guests",
+            "guestsMax": 100,
             "desc": "A VIP experience in your brand colours.",
             "plus": "Everything in Essential, plus:",
             "includes": [
               "VIP red carpet with gold stanchions",
               "Balloon arch in your brand colours",
-              "Table décor for up to 6 tables"
+              "Table décor for up to 12 tables"
             ],
             "photo": ""
           },
@@ -233,8 +233,8 @@
             "tier": "Luxe",
             "name": "Luxe Corporate",
             "price": "R20,000",
-            "guests": "50–80 guests",
-            "guestsMax": 80,
+            "guests": "100–150 guests",
+            "guestsMax": 150,
             "desc": "Full brand-themed styling for major functions.",
             "plus": "Everything in Signature, plus:",
             "includes": [
