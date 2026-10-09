@@ -158,9 +158,9 @@
 
     .copyright-container {
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
-        text-align: left;
+        text-align: center;
     }
 }
 
@@ -173,7 +173,7 @@
 }
 
 #element-to-show {
-    display: none;
+    display: block;
     z-index: 1;
     transition: all 0.3s ease-in-out;
     padding-right: 10px;

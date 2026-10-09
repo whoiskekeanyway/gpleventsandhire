@@ -89,7 +89,7 @@ Items marked **Owner input** need a business decision before changing.
   - `index.html:660` "became reality" → "became a reality"
   - `index.html:193–195` missing punctuation in "…your vision refined, memorable"
 - [ ] **"Whatsapp Us" → "WhatsApp Us"** on the floating button (93 pages).
-- [ ] **Brand name in footer** — "GPL Events and Hire" (82 pages) / "GPL events and Hire" (12) → "GPL Events & Hire".
+- [x] **Brand name in footer** *(Done 2026-10-09 — copyright line was hidden by `display:none` in footer.css; now visible as "© 2026 GPL Events & Hire | All rights reserved | Made with love by pixelsinframe.com". Lowercase "copyright" heading removed; designer link now goes to pixelsinframe.com; mobile WhatsApp bar no longer covers it.)* — "GPL Events and Hire" (82 pages) / "GPL events and Hire" (12) → "GPL Events & Hire".
   Footer heading "copyright" → "Copyright".
 - [ ] **UK spelling** — `bespoke-gifting.html`: personalized ×7, Personalization ×2, customized ×2,
   customization, "Party favors" → -ise/-isation/favours. `index.html`: "Specializing" (JSON-LD :62),

@@ -1082,7 +1082,8 @@
         font-size: 1.3rem;
     }
 
-    body {
+    /* :has() outranks the body reset in base.css, which loads after this file */
+    body:has(.sticky-whatsapp) {
         padding-bottom: 54px;
     }
 }
