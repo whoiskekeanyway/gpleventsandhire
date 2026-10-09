@@ -73,7 +73,7 @@ Items marked **Owner input** need a business decision before changing.
   bespoke-gifting, contact, event-packages, hire-full, and 4 item pages).
 - [ ] **LocalBusiness schema on location pages** — each claims its suburb as `addressLocality`, implying
   branches. Use the real Midrand address + `areaServed` for the suburb. (Links to locationpagestask.md Phase 2.)
-- [ ] **Render-blocking resources**
+- [x] **Render-blocking resources** *(Done 2026-10-09 — Google Fonts already moved to `<link>` + preconnect; Font Awesome now loads non-blocking (`media="print"` swap + `<noscript>` fallback); `defer` on all 393 local script tags.)*
   - Move Google Fonts from `@import` in `base.css:1` to `<link>` + preconnect in each page `<head>` (preconnect is only on index today)
   - Load Font Awesome non-blocking, or only the icons used
   - Add `defer` to scripts
