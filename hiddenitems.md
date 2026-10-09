@@ -89,6 +89,12 @@ Pages that still exist but are kept out of search until the item is in stock.
 | `hire/items/magic-mirror-photo-booth.html` | Same | Change robots meta to `index, follow`, add back to `sitemap.xml` |
 | `hire/items/throne-chair.html` | Hidden by owner 2026-10-09 (hired as a pair only) | Change robots meta to `index, follow`, add back to `sitemap.xml`, un-hide card in `furniture.html`, add back to furniture ItemList schema + hero copy |
 | `hire/items/shot-glasses.html` | Hidden by owner 2026-10-09 (no per-item price; no card on crockery page) | Set per-item price, change robots meta to `index, follow`, add back to `sitemap.xml`, add a card to `crockery.html` |
+| `hire/items/sweetheart-table.html` | Hidden by owner 2026-10-09 | Change robots meta to `index, follow`, add back to `sitemap.xml`, un-hide card in `hire/furniture.html`, add back to furniture hero copy |
+| `hire/items/ghost-chairs.html` | Hidden by owner 2026-10-09 | Change robots meta to `index, follow`, add back to `sitemap.xml`, un-hide card in `hire/furniture.html`, add back to furniture hero copy |
+| `hire/items/cocktail-table.html` | Hidden by owner 2026-10-09 | Change robots meta to `index, follow`, add back to `sitemap.xml`, un-hide card in `hire/furniture.html`, add back to furniture hero copy |
+| `hire/items/cornhole-board-set.html` | Hidden by owner 2026-10-09 | Change robots meta to `index, follow`, add back to `sitemap.xml`, un-hide card in `hire/lawn-games.html`, add back to lawn-games hero copy |
+| `hire/items/ring-toss-game.html` | Hidden by owner 2026-10-09 | Change robots meta to `index, follow`, add back to `sitemap.xml`, un-hide card in `hire/lawn-games.html`, add back to lawn-games hero copy |
+| `hire/items/white-champagne-board.html` | Hidden by owner 2026-10-09 | Change robots meta to `index, follow`, add back to `sitemap.xml`, un-hide card in `— (no card exists; add one to `hire/drinks-boards.html`)` |
 
 ---
 
@@ -99,3 +105,4 @@ Pages that still exist but are kept out of search until the item is in stock.
 - `hire/plinths.html` still exists but its hub tile is hidden — items were merged into `flower-stands.html` (now "Stands & Plinths")
 - To re-enable any item or tile: remove `style="display:none"` from the relevant `<div>` tag
 - `accessories.html`, `easels.html`, `plinths.html` are also 301-redirected in `_redirects` (added 2026-10-09). To re-enable one, delete its lines from `_redirects` and add it back to `sitemap.xml`
+- Category-page Google product lists (ItemList schema) are rebuilt from **visible** cards only — after un-hiding a card, re-add it to that page's ItemList too.
