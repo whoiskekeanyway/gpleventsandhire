@@ -1,0 +1,113 @@
+/* Portfolio Section */
+
+.portfolio {
+    background-color: var(--clr-secondary-blush);
+    padding-bottom: 2rem !important;
+}
+
+
+.testimonial-container {
+
+    max-width: 1440px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Optional: add some padding or background */
+    background-color: var(--clr-primary-navy);
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.testimonial-track {
+    display: flex;
+    width: max-content;
+    /* Remove animation here, JS will handle it */
+    will-change: transform;
+}
+
+.testimonial {
+    width: 400px;
+    padding: 0.50rem;
+    display: flex;
+    flex-direction: column;
+    vertical-align: top;
+    gap: 1rem;
+    white-space: normal;
+    margin-right: 1rem;
+    background-color: var(--clr-secondary-blush);
+    border-radius: 5px;
+}
+
+.testimonial img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    padding: 0.30rem;
+}
+
+.testimonial p {
+    font-family: var(--ff-secondary);
+    font-size: clamp(16px, 2vw, 20px);
+    color: var(--clr-primary-navy);
+}
+
+@media screen and (max-width: 768px) {
+    .testimonial {
+        width: 300px;
+    }
+
+    .testimonial-container {
+        max-width: 100% !important;
+
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .testimonial {
+        width: 300px;
+    }
+
+    .testimonial-container {
+        margin-right: 2rem;
+        max-width: 900px;
+
+    }
+}
+
+
+main {
+    background-color: var(--clr-secondary-blush);
+}
+
+.intro {
+    max-width: 1340px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-top: 100px;
+}
+
+.intro section {
+    flex: 1;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+}
+
+.section-photo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.section-photo img {}

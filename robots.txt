@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /old.html
+Disallow: /d.html
+
+Sitemap: https://www.gpleventsandhire.co.za/sitemap.xml

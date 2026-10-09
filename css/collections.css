@@ -1,0 +1,476 @@
+/* ===================================================
+   COLLECTIONS — GPL Events & Hire
+   Collections hub grid + hire item cards (category pages)
+   =================================================== */
+
+/* ===== COLLECTIONS HUB GRID ===== */
+
+.collections-section {
+    padding: 3rem 1.5rem 5rem;
+}
+
+.collections-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.collections-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    margin-top: 2.5rem;
+}
+
+.collection-card {
+    background: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(26, 35, 126, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.collection-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 40px rgba(26, 35, 126, 0.16);
+}
+
+.collection-card-img {
+    aspect-ratio: 1 / 1;
+    background: linear-gradient(135deg, var(--clr-secondary-blush), var(--clr-secondary-cream));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* Override the global .fas cream colour just for these icons */
+.collection-card-img i {
+    font-size: 4.5rem;
+    color: var(--clr-primary-navy) !important;
+}
+
+.collection-card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.collection-card-body {
+    padding: 1rem 1.1rem 1.3rem;
+    text-align: center;
+}
+
+.collection-card-title {
+    font-family: var(--ff-secondary);
+    font-size: clamp(14px, 1.8vw, 17px);
+    color: var(--clr-elegant-charcoal);
+    margin: 0 0 0.4rem;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.collection-card-link {
+    font-family: var(--ff-primary);
+    font-size: 12px;
+    color: var(--clr-accent-red);
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+@media (max-width: 1100px) {
+    .collections-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 720px) {
+    .collections-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+}
+
+/* ===== HIRE ITEM CARDS (Category Pages) ===== */
+
+.hire-items-section {
+    padding: 3rem 1.5rem 5rem;
+}
+
+.hire-items-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.hire-items-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 2.5rem;
+}
+
+.hire-item-card {
+    background: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(26, 35, 126, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.hire-item-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 35px rgba(26, 35, 126, 0.14);
+}
+
+.hire-item-card:has(.delivery-info-trigger:hover) {
+    transform: none;
+    box-shadow: 0 4px 20px rgba(26, 35, 126, 0.08);
+}
+
+.hire-item-img {
+    aspect-ratio: 1 / 1;
+    background: linear-gradient(135deg, var(--clr-secondary-blush), var(--clr-secondary-cream));
+    overflow: hidden;
+}
+
+.hire-item-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hire-item-body {
+    padding: 1rem 1.2rem 1.3rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.hire-item-name {
+    font-family: var(--ff-secondary);
+    font-size: clamp(15px, 1.8vw, 18px);
+    color: var(--clr-elegant-charcoal);
+    font-weight: 600;
+    margin: 0 0 0.35rem;
+    line-height: 1.3;
+}
+
+.hire-item-price {
+    font-family: var(--ff-primary);
+    font-size: clamp(14px, 1.5vw, 15px);
+    color: var(--clr-primary-navy);
+    font-weight: 700;
+    margin: 0 0 1rem;
+    letter-spacing: 0.04em;
+}
+
+.hire-item-price::after {
+    content: " / per day";
+    font-style: italic;
+    font-weight: 400;
+    font-size: 0.85em;
+    opacity: 0.75;
+}
+
+.hire-item-price.no-unit::after {
+    content: "";
+}
+
+@media (max-width: 900px) {
+    .hire-items-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Size / option selector buttons */
+.item-options {
+    display: flex;
+    gap: 0.3rem;
+    margin-bottom: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.option-btn {
+    flex: 1;
+    min-width: 0;
+    padding: 0.18rem 0.35rem;
+    border: 1px solid rgba(26, 35, 126, 0.4);
+    background: transparent;
+    color: var(--clr-primary-navy);
+    border-radius: 50px;
+    font-family: var(--ff-primary);
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+    opacity: 0.75;
+}
+
+.option-btn.active {
+    background: var(--clr-primary-navy);
+    color: #fff;
+    border-color: var(--clr-primary-navy);
+    opacity: 1;
+}
+
+.option-btn:hover:not(.active) {
+    border-color: var(--clr-primary-navy);
+    opacity: 1;
+}
+
+.hire-item-img {
+    position: relative;
+}
+
+.hire-item-img-note {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #e65100;
+    color: #fff;
+    font-family: var(--ff-primary);
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-align: center;
+    padding: 0.3rem 0.5rem;
+    line-height: 1.3;
+    z-index: 1;
+}
+
+/* Clickable item name on category cards */
+.hire-item-name a {
+    color: inherit;
+    text-decoration: none;
+}
+.hire-item-name a:hover {
+    text-decoration: underline;
+    text-decoration-color: currentColor;
+    opacity: 0.8;
+}
+
+/* WhatsApp-branded enquiry button on hire item cards */
+.hire-item-card a.cta-secondary {
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0.8rem 0.9rem;
+    margin-top: auto;
+    background: #25d366;
+    color: #fff;
+    border-color: #25d366;
+    font-size: 0.95rem;
+}
+
+.hire-item-card a.cta-secondary:hover {
+    background: #128c7e;
+    color: #fff;
+    border-color: #128c7e;
+}
+
+@media (max-width: 500px) {
+    .hire-items-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.75rem;
+    }
+
+    .hire-item-body {
+        padding: 0.75rem 0.9rem 1rem;
+    }
+}
+
+/* ===== DELIVERY INFO TRIGGER & MODAL ===== */
+
+.delivery-info-trigger {
+    display: block;
+    width: fit-content;
+    text-align: left;
+    margin-top: 0.6rem;
+    padding: 0;
+    background: transparent !important;
+    border: none;
+    font-family: var(--ff-primary);
+    font-size: 0.72rem;
+    color: var(--clr-primary-navy) !important;
+    opacity: 0.6;
+    text-decoration: underline;
+    cursor: pointer;
+    letter-spacing: 0.02em;
+}
+.delivery-info-trigger:hover {
+    opacity: 1;
+    background: transparent !important;
+    color: var(--clr-primary-navy) !important;
+}
+
+.delivery-modal-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    align-items: center;
+    justify-content: center;
+}
+.delivery-modal-overlay.active { display: flex; }
+
+.delivery-modal {
+    background: #fff;
+    border-radius: 14px;
+    padding: 2rem 1.75rem;
+    max-width: 420px;
+    width: 90%;
+    position: relative;
+}
+.delivery-modal-close {
+    position: absolute;
+    top: 0.85rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    line-height: 1;
+    cursor: pointer;
+    color: var(--clr-elegant-charcoal);
+    opacity: 0.5;
+}
+.delivery-modal-close:hover { opacity: 1; }
+.delivery-modal h3 {
+    font-family: var(--ff-secondary);
+    color: var(--clr-primary-navy);
+    font-size: 1.1rem;
+    margin: 0 0 0.85rem;
+}
+.delivery-modal p {
+    font-family: var(--ff-primary);
+    font-size: 0.875rem;
+    line-height: 1.65;
+    color: var(--clr-elegant-charcoal);
+    margin: 0;
+}
+
+/* ===== HIRE ITEM DETAIL (Individual item pages /hire/items/) ===== */
+
+.hire-item-detail-section {
+    padding: 3rem 1.5rem 5rem;
+}
+
+.hire-item-detail-container {
+    max-width: 960px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: start;
+}
+
+.hire-item-detail-img {
+    aspect-ratio: 1 / 1;
+    background: linear-gradient(135deg, var(--clr-secondary-blush), var(--clr-secondary-cream));
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+}
+
+.hire-item-detail-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hire-item-detail-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.hire-item-detail-info h2 {
+    font-family: var(--ff-secondary);
+    font-size: clamp(20px, 2.5vw, 28px);
+    color: var(--clr-elegant-charcoal);
+    margin: 0;
+    line-height: 1.2;
+}
+
+.hire-item-detail-info p.item-description {
+    font-family: var(--ff-primary);
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--clr-elegant-charcoal);
+    opacity: 0.85;
+    margin: 0;
+}
+
+.hire-item-detail-info a.cta-secondary {
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0.8rem 0.9rem;
+    background: #25d366;
+    color: #fff;
+    border-color: #25d366;
+    font-size: 0.95rem;
+}
+
+.hire-item-detail-info a.cta-secondary:hover {
+    background: #128c7e;
+    color: #fff;
+    border-color: #128c7e;
+}
+
+.hire-item-detail-back {
+    display: inline-block;
+    font-family: var(--ff-primary);
+    font-size: 0.8rem;
+    color: var(--clr-primary-navy);
+    opacity: 0.6;
+    text-decoration: underline;
+}
+
+.hire-item-detail-back:hover {
+    opacity: 1;
+}
+
+@media (max-width: 720px) {
+    .hire-item-detail-container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
+
+/* Price on item detail pages — larger and accent coloured */
+.hire-item-detail-info .hire-item-price {
+    font-size: clamp(26px, 4vw, 38px);
+    color: var(--clr-accent-red);
+    margin: 0;
+    letter-spacing: 0.02em;
+}
+
+/* Hover image swap on item detail pages */
+.hire-item-detail-img .img-secondary {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+.hire-item-detail-img:hover .img-secondary {
+    opacity: 1;
+}
+/* Placeholder second image — shows gradient until real photo is added */
+div.img-secondary {
+    background: linear-gradient(160deg, var(--clr-secondary-cream), var(--clr-secondary-blush));
+}

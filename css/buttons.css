@@ -1,0 +1,234 @@
+/* Buttons */
+
+/* Back to top button */
+
+.backToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 100px;
+    right: 30px;
+    z-index: 99;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid var(--clr-primary-navy-light);
+    width: 50px;
+}
+
+.backToTopBtn:hover {
+    background-color: var(--clr-accent-red);
+}
+
+.fa-arrow-right {
+    color: var(--clr-primary-navy-light) !important;
+}
+
+/* Call to action buttons */
+
+
+.cta-primary-btn {
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    align-self: center;
+}
+
+.cta-primary-btn {
+    background: linear-gradient(135deg, var(--clr-accent-red), var(--clr-accent-red));
+    color: white;
+}
+
+.cta-primary-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(201, 176, 55, 0.4);
+}
+
+
+/* Floating WhatsApp button */
+.whatsapp-float {
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: linear-gradient(180deg, #25D366 0%, #128C7E 100%);
+    width: 56px;
+
+    /* Using max-height for ultra-smooth collapsing/expanding transitions */
+    max-height: 56px;
+    height: 100%;
+
+    border-radius: 28px;
+    /* Keeps rounded pill shape */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    /* Keeps icon anchored perfectly at the top */
+    box-shadow: 0 8px 20px rgba(18, 140, 126, 0.2);
+    z-index: 99999;
+    text-decoration: none;
+    padding: 8px;
+    /* Consistent padding prevents structural jumps */
+    box-sizing: border-box;
+    overflow: hidden;
+
+    /* A snappy, professional easing curve */
+    transition: max-height 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.whatsapp-float img {
+    display: block;
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+
+    /* Transitions the icon scales smoothly at the exact same speed */
+    transition: width 0.4s cubic-bezier(0.25, 1, 0.5, 1),
+    height 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.whatsapp-float:focus {
+    outline: 3px solid rgba(37, 211, 102, 0.25);
+    outline-offset: 4px;
+}
+
+/* --- THE TEXT CONTAINER --- */
+.whatsapp-text {
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: 700;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-top: 8px;
+
+    /* Vertical writing mode minus the orientation property */
+    writing-mode: vertical-rl;
+    white-space: nowrap;
+
+    /* Fade and scale text smoothly alongside the button expansion */
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* --- SMOOTH HOVER STATES --- */
+.whatsapp-float:hover {
+    max-height: 150px;
+    /* Expands to fit the single line vertical text */
+}
+
+.whatsapp-float:hover img {
+    width: 24px;
+    /* Scales down icon flawlessly */
+    height: 24px;
+    margin-top: 4px;
+     /* Keeps the icon perfectly centered as it scales down */
+}
+
+.whatsapp-float:hover .whatsapp-text {
+    opacity: 1;
+    transform: scale(1);
+    /* Tiny delay to let the button expand a fraction before text shows */
+    transition-delay: 0.05s;
+}
+
+/* --- MOBILE TWEAKS --- */
+@media (max-width: 768px) {
+    .whatsapp-float {
+        display: none;
+    }
+}
+
+
+.cta {
+    font-family: var(--ff-secondary);
+    font-size: clamp(16px, 4vw, 18px);
+    font-weight: 300;
+}
+
+.cta-button {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    overflow: hidden;
+    border-radius: 5px;
+    border: none;
+    background-color: #3d348b;
+    text-decoration: none;
+}
+
+.cta-button:hover {
+    border-radius: 5px;
+    padding-right: 24px;
+    padding-left: 8px;
+}
+
+
+.cta-button:hover:after {
+    opacity: 1;
+    right: 10px;
+}
+
+.cta-button:after {
+    content: "\00BB";
+    position: absolute;
+    opacity: 0;
+    font-size: 16px;
+    line-height: 40px;
+    top: -5px;
+    right: -20px;
+    transition: 0.4s;
+}
+
+.css-button-arrow--blue {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    overflow: hidden;
+    border-radius: 5px;
+    border: none;
+    background-color: #3d348b
+}
+
+.css-button-arrow--blue:hover {
+    border-radius: 5px;
+    padding-right: 24px;
+    padding-left: 8px;
+}
+
+.css-button-arrow--blue:hover:after {
+    opacity: 1;
+    right: 10px;
+}
+
+.css-button-arrow--blue:after {
+    content: "\00BB";
+    position: absolute;
+    opacity: 0;
+    font-size: 20px;
+    line-height: 40px;
+    top: 0;
+    right: -20px;
+    transition: 0.4s;
+}

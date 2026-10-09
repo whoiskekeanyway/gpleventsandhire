@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Faustina:ital,wght@0,300..800;1,300..800&family=Manrope:wght@200..800&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+:root {
+    /* Primary Brand Colors */
+    --clr-primary-navy: #1a237e;
+    /* Deep navy from logo */
+    --clr-primary-red: #e53e3e;
+    /* Vibrant red from heart */
+    --clr-primary-navy-light: #3949ab;
+    /* Lighter navy for hover states */
+    --clr-primary-red-light: #ef5350;
+
+    /* Secondary Brand Colors */
+    --clr-secondary-navy: #0d47a1;
+    /* Darker navy for depth */
+    --clr-secondary-red: #c62828;
+    /* Darker red for contrast */
+    --clr-secondary-blush: #fce4ec;
+    /* Soft pink for romantic events */
+    --clr-secondary-cream: #fff8e1;
+    /* Warm cream for elegance */
+
+
+    /* Aliases for legacy usage */
+    --clr-primary: var(--clr-primary-navy);
+    --clr-accent: var(--clr-accent-red);
+    --clr-secondary-orange: #ff6f00;
+
+    /* Accent Colors */
+    --clr-accent-red: #d32f2f;
+    /* Premium/luxury events */
+    --clr-accent-success: #2e7d32;
+    /* Success messages */
+    --clr-accent-warning: #f57c00;
+    /* Warning messages */
+    --clr-accent-error: #d32f2f;
+    /* Error messages */
+    --clr-accent-info: #1976d2;
+    /* Info messages */
+
+    /* Event Type Colors */
+    --clr-wedding-rose: #f8bbd9;
+    /* Wedding theme */
+    --clr-corporate-steel: #607d8b;
+    /* Corporate events */
+    --clr-party-purple: #9c27b0;
+    /* Party/celebration */
+    --clr-elegant-charcoal: #37474f;
+
+    --ff-primary: "Manrope",
+        sans-serif;
+    --ff-secondary: "Faustina",
+        serif;
+
+
+}
+
+html {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    interpolate-size: allow-keywords;
+}
+
+body {
+    width: 100%;
+    padding: 0;
+
+}
+
+/* Reset margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+    margin: 0;
+}
+
+
+
+/* Set up the body */
+body {
+    min-height: 100vh;
+}
+
+/* Make images easier to work with */
+
+img,
+picture {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    font-style: italic;
+    shape-margin: 1rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Make form elements easier to work with */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* Remove animations for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* WebKit Browsers */
+::-webkit-scrollbar {
+    width: 1em;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--clr-secondary-orange);
+    border-radius: 100vw;
+    margin-block: 0.5em;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--clr-primary);
+    border: 0.25em solid var(--clr-primary-navy-light);
+    border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--clr-primary-navy-light) !important;
+    border: 0.25em solid var(--clr-primary-red) !important;
+}
+
+/* Firefox */
+@supports (scrollbar-color: red blue) {
+    * {
+        scrollbar-color: var(--clr-primary-navy) var(--clr-primary-red);
+        scrollbar-width: thin;
+    }
+}
+
+/* Typography */
+
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--ff-secondary);
+    font-size: clamp(40px, 4vw, 60px);
+    letter-spacing: 0.06em;
+    line-height: 1.5;
+}
+
+p {
+    letter-spacing: 0.09em;
+    font-family: var(--ff-primary);
+}
+
+p,
+li,
+figcaption {
+    font-family: var(--ff-secondary);
+    font-size: clamp(16px, 3vw, 18px);
+    letter-spacing: normal;
+    line-height: 1.5;
+}
+
+/* Section Headers */
+
+
+.section-header {
+    text-align: center;
+    margin: 2.5rem 0 2rem;
+}
+
+
+
+.section-header p {
+    font-family: var(--ff-primary);
+    font-size: clamp(18px, 4vw, 20px);
+    font-weight: 400;
+    position: relative;
+    line-height: 1.5;
+}
+
+
+/* Responsive Design */
+/* Breakpoints */
+
+@media (max-width: 1200px) {
+    :root {
+        --font-space: 1.2rem;
+    }
+}
+
+@media (max-width: 992px) {
+    :root {
+        --font-space: 1.1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    :root {
+        --font-space: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    :root {
+        --font-space: 0.9rem;
+    }
+}
+
+/* Form Styles */
+input,
+textarea,
+select,
+button {
+    padding: 0.5rem;
+    border: 1px solid var(--clr-primary-red);
+    border-radius: 5px;
+    outline: none;
+}
+
+input:focus,
+textarea:focus,
+select:focus,
+button:focus {
+    border-color: var(--clr-accent-success);
+    box-shadow: 0 0 0 3px rgba(211, 47, 47, 0.2);
+}
+
+button {
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--clr-primary);
+}
+
+/* Additional Reset Styles */
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    a,
+    a:hover,
+    a:focus,
+    a:active {
+        text-decoration: none;
+    }
+}
+
+
+
+
+/* Accessibility Enhancements */
+
+:focus {
+    outline: 2px dashed var(--clr-accent);
+    outline-offset: 4px;
+}
+
+a:focus {
+    outline: none;
+}
+
+a:focus-visible {
+    outline: 2px dashed var(--clr-accent);
+    outline-offset: 4px;
+}
+
+
+.title {
+    color: var(--clr-primary-navy);
+    margin-bottom: 1rem;
+}
