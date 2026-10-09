@@ -144,10 +144,9 @@
 </head>
 
 <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
 
-    <img width="512" height="512" loading="lazy" class="backToTopBtn" id="myBtn"
-        src="https://res.cloudinary.com/da93q413z/image/upload/v1669920532/pixelsinframe/icons/chevron-up-circle-outline_dnw9gj.svg"
-        alt="back to top navigation">
+    <button type="button" class="backToTopBtn" id="myBtn" aria-label="Back to top"><img src="https://res.cloudinary.com/da93q413z/image/upload/v1669920532/pixelsinframe/icons/chevron-up-circle-outline_dnw9gj.svg" width="512" height="512" alt=""></button>
 
     <header>
         <nav class="navbar">
@@ -177,6 +176,8 @@
             </button>
         </nav>
     </header>
+
+    <main id="main">
 
     <section class="hero-options">
         <div class="hero-overlay"></div>
@@ -223,7 +224,7 @@
                     <div class="contact-methods">
 
                         <div class="contact-method">
-                            <i class="fas fa-phone" aria-label="Phone icon"></i>
+                            <i class="fas fa-phone" aria-hidden="true"></i>
                             <div>
                                 <h3>Call Us Now</h3>
                                 <a href="tel:+27649318467">+27 (64) 931-8467</a>
@@ -231,7 +232,7 @@
                         </div>
 
                         <div class="contact-method">
-                            <i class="fas fa-envelope" aria-label="Email icon"></i>
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
                             <div>
                                 <h3>Email Us</h3>
                                 <a href="mailto:gpleventsandhire@gmail.com">gpleventsandhire@gmail.com</a>
@@ -239,7 +240,7 @@
                         </div>
 
                         <div class="contact-method">
-                            <i class="fab fa-whatsapp" aria-label="WhatsApp icon"></i>
+                            <i class="fab fa-whatsapp" aria-hidden="true"></i>
                             <div>
                                 <h3>WhatsApp Us</h3>
                                 <a href="https://wa.me/27649318467?text=Hi%20GPL%20Events%2C%20I%27m%20interested%20in%20planning%20an%20event.%20Can%20you%20help%3F"
@@ -248,7 +249,7 @@
                         </div>
 
                         <div class="contact-method">
-                            <i class="fas fa-map-marker-alt" aria-label="Location icon"></i>
+                            <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
                             <div>
                                 <h3>Based In</h3>
                                 <p>Midrand, Gauteng, South Africa</p>
@@ -256,7 +257,7 @@
                         </div>
 
                         <div class="contact-method">
-                            <i class="fas fa-clock" aria-label="Hours icon"></i>
+                            <i class="fas fa-clock" aria-hidden="true"></i>
                             <div>
                                 <h3>Hours</h3>
                                 <p>Monday – Sunday, 08:00 – 20:00</p>
@@ -278,31 +279,42 @@
 
                 <div class="contact-form-container" id="contact-form">
 
-                    <form name="contact" method="POST" data-netlify="true">
+                    <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
 
                         <h3>Get Your Free Quote</h3>
+                        <p class="form-note">Fields marked <span aria-hidden="true">*</span><span class="sr-only">with an asterisk</span> are required. Prefer WhatsApp? <a href="https://wa.me/27649318467?text=Hi%20GPL%20Events%2C%20I%27d%20like%20a%20quote%20for%20my%20event." target="_blank" rel="noopener noreferrer">Message us instead</a>.</p>
+
+                        <input type="hidden" name="form-name" value="contact">
+                        <p class="form-honeypot" aria-hidden="true">
+                            <label>Leave this empty: <input name="bot-field" tabindex="-1" autocomplete="off"></label>
+                        </p>
 
                         <div class="form-row">
                             <div class="form-group">
-                                <input type="text" name="firstName" placeholder="First Name" required>
+                                <label for="contact-firstName">First name <span class="req" aria-hidden="true">*</span></label>
+                                <input id="contact-firstName" type="text" name="firstName" autocomplete="given-name" required>
                             </div>
                             <div class="form-group">
-                                <input type="text" name="lastName" placeholder="Last Name" required>
+                                <label for="contact-lastName">Last name</label>
+                                <input id="contact-lastName" type="text" name="lastName" autocomplete="family-name">
                             </div>
                         </div>
 
                         <div class="form-row">
                             <div class="form-group">
-                                <input type="email" name="email" placeholder="Email Address" required>
+                                <label for="contact-email">Email <span class="req" aria-hidden="true">*</span></label>
+                                <input id="contact-email" type="email" name="email" autocomplete="email" required>
                             </div>
                             <div class="form-group">
-                                <input type="tel" name="phone" placeholder="Phone Number" required>
+                                <label for="contact-phone">Phone / WhatsApp number <span class="req" aria-hidden="true">*</span></label>
+                                <input id="contact-phone" type="tel" name="phone" autocomplete="tel" inputmode="tel" required>
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <select name="eventType" required>
-                                <option value="">Select Event Type</option>
+                            <label for="contact-eventType">Event type <span class="req" aria-hidden="true">*</span></label>
+                            <select id="contact-eventType" name="eventType" required>
+                                <option value="">Choose an event type</option>
                                 <option value="wedding">Wedding</option>
                                 <option value="corporate">Corporate Event</option>
                                 <option value="birthday">Birthday Party</option>
@@ -314,25 +326,27 @@
 
                         <div class="form-row">
                             <div class="form-group">
-                                <input type="date" name="eventDate" required>
+                                <label for="contact-eventDate">Event date <span class="req" aria-hidden="true">*</span></label>
+                                <input id="contact-eventDate" type="date" name="eventDate" required>
                             </div>
                             <div class="form-group">
-                                <input type="number" name="guestCount" placeholder="Number of Guests" required>
+                                <label for="contact-guestCount">Number of guests</label>
+                                <input id="contact-guestCount" type="number" name="guestCount" min="1" inputmode="numeric">
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <input type="text" name="location" placeholder="Event Location / Area" required>
+                            <label for="contact-location">Venue or area <span class="req" aria-hidden="true">*</span></label>
+                            <input id="contact-location" type="text" name="location" placeholder="e.g. Midrand, Sandton or venue name" required>
                         </div>
 
                         <div class="form-group">
-                            <textarea name="message"
-                                placeholder="Tell us about your vision and any special requirements..."
-                                rows="4"></textarea>
+                            <label for="contact-message">Your vision or special requirements</label>
+                            <textarea id="contact-message" name="message" rows="4"></textarea>
                         </div>
 
                         <button type="submit" class="form-submit">
-                            <i class="fas fa-paper-plane"></i> Get My Free Quote
+                            <i class="fas fa-paper-plane" aria-hidden="true"></i> Get My Free Quote
                         </button>
 
                     </form>
@@ -400,66 +414,80 @@
         </div>
     </section>
 
-    <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-brand">
-                <a rel="noopener noreferrer" title="Home" class="container-icon" href="/">
-                    <img width="1600" height="309" loading="lazy" class="footer-logo"
-                        src="https://res.cloudinary.com/dp24kap9x/image/upload/f_auto,q_auto,w_1600/v1759600894/2_a7x9a0.png"
-                        alt="GPL Events & Hire logo">
-                </a>
-            </div>
-            <div class="footer-content">
-                <div class="footer-links">
-                    <h3>Services</h3>
-                    <ul>
-                        <li><a href="event-packages.html" title="Event packages">Event Packages</a></li>
-                        <li><a href="hire.html" title="Décor hire">Décor Hire</a></li>
-                        <li><a href="bespoke-gifting.html" title="Bespoke gifting">Bespoke Gifting</a></li>
-                        <li><a href="contact.html" title="Contact us">Get a Quote</a></li>
-                    </ul>
+    </main>
+
+    <footer class="site-footer">
+
+        <div class="ft-cta">
+            <div class="ft-cta-inner">
+                <div class="ft-cta-text">
+                    <p class="ft-cta-title">Planning an event?</p>
+                    <p class="ft-cta-sub">Tell us your date and venue — we'll confirm availability and pricing, usually the same day.</p>
                 </div>
-                <div class="footer-areas">
-                    <h3>Service Areas</h3>
-                    <ul>
-                        <li><a href="locations/midrand.html" title="Event planning services in Midrand">Midrand</a></li>
-                        <li><a href="locations/johannesburg.html" title="Event planning services in Johannesburg">Johannesburg</a>
-                        </li>
-                        <li><a href="locations/sandton.html" title="Event planning services in Sandton">Sandton</a></li>
-                        <li><a href="locations/centurion.html" title="Event planning services in Centurion">Centurion</a></li>
-                        <li><a href="locations/waterfall.html" title="Event planning services in Waterfall">Waterfall</a></li>
-                        <li><a href="locations/carlswald.html" title="Event planning services in Carlswald">Carlswald</a></li>
-                        <li><a href="locations/fourways.html" title="Event planning services in Fourways">Fourways</a></li>
-                    </ul>
+                <div class="ft-cta-actions">
+                    <a class="ft-btn ft-btn-wa"
+                        href="https://wa.me/27649318467?text=Hi%20GPL%20Events%2C%20I%27d%20like%20to%20enquire%20about%20an%20event."
+                        target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp" aria-hidden="true"></i> WhatsApp us</a>
+                    <a class="ft-btn ft-btn-call" href="tel:+27649318467"><i class="fas fa-phone" aria-hidden="true"></i> 064 931 8467</a>
                 </div>
-            </div>
-            <div class="footer-gbp">
-                <h3>Google Business</h3>
-                <p><a href="https://share.google/hgqL3xBRj575rXru5" target="_blank" rel="noopener noreferrer">Find us on
-                        Google Business</a></p>
-            </div>
-            <div class="footer-wa">
-                <h3>WhatsApp</h3>
-                <p><a href="https://wa.me/27649318467?text=Hi%2C%20I%E2%80%99d%20like%20to%20enquire%20about%20your%20event%20services."
-                        target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> Chat with us on
-                        WhatsApp</a></p>
-            </div>
-            <div class="footer-bottom">
-                <section class="copyright-container">
-                    <div id="element-to-show">
-                        <p> &copy;
-                            <span class="year"> </span>
-                            <span class="agency-name">GPL Events &amp; Hire </span>
-                            | All rights reserved |
-                            Made with love by
-                            <a class="designer" target="_blank" rel="noopener noreferrer" href="https://pixelsinframe.com">
-                                pixelsinframe.com
-                            </a>
-                        </p>
-                    </div>
-                </section>
             </div>
         </div>
+
+        <div class="ft-main">
+            <div class="ft-brand">
+                <a href="/" class="ft-logo-link" title="GPL Events &amp; Hire — Home">
+                    <img class="ft-logo" width="600" height="116" loading="lazy"
+                        src="https://res.cloudinary.com/dp24kap9x/image/upload/f_auto,q_auto,w_600/v1759653499/variation-01_nfpohg.png"
+                        alt="GPL Events &amp; Hire logo">
+                </a>
+                <p class="ft-blurb">Event packages, décor hire and bespoke gifting — based in Midrand, serving Johannesburg, Sandton, Centurion and greater Gauteng.</p>
+                <ul class="ft-contact">
+                    <li><i class="fab fa-whatsapp" aria-hidden="true"></i><a href="https://wa.me/27649318467" target="_blank" rel="noopener noreferrer">WhatsApp 064 931 8467</a></li>
+                    <li><i class="fas fa-envelope" aria-hidden="true"></i><a href="mailto:gpleventsandhire@gmail.com">gpleventsandhire@gmail.com</a></li>
+                    <li><i class="fas fa-location-dot" aria-hidden="true"></i><a href="https://share.google/hgqL3xBRj575rXru5" target="_blank" rel="noopener noreferrer">Midrand, Gauteng — Google Business</a></li>
+                </ul>
+            </div>
+
+            <nav class="ft-col" aria-label="Explore">
+                <p class="ft-heading">Explore</p>
+                <ul>
+                    <li><a href="/event-packages.html">Event Packages</a></li>
+                    <li><a href="/hire.html">Hire Items</a></li>
+                    <li><a href="/bespoke-gifting.html">Bespoke Gifting</a></li>
+                    <li><a href="/contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+
+            <nav class="ft-col" aria-label="Popular hire">
+                <p class="ft-heading">Popular Hire</p>
+                <ul>
+                    <li><a href="/hire/arches.html">Arches</a></li>
+                    <li><a href="/hire/backdrops.html">Backdrops</a></li>
+                    <li><a href="/hire/marquee-letters.html">Marquee Letters</a></li>
+                    <li><a href="/hire/crockery.html">Crockery &amp; Glassware</a></li>
+                    <li><a href="/hire/kids.html">Kids Party Hire</a></li>
+                </ul>
+            </nav>
+
+            <nav class="ft-col" aria-label="Service areas">
+                <p class="ft-heading">Service Areas</p>
+                <ul class="ft-areas">
+                    <li><a href="/locations/midrand.html">Midrand</a></li>
+                    <li><a href="/locations/johannesburg.html">Johannesburg</a></li>
+                    <li><a href="/locations/sandton.html">Sandton</a></li>
+                    <li><a href="/locations/centurion.html">Centurion</a></li>
+                    <li><a href="/locations/waterfall.html">Waterfall</a></li>
+                    <li><a href="/locations/carlswald.html">Carlswald</a></li>
+                    <li><a href="/locations/fourways.html">Fourways</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="ft-bottom">
+            <p>&copy; <span class="year"></span> GPL Events &amp; Hire. All rights reserved.</p>
+            <p>Made with love by <a href="https://pixelsinframe.com" target="_blank" rel="noopener noreferrer">pixelsinframe.com</a></p>
+        </div>
+
     </footer>
 
     <script src="./scripts/script.js" defer></script>

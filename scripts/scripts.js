@@ -27,11 +27,11 @@ document.addEventListener('DOMContentLoaded', function () {
     if (!hasCards && !hasDetail) return;
 
     document.body.insertAdjacentHTML('beforeend',
-        '<div class="delivery-modal-overlay" id="deliveryModal" role="dialog" aria-modal="true">' +
+        '<div class="delivery-modal-overlay" id="deliveryModal" role="dialog" aria-modal="true" aria-labelledby="deliveryModalTitle">' +
             '<div class="delivery-modal">' +
-                '<button class="delivery-modal-close" aria-label="Close">&times;</button>' +
-                '<h3>Delivery &amp; Collection</h3>' +
-                '<p>Delivery and collection are quoted separately based on your location. ' +
+                '<button type="button" class="delivery-modal-close" aria-label="Close">&times;</button>' +
+                '<h3 id="deliveryModalTitle">Delivery &amp; Collection</h3>' +
+                '<p>Delivery and collection are quoted separately based on your location, and setup is not included in hire prices. ' +
                 'You\'re also welcome to collect your order from our warehouse free of charge — ' +
                 'by appointment only. Simply select your preferred option when requesting your quote.</p>' +
             '</div>' +
@@ -39,9 +39,24 @@ document.addEventListener('DOMContentLoaded', function () {
     );
 
     var overlay = document.getElementById('deliveryModal');
+    var closeBtn = overlay.querySelector('.delivery-modal-close');
+    var lastTrigger = null;
+
+    function openModal(trigger) {
+        lastTrigger = trigger;
+        overlay.classList.add('active');
+        closeBtn.focus();
+    }
+
+    function closeModal() {
+        if (!overlay.classList.contains('active')) return;
+        overlay.classList.remove('active');
+        if (lastTrigger) lastTrigger.focus();
+    }
 
     document.querySelectorAll('.hire-item-body').forEach(function (body) {
         var btn = document.createElement('button');
+        btn.type = 'button';
         btn.className = 'delivery-info-trigger';
         btn.textContent = 'Delivery & collection info';
         body.appendChild(btn);
@@ -50,6 +65,7 @@ document.addEventListener('DOMContentLoaded', function () {
     document.querySelectorAll('.hire-item-detail-info').forEach(function (info) {
         var backLink = info.querySelector('.hire-item-detail-back');
         var btn = document.createElement('button');
+        btn.type = 'button';
         btn.className = 'delivery-info-trigger';
         btn.textContent = 'Delivery & collection info';
         if (backLink) {
@@ -61,20 +77,24 @@ document.addEventListener('DOMContentLoaded', function () {
 
     document.addEventListener('click', function (e) {
         if (e.target.classList.contains('delivery-info-trigger')) {
-            overlay.classList.add('active');
+            openModal(e.target);
         }
     });
 
-    overlay.querySelector('.delivery-modal-close').addEventListener('click', function () {
-        overlay.classList.remove('active');
-    });
+    closeBtn.addEventListener('click', closeModal);
 
     overlay.addEventListener('click', function (e) {
-        if (e.target === overlay) overlay.classList.remove('active');
+        if (e.target === overlay) closeModal();
     });
 
     document.addEventListener('keydown', function (e) {
-        if (e.key === 'Escape') overlay.classList.remove('active');
+        if (!overlay.classList.contains('active')) return;
+        if (e.key === 'Escape') closeModal();
+        // Close is the only control in the dialog, so keep focus on it
+        if (e.key === 'Tab') {
+            e.preventDefault();
+            closeBtn.focus();
+        }
     });
 });
 
@@ -82,11 +102,19 @@ document.addEventListener("DOMContentLoaded", function () {
   const track = document.querySelector(".testimonial-track");
   const container = document.querySelector(".testimonial-container");
   if (!track) return;
+
+  // Respect "reduce motion": no auto-scroll, let people swipe the strip instead
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    if (container) container.style.overflowX = "auto";
+    return;
+  }
+
   const images = Array.from(track.children);
 
-  // Duplicate images for seamless scroll
+  // Duplicate images for seamless scroll (hidden from screen readers)
   images.forEach((img) => {
     const clone = img.cloneNode(true);
+    clone.setAttribute("aria-hidden", "true");
     track.appendChild(clone);
   });
 

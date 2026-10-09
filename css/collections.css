@@ -200,13 +200,14 @@
 .option-btn {
     flex: 1;
     min-width: 0;
-    padding: 0.18rem 0.35rem;
+    min-height: 36px;
+    padding: 0.4rem 0.45rem;
     border: 1px solid rgba(26, 35, 126, 0.4);
     background: transparent;
     color: var(--clr-primary-navy);
     border-radius: 50px;
     font-family: var(--ff-primary);
-    font-size: 0.65rem;
+    font-size: 0.75rem;
     font-weight: 600;
     letter-spacing: 0.04em;
     text-transform: uppercase;
@@ -295,14 +296,14 @@
     display: block;
     width: fit-content;
     text-align: left;
-    margin-top: 0.6rem;
-    padding: 0;
+    margin-top: 0.4rem;
+    padding: 0.4rem 0;
     background: transparent !important;
     border: none;
     font-family: var(--ff-primary);
-    font-size: 0.72rem;
+    font-size: 0.82rem;
     color: var(--clr-primary-navy) !important;
-    opacity: 0.6;
+    opacity: 0.8;
     text-decoration: underline;
     cursor: pointer;
     letter-spacing: 0.02em;

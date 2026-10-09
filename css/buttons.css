@@ -9,13 +9,34 @@
     right: 30px;
     z-index: 99;
     cursor: pointer;
-    border-radius: 5px;
-    border: 1px solid var(--clr-primary-navy-light);
     width: 50px;
+    height: 50px;
+    padding: 4px;
+    border-radius: 50%;
+    border: 1px solid var(--clr-primary-navy-light);
+    background-color: #fff;
+    box-shadow: 0 4px 14px rgba(26, 35, 126, 0.18);
 }
 
-.backToTopBtn:hover {
-    background-color: var(--clr-accent-red);
+.backToTopBtn img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.backToTopBtn:hover,
+.backToTopBtn:focus-visible {
+    background-color: var(--clr-secondary-blush);
+}
+
+/* Sit above the sticky WhatsApp bar, clear of page content, on phones */
+@media (max-width: 768px) {
+    .backToTopBtn {
+        width: 44px;
+        height: 44px;
+        right: 12px;
+        bottom: 70px;
+    }
 }
 
 .fa-arrow-right {

@@ -143,19 +143,19 @@ Items marked **Owner input** need a business decision before changing.
   - Fix: use a darker red (#b71c1c) on light backgrounds, white on red
 - [x] **Option buttons go blank on hover** *(Done 2026-10-09 — global `button:hover` wrapped in `:where()`.)* — `base.css:271` `button:hover { background: navy }` beats
   `.option-btn` → navy text on navy. Scope the global rule.
-- [ ] **Form labels + focus styles** — forms (`index.html:759–800`, `contact.html`) use placeholders only;
+- [x] **Form labels + focus styles** *(Done 2026-10-09 — visible labels, autocomplete hints, Netlify honeypot, clear focus outline, "Message us instead" WhatsApp link; Last name + guests now optional.)* — forms (`index.html:759–800`, `contact.html`) use placeholders only;
   focus ring nearly invisible (`style.css:790–792`, `base.css:256`). Add visible labels + clear focus outline.
   Add a Netlify honeypot field (`netlify-honeypot`) to cut spam.
-- [ ] **Footer/nav drift** — standardise footer on `contact.html` (different Services list), `giant-tic-tac-toe.html`,
+- [x] **Footer/nav drift** *(Done 2026-10-09 — footer redesigned and identical on all 98 pages; source in `tools/footer.html`.)* — standardise footer on `contact.html` (different Services list), `giant-tic-tac-toe.html`,
   `charger-side-plate-combo.html`; add missing WhatsApp float to `charger-side-plate-combo`, `gold-rim-champagne-glass`,
   `gold-rim-wine-glass`; fix different nav markup on `giant-tic-tac-toe`, `gold-balloon-flower-arch`.
-- [ ] **Accessibility basics**
+- [x] **Accessibility basics** *(Done 2026-10-09 — skip link + `<main>` on all pages, back-to-top is a `<button>`, decorative icons `aria-hidden`, star ratings labelled, testimonial dots focusable, delivery modal focus handling, marquee respects reduced motion.)*
   - Add a skip link and a `<main>` landmark
   - Back-to-top is an `<img>`, so make it a `<button>`
   - Remove `aria-label` on decorative `<i>` icons and `aria-hidden` wrapping focusable dots (`index.html:686`)
   - Delivery modal needs focus management
   - Testimonial marquee should respect `prefers-reduced-motion`
-- [ ] **Tiny tap targets / text** — `.option-btn` ~18px tall @0.65rem, `.delivery-info-trigger` 0.72rem,
+- [x] **Tiny tap targets / text** *(Done 2026-10-09 — option buttons 36px, delivery link 0.82rem, service tags 0.68rem, testimonial dots 24px tap area.)* — `.option-btn` ~18px tall @0.65rem, `.delivery-info-trigger` 0.72rem,
   `.service-tag` 0.52rem (~8px), testimonial dots 8px. Aim for ≥44px tap height, ≥12px text.
 - [ ] **CSS tidy-up (low)**
   - Load `base.css` before `style.css`
@@ -170,7 +170,7 @@ Items marked **Owner input** need a business decision before changing.
 ### 💡 Conversion ideas (optional, after fixes)
 
 - [ ] Make WhatsApp the primary CTA everywhere (darker green, pre-filled with page/item name).
-- [ ] Rename "Get an Instant Quote" (`index.html:197`) — it only scrolls to a form. Consider a 3-field quick-quote
+- [x] Rename "Get an Instant Quote" *(Done 2026-10-09 — now "Get a Free Quote".)* (`index.html:197`) — it only scrolls to a form. Consider a 3-field quick-quote
   (date, area, WhatsApp number) on package + location pages.
 - [ ] Trust signals near CTAs: Google rating + review count, real event photos on cards.
 - [ ] "Request these items" multi-select on hire pages that builds one WhatsApp message.
