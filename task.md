@@ -105,7 +105,7 @@ Items marked **Owner input** need a business decision before changing.
   - Wooden A-Frame Easel: `easels.html:175` vs its item page
   - Gold Metal Easel: `easels.html:190` vs its item page
   - White Carpet: unit "/ per day" on the item page only
-- [ ] **Wrong-item / contradictory copy**
+- [ ] **Wrong-item / contradictory copy** *(Partly done 2026-10-09 — fixed: charger→dinner plate copy + WhatsApp texts, crockery combo pre-fill, event-packages tagline, lawn-games "all three", kids 10/20 FAQ contents, marquee popular sets, Pretoria → Midrand/Centurion, branded-cup alt text. **Owner input still needed:** plates/glasses "sets of 10" vs per-item pricing; kids ages 2–10 vs 3–12; throne chairs pair-only vs singles; glass washing (guests rinse vs we wash); selfie mirror printing + attendant included?; caption for the branded-cup photo on index.html (currently "Table Décor").)*
   - `charger-plates.html` — H1 says Dinner Plate, hero and WhatsApp say Charger Plates
   - `crockery.html:275` — WhatsApp pre-fill names the wrong combo
   - "Sets of 10" vs per-item pricing on plates/glasses
@@ -118,7 +118,7 @@ Items marked **Owner input** need a business decision before changing.
   - `marquee-letters.html:354` names sets that differ from `popular-marquee-sets.html`
   - `index.html:289` mentions Pretoria (not a service area elsewhere)
   - `index.html:565` caption "Table Decor" on a ceremony photo
-- [ ] **Hero copy names hidden items** — `drinks-boards.html:151`, `welcome-board-stands.html:319`,
+- [x] **Hero copy names hidden items** *(Done 2026-10-09 — drinks-boards now describes the champagne wall; crockery lists visible items.)* — `drinks-boards.html:151`, `welcome-board-stands.html:319`,
   `crockery.html:160` (shot glasses has no card). Reword or un-hide.
 - [ ] **Orphan item pages** — `shot-glasses.html`, `white-champagne-board.html` have no category card linking
   to them (latter says "for Hire" but "yours to keep"). Add a card or remove from sitemap.
