@@ -50,11 +50,11 @@ Items marked **Owner input** need a business decision before changing.
 - [ ] **Decide on `hire-full.html`** — **Owner input.** It duplicates `hire.html` with an older price
   list that conflicts with item pages (Correx R350–R650 vs R900; marquee numbers R150–R300 vs R350).
   Recommend 301 → `hire.html`, or update prices.
-- [ ] **Compress huge images** (biggest page-speed win) — re-export ≤300 KB WebP or move to Cloudinary `f_auto,q_auto`:
+- [x] **Compress huge images** *(Done 2026-10-09 — resized to ≤1600px + recompressed; assets 66 MB → 14 MB. `Asset 1@4x.png` → `asset-1.webp`. Originals are in git history. Still to decide: delete unused `image.png` + `IMG_7048.jpeg` (9 MB).)* (biggest page-speed win) — re-export ≤300 KB WebP or move to Cloudinary `f_auto,q_auto`:
   `assets/combo.jpg` **18 MB** (also used as og:image!), `Asset 1@4x.png` **13 MB**, `correx.jpg` 7.5 MB,
   `wineglass.jpg` 4.4 MB, `step-arch-backdrop.jpeg` 2.8 MB, `rosebank.jpeg` 1.9 MB, `welcome-board.jpeg` 1.6 MB,
   `Untitled-2-01/02.webp` 1.4/1.2 MB, `correx2.jpg` 1.3 MB. Delete unused `image.png` and `IMG_7048.jpeg`.
-- [ ] **Don't lazy-load the main item image** — 31 item pages have `loading="lazy"` on `.img-primary`
+- [x] **Don't lazy-load the main item image** *(Done 2026-10-09 — 31 pages now `fetchpriority="high"`.)* — 31 item pages have `loading="lazy"` on `.img-primary`
   (above the fold). Remove it / add `fetchpriority="high"` → faster LCP.
 - [ ] **Add Google Analytics to all pages** — GA only on `index.html` + `bespoke-gifting.html` (2 of 98).
   You can't see which hire/location pages drive enquiries. Add GA4 + click events on `wa.me`, `tel:`, form submit.
