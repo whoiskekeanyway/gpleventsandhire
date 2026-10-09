@@ -37,12 +37,12 @@ Everything hidden with `style="display:none"` — ready to re-enable when needed
 
 | Item | Line (approx) |
 |---|---|
-| Throne Chair (pair) | ~209 |
-| Sweetheart Table | ~222 |
-| Ghost Chairs (set of 4) | ~235 |
-| Cocktail Table | ~248 |
-| Stanchion Rope Set (Black) | ~249 |
-| Stanchion Rope Set (Silver) | ~266 |
+| Throne Chair (pair) | ~266 |
+| Sweetheart Table | ~279 |
+| Ghost Chairs (set of 4) | ~292 |
+| Cocktail Table | ~305 |
+| Stanchion Rope Set (Black) | ~335 |
+| Stanchion Rope Set (Silver) | ~350 |
 
 ### `hire/backdrops.html`
 
@@ -87,6 +87,8 @@ Pages that still exist but are kept out of search until the item is in stock.
 | `hire/selfie-mirrors.html` | No selfie mirror in stock yet (2026-10-09) | Change robots meta to `index, follow`, add back to `sitemap.xml`, un-hide hub tile in `hire.html` |
 | `hire/items/led-selfie-mirror-station.html` | Same | Change robots meta to `index, follow`, add back to `sitemap.xml` |
 | `hire/items/magic-mirror-photo-booth.html` | Same | Change robots meta to `index, follow`, add back to `sitemap.xml` |
+| `hire/items/throne-chair.html` | Hidden by owner 2026-10-09 (hired as a pair only) | Change robots meta to `index, follow`, add back to `sitemap.xml`, un-hide card in `furniture.html`, add back to furniture ItemList schema + hero copy |
+| `hire/items/shot-glasses.html` | Hidden by owner 2026-10-09 (no per-item price; no card on crockery page) | Set per-item price, change robots meta to `index, follow`, add back to `sitemap.xml`, add a card to `crockery.html` |
 
 ---
 
