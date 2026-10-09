@@ -1,0 +1,3 @@
+# Netlify redirects
+/hire-full.html  /hire.html  301
+/hire-full       /hire.html  301

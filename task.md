@@ -39,7 +39,7 @@ Items marked **Owner input** need a business decision before changing.
 
 ### 🟠 SEO & Technical SEO
 
-- [ ] **sitemap.xml cleanup**
+- [ ] **sitemap.xml cleanup** *(Mostly done 2026-10-09 — removed hire-intent.html + hire-full.html, added the 2 gold-rim glass pages. Still to do: `<lastmod>` dates.)*
   - Remove `hire-intent.html` (line 35 — file doesn't exist, 404 in sitemap)
   - Add missing `hire/items/gold-rim-champagne-glass.html` and `gold-rim-wine-glass.html`
   - Add `<lastmod>` dates
@@ -47,7 +47,7 @@ Items marked **Owner input** need a business decision before changing.
   `/hire/accessories.html → /hire/table-decor.html 301`, `/hire/easels.html → /hire/welcome-board-stands.html 301`,
   `/hire/plinths.html → /hire/flower-stands.html 301`. Remove them from sitemap. (They currently
   show old/conflicting prices and are still indexed.)
-- [ ] **Decide on `hire-full.html`** — **Owner input.** It duplicates `hire.html` with an older price
+- [x] **Decide on `hire-full.html`** *(Done 2026-10-09 — deleted; 301 → `hire.html` in new `_redirects`; removed from sitemap.)* — **Owner input.** It duplicates `hire.html` with an older price
   list that conflicts with item pages (Correx R350–R650 vs R900; marquee numbers R150–R300 vs R350).
   Recommend 301 → `hire.html`, or update prices.
 - [x] **Compress huge images** *(Done 2026-10-09 — resized to ≤1600px + recompressed; assets 66 MB → 14 MB. `Asset 1@4x.png` → `asset-1.webp`. Originals are in git history. Still to decide: delete unused `image.png` + `IMG_7048.jpeg` (9 MB).)* (biggest page-speed win) — re-export ≤300 KB WebP or move to Cloudinary `f_auto,q_auto`:
@@ -66,7 +66,7 @@ Items marked **Owner input** need a business decision before changing.
   - Schema price ≠ visible price: `arch-backdrop` (800 vs R550), `square-white-backdrop` (500 vs R1,100)
   - Add `image` (missing on 65) and `priceValidUntil` (missing on all)
 - [ ] **Homepage canonical slash** — `index.html:17,23` use no trailing slash; sitemap + twitter:url use `/`. Make all `https://www.gpleventsandhire.co.za/`.
-- [ ] **Social share image** — 82 pages use a Cloudinary image from a different account
+- [ ] **Social share image** *(Owner confirmed 2026-10-09: the `dhvalxorx` Cloudinary account is theirs — image is fine. Still worth giving item pages their own product photo.)* — 82 pages use a Cloudinary image from a different account
   (`dhvalxorx/.../Giftspeoplelove/Asset_1_nbjykf.png`). **Owner input:** confirm it's the GPL brand image.
   Item pages should use their own product photo.
 - [ ] **Align FAQ schema with visible FAQ text** (31 mismatched questions; some schema-only questions on
@@ -95,10 +95,10 @@ Items marked **Owner input** need a business decision before changing.
   customization, "Party favors" → -ise/-isation/favours. `index.html`: "Specializing" (JSON-LD :62),
   "centerpiece(s)" alt text (:542, :570). Mom vs Mum mixed on bespoke-gifting (356–402) — pick one.
 - [x] **Décor accent** *(Done 2026-10-09)* — `index.html:220, 288, 565` "decor" → "décor" (288 also "Hire Midrand" → "Hire in Midrand").
-- [ ] **Delivery contradiction** — **Owner input.** All category pages + hire-full say "Delivery, setup and
+- [x] **Delivery contradiction** *(Done 2026-10-09 — owner confirmed: delivery for hire items is quoted separately. Updated all 15 category FAQs (+schema), LED selfie mirror, magic mirror, Correx. Event packages still say delivery/setup included — that is correct for packages.)* — **Owner input.** All category pages + hire-full say "Delivery, setup and
   collection are included"; ~54 item pages say "quoted separately"; `correx-welcome-board.html:187` vs `:191`
   contradict on the same page. Confirm the real policy, then make it one sentence everywhere.
-- [ ] **Package price contradiction** — **Owner input.** Location pages say birthday packages "From R1,200–R1,300"
+- [x] **Package price contradiction** *(Done 2026-10-09 — owner confirmed birthday packages start from R2,500; all 7 location pages updated.)* — **Owner input.** Location pages say birthday packages "From R1,200–R1,300"
   (e.g. `sandton.html:199`); `event-packages.html:229` and `index.html:829` say packages start at R2,500.
 - [ ] **Card vs item page price mismatches** (mostly on the to-be-redirected hubs)
   - Candle Holders: `accessories.html:201` says R200–R350, the item page says R100
