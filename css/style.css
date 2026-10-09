@@ -64,9 +64,15 @@
 .hero-usp {
     font-size: 1.5rem;
     margin-bottom: 2.5rem;
-    color: var(--clr-accent-red);
+    color: var(--clr-secondary-red);
     font-weight: 500;
     font-style: italic;
+}
+
+/* Light tint on dark hero overlays (red fails contrast there) */
+.hero .hero-usp,
+.hero-options .hero-usp {
+    color: #ffcdd2;
 }
 
 .hero-stats {
@@ -419,7 +425,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--clr-primary-navy);
+    color: white;
     font-size: 1.5rem;
     flex-shrink: 0;
 }
@@ -685,7 +691,7 @@
 }
 
 .contact-method a {
-    color: var(--clr-secondary-red);
+    color: #ffcdd2;
     text-decoration: none;
     font-weight: 500;
     font-size: clamp(20px, 3vw, 20px) !important;
@@ -1062,7 +1068,7 @@
         left: 0;
         right: 0;
         z-index: 1000;
-        background: #25d366;
+        background: var(--clr-whatsapp);
         color: white;
         padding: 0.85rem 1rem;
         font-family: var(--ff-primary);
@@ -1074,7 +1080,7 @@
     }
 
     .sticky-whatsapp:hover {
-        background: #128c7e;
+        background: var(--clr-whatsapp-dark);
         color: white;
     }
 

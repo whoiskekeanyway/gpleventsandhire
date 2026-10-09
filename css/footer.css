@@ -115,13 +115,13 @@
 }
 
 .footer-wa a {
-    color: #25d366;
+    color: var(--clr-whatsapp-dark);
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .footer-wa a:hover {
-    color: #128c7e;
+    color: var(--clr-primary-navy);
 }
 
 .footer-bottom {

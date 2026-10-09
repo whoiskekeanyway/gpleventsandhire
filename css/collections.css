@@ -266,16 +266,16 @@
     width: 100%;
     padding: 0.8rem 0.9rem;
     margin-top: auto;
-    background: #25d366;
+    background: var(--clr-whatsapp);
     color: #fff;
-    border-color: #25d366;
+    border-color: var(--clr-whatsapp);
     font-size: 0.95rem;
 }
 
 .hire-item-card a.cta-secondary:hover {
-    background: #128c7e;
+    background: var(--clr-whatsapp-dark);
     color: #fff;
-    border-color: #128c7e;
+    border-color: var(--clr-whatsapp-dark);
 }
 
 @media (max-width: 500px) {
@@ -417,16 +417,16 @@
     justify-content: center;
     width: 100%;
     padding: 0.8rem 0.9rem;
-    background: #25d366;
+    background: var(--clr-whatsapp);
     color: #fff;
-    border-color: #25d366;
+    border-color: var(--clr-whatsapp);
     font-size: 0.95rem;
 }
 
 .hire-item-detail-info a.cta-secondary:hover {
-    background: #128c7e;
+    background: var(--clr-whatsapp-dark);
     color: #fff;
-    border-color: #128c7e;
+    border-color: var(--clr-whatsapp-dark);
 }
 
 .hire-item-detail-back {

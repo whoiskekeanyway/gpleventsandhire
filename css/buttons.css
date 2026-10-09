@@ -57,7 +57,7 @@
     right: 20px;
     top: 50%;
     transform: translateY(-50%);
-    background: linear-gradient(180deg, #25D366 0%, #128C7E 100%);
+    background: linear-gradient(180deg, var(--clr-whatsapp) 0%, var(--clr-whatsapp-dark) 100%);
     width: 56px;
 
     /* Using max-height for ultra-smooth collapsing/expanding transitions */
@@ -104,7 +104,7 @@
     color: #ffffff;
     font-size: 10px;
     font-weight: 700;
-    font-family: sans-serif;
+    font-family: var(--ff-primary);
     letter-spacing: 1px;
     text-align: center;
     margin-top: 8px;

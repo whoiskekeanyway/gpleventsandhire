@@ -128,20 +128,20 @@ Items marked **Owner input** need a business decision before changing.
 
 ### 🔵 Design, Fonts & Accessibility
 
-- [ ] **Body font isn't what was intended** — `base.css:182–188` overrides `p`/`li` to Faustina, so all body copy
+- [x] **Body font isn't what was intended** *(Done 2026-10-09 — body/p/li now Manrope; headings stay Faustina; fonts loaded via `<link>` + preconnect on all pages instead of `@import`.)* — `base.css:182–188` overrides `p`/`li` to Faustina, so all body copy
   is serif; `body` has no `font-family` at all, so buttons/links outside `p` fall back to Times.
   Fix: `body { font-family: var(--ff-primary); }` and remove the Faustina override on `p, li`.
   Drop the unused Manrope 200 weight. Replace hardcoded `sans-serif` (`buttons.css:107`).
-- [ ] **WhatsApp button contrast** — white on #25d366 is 1.98:1 (fails). Use darker green #128c7e / #075e54
+- [x] **WhatsApp button contrast** *(Done 2026-10-09 — new vars `--clr-whatsapp: #0e7a5f` (5.3:1) / `--clr-whatsapp-dark: #075e54`.)* — white on #25d366 is 1.98:1 (fails). Use darker green #128c7e / #075e54
   on item enquiry buttons (`collections.css:269,420`), sticky bar (`style.css:1065`), footer link (`footer.css:118`).
   This is the main conversion button — make it pop.
-- [ ] **Other contrast fails**
+- [x] **Other contrast fails** *(Done 2026-10-09 — nav links → `--clr-secondary-red` (light pink on mobile navy menu); quote button white on red; contact links + hero USP → #ffcdd2 on dark; USP on white → dark red. Also added explicit white page background + `color-scheme: light` — dark-mode browsers were painting unstyled sections black.)*
   - Red contact links on navy (`style.css:688`, 2.36:1)
   - Hero USP red on dark overlay (`style.css:67`)
   - Nav links #ef5350 on blush (`navbar.css:50`, 2.9:1)
   - Navy on red quote button (`navbar.css:148`)
   - Fix: use a darker red (#b71c1c) on light backgrounds, white on red
-- [ ] **Option buttons go blank on hover** — `base.css:271` `button:hover { background: navy }` beats
+- [x] **Option buttons go blank on hover** *(Done 2026-10-09 — global `button:hover` wrapped in `:where()`.)* — `base.css:271` `button:hover { background: navy }` beats
   `.option-btn` → navy text on navy. Scope the global rule.
 - [ ] **Form labels + focus styles** — forms (`index.html:759–800`, `contact.html`) use placeholders only;
   focus ring nearly invisible (`style.css:790–792`, `base.css:256`). Add visible labels + clear focus outline.
