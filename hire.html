@@ -187,6 +187,17 @@
                 <p class="subtitle">Select a category to browse available items and pricing.</p>
             </div>
 
+            <div class="hire-search" role="search">
+                <label for="hire-search-input" class="hire-search-label">Search all hire items</label>
+                <div class="hire-search-field">
+                    <i class="fas fa-search" aria-hidden="true"></i>
+                    <input id="hire-search-input" type="search" placeholder="Try &ldquo;arch&rdquo;, &ldquo;glasses&rdquo; or &ldquo;marquee&rdquo;"
+                        autocomplete="off" enterkeyhint="search" aria-controls="hire-search-results" aria-describedby="hire-search-status">
+                </div>
+                <p id="hire-search-status" class="hire-search-status" aria-live="polite"></p>
+                <div id="hire-search-results" class="hire-search-results" hidden></div>
+            </div>
+
             <div class="collections-grid">
 
                 <a class="collection-card" href="hire/accessories.html" style="display:none">
@@ -439,6 +450,7 @@
     <script src="./scripts/scripts.js"></script>
     <script src="./scripts/navbar.js"></script>
     <script src="./scripts/backtotop.js"></script>
+    <script src="./scripts/hire-search.js"></script>
 
     <a class="whatsapp-float" href="https://wa.me/27649318467" target="_blank" rel="noopener noreferrer"
         aria-label="Chat on WhatsApp">

@@ -106,3 +106,4 @@ Pages that still exist but are kept out of search until the item is in stock.
 - To re-enable any item or tile: remove `style="display:none"` from the relevant `<div>` tag
 - `accessories.html`, `easels.html`, `plinths.html` are also 301-redirected in `_redirects` (added 2026-10-09). To re-enable one, delete its lines from `_redirects` and add it back to `sitemap.xml`
 - Category-page Google product lists (ItemList schema) are rebuilt from **visible** cards only — after un-hiding a card, re-add it to that page's ItemList too.
+- After hiding or un-hiding anything, re-run `python3 tools/build-hire-items.py` so the hire search (hire.html) stays in sync.

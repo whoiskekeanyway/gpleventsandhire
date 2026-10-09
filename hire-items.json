@@ -1,0 +1,450 @@
+[
+  {
+    "name": "Round Circle Arch",
+    "category": "Arches",
+    "categoryUrl": "hire/arches.html",
+    "itemUrl": "hire/items/round-circle-arch.html",
+    "price": "R250",
+    "image": "assets/Round-Ballon-arhc.webp"
+  },
+  {
+    "name": "Balloon Arch",
+    "category": "Arches",
+    "categoryUrl": "hire/arches.html",
+    "itemUrl": "hire/items/balloon-arch.html",
+    "price": "R150",
+    "image": "assets/slim-arch.file"
+  },
+  {
+    "name": "Square Arch",
+    "category": "Arches",
+    "categoryUrl": "hire/arches.html",
+    "itemUrl": "hire/items/square-arch.html",
+    "price": "R150",
+    "image": null
+  },
+  {
+    "name": "Gold Balloon/Flower Arch",
+    "category": "Arches",
+    "categoryUrl": "hire/arches.html",
+    "itemUrl": "hire/items/gold-balloon-flower-arch.html",
+    "price": "R450 / per day",
+    "image": "assets/arch-1.jpg"
+  },
+  {
+    "name": "Panel Backdrop Set (3-piece)",
+    "category": "Backdrops",
+    "categoryUrl": "hire/backdrops.html",
+    "itemUrl": "hire/items/panel-backdrop-set.html",
+    "price": "R900 – R1,500",
+    "image": null
+  },
+  {
+    "name": "Square 2×2 White Backdrop",
+    "category": "Backdrops",
+    "categoryUrl": "hire/backdrops.html",
+    "itemUrl": "hire/items/square-white-backdrop.html",
+    "price": "R1,100",
+    "image": null
+  },
+  {
+    "name": "Arch Backdrop",
+    "category": "Backdrops",
+    "categoryUrl": "hire/backdrops.html",
+    "itemUrl": "hire/items/arch-backdrop.html",
+    "price": "R550",
+    "image": "assets/arch-backdrop.jpg"
+  },
+  {
+    "name": "Step Arch Backdrop",
+    "category": "Backdrops",
+    "categoryUrl": "hire/backdrops.html",
+    "itemUrl": "hire/items/step-arch-backdrop.html",
+    "price": "R1,200",
+    "image": "assets/asset-1.webp"
+  },
+  {
+    "name": "Wine Glass",
+    "category": "Crockery & Glassware",
+    "categoryUrl": "hire/crockery.html",
+    "itemUrl": "hire/items/wine-glasses.html",
+    "price": "R6 / per item",
+    "image": "assets/wineglass.jpg"
+  },
+  {
+    "name": "Gold Rim Wine Glass",
+    "category": "Crockery & Glassware",
+    "categoryUrl": "hire/crockery.html",
+    "itemUrl": "hire/items/gold-rim-wine-glass.html",
+    "price": "R10 / per day",
+    "image": "assets/Gold%20Rim%20Wine%20Glass.jpg"
+  },
+  {
+    "name": "Champagne Flute",
+    "category": "Crockery & Glassware",
+    "categoryUrl": "hire/crockery.html",
+    "itemUrl": "hire/items/champagne-flutes.html",
+    "price": "R6 / per item",
+    "image": "assets/champagne flute.png"
+  },
+  {
+    "name": "Gold Rim Champagne Glass",
+    "category": "Crockery & Glassware",
+    "categoryUrl": "hire/crockery.html",
+    "itemUrl": "hire/items/gold-rim-champagne-glass.html",
+    "price": "R10 / per day",
+    "image": "assets/Gold%20Rim%20Champagne%20Glass.jpg"
+  },
+  {
+    "name": "Dinner Plate",
+    "category": "Crockery & Glassware",
+    "categoryUrl": "hire/crockery.html",
+    "itemUrl": "hire/items/charger-plates.html",
+    "price": "R12 / per item",
+    "image": "assets/dinner-plate-large.webp"
+  },
+  {
+    "name": "Dinner Plate + Side Plate Combo",
+    "category": "Crockery & Glassware",
+    "categoryUrl": "hire/crockery.html",
+    "itemUrl": "hire/items/charger-side-plate-combo.html",
+    "price": "R20 / per set",
+    "image": "assets/combo.jpg"
+  },
+  {
+    "name": "Side Plate",
+    "category": "Crockery & Glassware",
+    "categoryUrl": "hire/crockery.html",
+    "itemUrl": "hire/items/side-plates.html",
+    "price": "R10 / per item",
+    "image": "assets/dinner-plate-large.webp"
+  },
+  {
+    "name": "Cutlery Full Set",
+    "category": "Crockery & Glassware",
+    "categoryUrl": "hire/crockery.html",
+    "itemUrl": "hire/items/cutlery-set.html",
+    "price": "R30 / per item",
+    "image": "assets/16_Piece_Silver_Cutlery_Set.webp"
+  },
+  {
+    "name": "Natural Mat Underplate",
+    "category": "Crockery & Glassware",
+    "categoryUrl": "hire/crockery.html",
+    "itemUrl": "hire/items/natural-mat-underplate.html",
+    "price": "R20 / per item",
+    "image": "assets/Underplate-1.webp"
+  },
+  {
+    "name": "Golden Pattern Underplate",
+    "category": "Crockery & Glassware",
+    "categoryUrl": "hire/crockery.html",
+    "itemUrl": "hire/items/golden-pattern-underplate.html",
+    "price": "R35 / per item",
+    "image": "assets/gold-underplate.webp"
+  },
+  {
+    "name": "Acrylic Ice Bucket (Frosted, 4L)",
+    "category": "Crockery & Glassware",
+    "categoryUrl": "hire/crockery.html",
+    "itemUrl": "hire/items/acrylic-ice-bucket.html",
+    "price": "R65 / per day",
+    "image": "assets/ACRYLIC%20ICE%20BUCKET.jpg"
+  },
+  {
+    "name": "Champagne Wall",
+    "category": "Drinks Boards",
+    "categoryUrl": "hire/drinks-boards.html",
+    "itemUrl": "hire/items/champagne-wall.html",
+    "price": "R950",
+    "image": "assets/ChampagneWall.webp"
+  },
+  {
+    "name": "Tall Floral Stand (pair)",
+    "category": "Stands & Plinths",
+    "categoryUrl": "hire/flower-stands.html",
+    "itemUrl": "hire/items/tall-floral-stand.html",
+    "price": "R400 – R700",
+    "image": null
+  },
+  {
+    "name": "Round Pedestal Stand",
+    "category": "Stands & Plinths",
+    "categoryUrl": "hire/flower-stands.html",
+    "itemUrl": "hire/items/round-pedestal-stand.html",
+    "price": "R300 – R550",
+    "image": null
+  },
+  {
+    "name": "Cylinder Stand",
+    "category": "Stands & Plinths",
+    "categoryUrl": "hire/flower-stands.html",
+    "itemUrl": "hire/items/cylinder-stand.html",
+    "price": "R300 – R500",
+    "image": null
+  },
+  {
+    "name": "White Square Plinth",
+    "category": "Stands & Plinths",
+    "categoryUrl": "hire/flower-stands.html",
+    "itemUrl": "hire/items/white-square-plinth.html",
+    "price": "R50",
+    "image": "assets/large-plinth.jpg"
+  },
+  {
+    "name": "Clear Acrylic Plinth",
+    "category": "Stands & Plinths",
+    "categoryUrl": "hire/flower-stands.html",
+    "itemUrl": "hire/items/clear-acrylic-plinth.html",
+    "price": "Contact for pricing",
+    "image": null
+  },
+  {
+    "name": "3pc Clear Acrylic Plinth Set",
+    "category": "Stands & Plinths",
+    "categoryUrl": "hire/flower-stands.html",
+    "itemUrl": "hire/items/3pc-acrylic-plinth-set.html",
+    "price": "R350 – R600",
+    "image": "assets/Acrylic Clear Plinth.webp"
+  },
+  {
+    "name": "Stanchion Rope Set (Gold)",
+    "category": "Furniture",
+    "categoryUrl": "hire/furniture.html",
+    "itemUrl": "hire/items/stanchion-rope-set.html",
+    "price": "R95",
+    "image": "assets/Stanchion Rope Sets.webp"
+  },
+  {
+    "name": "Carpet (Bright Red)",
+    "category": "Furniture",
+    "categoryUrl": "hire/furniture.html",
+    "itemUrl": "hire/items/red-carpet.html",
+    "price": "R400",
+    "image": "assets/carpet-red.avif"
+  },
+  {
+    "name": "Carpet (White)",
+    "category": "Furniture",
+    "categoryUrl": "hire/furniture.html",
+    "itemUrl": "hire/items/white-carpet.html",
+    "price": "R400",
+    "image": "assets/white-carpet.avif"
+  },
+  {
+    "name": "Kiddies Tiffany Chair",
+    "category": "Kids Party Hire",
+    "categoryUrl": "hire/kids.html",
+    "itemUrl": "hire/items/kids-chair.html",
+    "price": "R20 / each",
+    "image": "assets/kiddies-tiffany.png"
+  },
+  {
+    "name": "Kiddies Wooden Table",
+    "category": "Kids Party Hire",
+    "categoryUrl": "hire/kids.html",
+    "itemUrl": "hire/items/kids-table.html",
+    "price": "R350 / per day",
+    "image": "assets/Kiddies-wooden-table.jpg"
+  },
+  {
+    "name": "Kids Table & 10 Chairs (Hire Only)",
+    "category": "Kids Party Hire",
+    "categoryUrl": "hire/kids.html",
+    "itemUrl": "hire/items/kids-table-and-10-chairs.html",
+    "price": "R350",
+    "image": "assets/kiddies-tiffany.png"
+  },
+  {
+    "name": "20 Kids Chairs (Hire Only)",
+    "category": "Kids Party Hire",
+    "categoryUrl": "hire/kids.html",
+    "itemUrl": "hire/items/20-kids-chairs.html",
+    "price": "R700",
+    "image": "assets/kiddies-tiffany.png"
+  },
+  {
+    "name": "Giant Jenga",
+    "category": "Lawn Games",
+    "categoryUrl": "hire/lawn-games.html",
+    "itemUrl": "hire/items/giant-jenga.html",
+    "price": "R250",
+    "image": "assets/giant-jenga.jpeg"
+  },
+  {
+    "name": "Giant Tic Tac Toe",
+    "category": "Lawn Games",
+    "categoryUrl": "hire/lawn-games.html",
+    "itemUrl": "hire/items/giant-tic-tac-toe.html",
+    "price": "R250",
+    "image": "assets/tictactoe.png"
+  },
+  {
+    "name": "Marquee Numbers (0–9)",
+    "category": "Marquee Letters & Numbers",
+    "categoryUrl": "hire/marquee-letters.html",
+    "itemUrl": "hire/items/marquee-numbers.html",
+    "price": "R350 per number",
+    "image": "assets/marquee-letters.avif"
+  },
+  {
+    "name": "Marquee Letters (A–Z)",
+    "category": "Marquee Letters & Numbers",
+    "categoryUrl": "hire/marquee-letters.html",
+    "itemUrl": "hire/items/marquee-letters-az.html",
+    "price": "R300 per letter",
+    "image": "assets/marquee-letters.avif"
+  },
+  {
+    "name": "Popular Marquee Sets",
+    "category": "Marquee Letters & Numbers",
+    "categoryUrl": "hire/marquee-letters.html",
+    "itemUrl": "hire/items/popular-marquee-sets.html",
+    "price": "R300 per letter",
+    "image": "assets/marquee-letters.avif"
+  },
+  {
+    "name": "MD",
+    "category": "Marquee Letters & Numbers",
+    "categoryUrl": "hire/marquee-letters.html",
+    "itemUrl": "hire/items/md-marquee-set.html",
+    "price": "R600 (2 letters)",
+    "image": "assets/marquee-letters.avif"
+  },
+  {
+    "name": "Marry Me",
+    "category": "Marquee Letters & Numbers",
+    "categoryUrl": "hire/marquee-letters.html",
+    "itemUrl": "hire/items/marry-me-marquee-set.html",
+    "price": "R2,100 (7 letters)",
+    "image": "assets/marquee-letters.avif"
+  },
+  {
+    "name": "LOVE (4 letters)",
+    "category": "Marquee Letters & Numbers",
+    "categoryUrl": "hire/marquee-letters.html",
+    "itemUrl": "hire/items/popular-marquee-sets.html",
+    "price": "R1,200",
+    "image": "assets/marquee-letters.avif"
+  },
+  {
+    "name": "BABY (4 letters)",
+    "category": "Marquee Letters & Numbers",
+    "categoryUrl": "hire/marquee-letters.html",
+    "itemUrl": "hire/items/popular-marquee-sets.html",
+    "price": "R1,200",
+    "image": "assets/marquee-letters.avif"
+  },
+  {
+    "name": "MR & MRS (5 letters)",
+    "category": "Marquee Letters & Numbers",
+    "categoryUrl": "hire/marquee-letters.html",
+    "itemUrl": "hire/items/popular-marquee-sets.html",
+    "price": "R1,500",
+    "image": "assets/marquee-letters.avif"
+  },
+  {
+    "name": "Floral Centrepiece (per table)",
+    "category": "Table Décor & Accessories",
+    "categoryUrl": "hire/table-decor.html",
+    "itemUrl": "hire/items/floral-centrepiece.html",
+    "price": "R300 – R600",
+    "image": null
+  },
+  {
+    "name": "Tall Candelabra",
+    "category": "Table Décor & Accessories",
+    "categoryUrl": "hire/table-decor.html",
+    "itemUrl": "hire/items/tall-candelabra.html",
+    "price": "R250 – R450",
+    "image": null
+  },
+  {
+    "name": "Geometric Vase Set",
+    "category": "Table Décor & Accessories",
+    "categoryUrl": "hire/table-decor.html",
+    "itemUrl": "hire/items/geometric-vase-set.html",
+    "price": "R200 – R400",
+    "image": null
+  },
+  {
+    "name": "Votives / Tea Light Holders (set of 6)",
+    "category": "Table Décor & Accessories",
+    "categoryUrl": "hire/table-decor.html",
+    "itemUrl": "hire/items/votives-tea-light-holders.html",
+    "price": "R80 – R150",
+    "image": null
+  },
+  {
+    "name": "Table Numbers (set of 10)",
+    "category": "Table Décor & Accessories",
+    "categoryUrl": "hire/table-decor.html",
+    "itemUrl": "hire/items/table-numbers.html",
+    "price": "R150 – R300",
+    "image": null
+  },
+  {
+    "name": "Rose Gold Candle Sticks (set of 3)",
+    "category": "Table Décor & Accessories",
+    "categoryUrl": "hire/table-decor.html",
+    "itemUrl": "hire/items/rose-gold-candle-sticks.html",
+    "price": "R150 – R280",
+    "image": "assets/candle-sticks.jpg"
+  },
+  {
+    "name": "Black Candle Sticks (set of 3)",
+    "category": "Table Décor & Accessories",
+    "categoryUrl": "hire/table-decor.html",
+    "itemUrl": "hire/items/black-candle-sticks.html",
+    "price": "R150 – R280",
+    "image": "assets/candle-sticks.jpg"
+  },
+  {
+    "name": "Table Runner",
+    "category": "Table Décor & Accessories",
+    "categoryUrl": "hire/table-decor.html",
+    "itemUrl": "hire/items/table-runner.html",
+    "price": "R150 – R250",
+    "image": null
+  },
+  {
+    "name": "Candle Holders (set of 6)",
+    "category": "Table Décor & Accessories",
+    "categoryUrl": "hire/table-decor.html",
+    "itemUrl": "hire/items/candle-holders.html",
+    "price": "R100",
+    "image": "assets/candle-sticks.jpg"
+  },
+  {
+    "name": "A1 Correx Welcome Board (Printed)",
+    "category": "Welcome Boards & Easels",
+    "categoryUrl": "hire/welcome-board-stands.html",
+    "itemUrl": "hire/items/correx-welcome-board.html",
+    "price": "R900 once-off",
+    "image": "assets/correx.jpg"
+  },
+  {
+    "name": "Wooden A-Frame Easel",
+    "category": "Welcome Boards & Easels",
+    "categoryUrl": "hire/welcome-board-stands.html",
+    "itemUrl": "hire/items/wooden-aframe-easel.html",
+    "price": "R150",
+    "image": "assets/Wooden-easel-Stand.jpg"
+  },
+  {
+    "name": "Welcome Board (Flower Box)",
+    "category": "Welcome Boards & Easels",
+    "categoryUrl": "hire/welcome-board-stands.html",
+    "itemUrl": "hire/items/welcome-board-flower-box.html",
+    "price": "R300",
+    "image": "assets/welcome-board.jpeg"
+  },
+  {
+    "name": "Decorative Gold Metal Easel",
+    "category": "Welcome Boards & Easels",
+    "categoryUrl": "hire/welcome-board-stands.html",
+    "itemUrl": "hire/items/gold-metal-easel.html",
+    "price": "R150",
+    "image": "assets/gold-metal-stand-for-hire.jpg"
+  }
+]
