@@ -173,7 +173,7 @@ Items marked **Owner input** need a business decision before changing.
 - [x] Rename "Get an Instant Quote" *(Done 2026-10-09 — now "Get a Free Quote".)* (`index.html:197`) — it only scrolls to a form. Consider a 3-field quick-quote
   (date, area, WhatsApp number) on package + location pages.
 - [ ] Trust signals near CTAs: Google rating + review count, real event photos on cards.
-- [ ] "Request these items" multi-select on hire pages that builds one WhatsApp message.
+- [x] "Request these items" multi-select on hire pages that builds one WhatsApp message. *(Done 2026-10-09 — `scripts/enquiry-list.js`: "Add to list" on every visible card + item page, list kept across pages (localStorage), floating bar → one WhatsApp message with items, sizes, prices + date/venue prompts; GA4 `add_to_enquiry` event.)*
 - [ ] Replace the auto-scrolling testimonial marquee with static review cards.
 
 ---
