@@ -43,7 +43,7 @@ Items marked **Owner input** need a business decision before changing.
   - Remove `hire-intent.html` (line 35 — file doesn't exist, 404 in sitemap)
   - Add missing `hire/items/gold-rim-champagne-glass.html` and `gold-rim-wine-glass.html`
   - Add `<lastmod>` dates
-- [ ] **Redirect the 3 merged hub pages** — create a Netlify `_redirects` file:
+- [x] **Redirect the 3 merged hub pages** *(Done 2026-10-09 — forced `301!` in `_redirects`, removed from sitemap; files kept for re-enabling.)* — create a Netlify `_redirects` file:
   `/hire/accessories.html → /hire/table-decor.html 301`, `/hire/easels.html → /hire/welcome-board-stands.html 301`,
   `/hire/plinths.html → /hire/flower-stands.html 301`. Remove them from sitemap. (They currently
   show old/conflicting prices and are still indexed.)
@@ -58,9 +58,9 @@ Items marked **Owner input** need a business decision before changing.
   (above the fold). Remove it / add `fetchpriority="high"` → faster LCP.
 - [x] **Add Google Analytics to all pages** *(Done 2026-10-09 — G-NE46SRYXMX on all 98 pages; `generate_lead` events for WhatsApp/phone/email taps + form submits in `scripts/script.js`. In GA4: Admin → Events → mark `generate_lead` as a key event.)* — GA only on `index.html` + `bespoke-gifting.html` (2 of 98).
   You can't see which hire/location pages drive enquiries. Add GA4 + click events on `wa.me`, `tel:`, form submit.
-- [ ] **Shorten titles >60 chars** (42 pages — worst: `hire/table-decor` 98, `hire-full`/`flower-stands`/
+- [x] **Shorten titles >60 chars** *(Done 2026-10-09 — 38 titles rewritten, all ≤60.)* (42 pages — worst: `hire/table-decor` 98, `hire-full`/`flower-stands`/
   `welcome-board-stands` 93, `event-packages` 88, `crockery` 85, `bespoke-gifting` 84, `kids` 83, `index` 78).
-- [ ] **Shorten meta descriptions >155 chars** (60 pages, mostly item pages — up to 287 chars).
+- [x] **Shorten meta descriptions >155 chars** *(Done 2026-10-09 — 59 rewritten, all ≤155; og/twitter descriptions synced.)* (60 pages, mostly item pages — up to 287 chars).
 - [ ] **Fix Product schema on item pages**
   - Missing price: `cutlery-set`, `golden-pattern-underplate`, `natural-mat-underplate`, `clear-acrylic-plinth`; `white-carpet` has no offer at all
   - Schema price ≠ visible price: `arch-backdrop` (800 vs R550), `square-white-backdrop` (500 vs R1,100)
@@ -95,7 +95,7 @@ Items marked **Owner input** need a business decision before changing.
   customization, "Party favors" → -ise/-isation/favours. `index.html`: "Specializing" (JSON-LD :62),
   "centerpiece(s)" alt text (:542, :570). Mom vs Mum mixed on bespoke-gifting (356–402) — pick one.
 - [x] **Décor accent** *(Done 2026-10-09)* — `index.html:220, 288, 565` "decor" → "décor" (288 also "Hire Midrand" → "Hire in Midrand").
-- [x] **Delivery contradiction** *(Done 2026-10-09 — owner confirmed: delivery for hire items is quoted separately. Updated all 15 category FAQs (+schema), LED selfie mirror, magic mirror, Correx. Event packages still say delivery/setup included — that is correct for packages.)* — **Owner input.** All category pages + hire-full say "Delivery, setup and
+- [x] **Delivery contradiction** *(Done 2026-10-09 — owner confirmed: delivery for hire items is quoted separately. Updated all 15 category FAQs (+schema), LED selfie mirror, magic mirror, Correx. Event packages still say delivery/setup included — that is correct for packages. Owner also confirmed setup is NOT included for hire items — fixed arches, audio guestbook, kids, LED mirror, magic mirror.)* — **Owner input.** All category pages + hire-full say "Delivery, setup and
   collection are included"; ~54 item pages say "quoted separately"; `correx-welcome-board.html:187` vs `:191`
   contradict on the same page. Confirm the real policy, then make it one sentence everywhere.
 - [x] **Package price contradiction** *(Done 2026-10-09 — owner confirmed birthday packages start from R2,500; all 7 location pages updated.)* — **Owner input.** Location pages say birthday packages "From R1,200–R1,300"

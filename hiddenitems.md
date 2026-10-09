@@ -84,3 +84,4 @@ Everything hidden with `style="display:none"` — ready to re-enable when needed
 - `hire/accessories.html` still exists but its hub tile is hidden — items were merged into `table-decor.html`
 - `hire/plinths.html` still exists but its hub tile is hidden — items were merged into `flower-stands.html` (now "Stands & Plinths")
 - To re-enable any item or tile: remove `style="display:none"` from the relevant `<div>` tag
+- `accessories.html`, `easels.html`, `plinths.html` are also 301-redirected in `_redirects` (added 2026-10-09). To re-enable one, delete its lines from `_redirects` and add it back to `sitemap.xml`
