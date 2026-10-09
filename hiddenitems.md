@@ -4,7 +4,7 @@ Everything hidden with `style="display:none"` — ready to re-enable when needed
 
 ---
 
-## Hub Tiles (`hire-intent.html`)
+## Hub Tiles (`hire.html`)
 
 | Category | Line (approx) | Notes |
 |---|---|---|

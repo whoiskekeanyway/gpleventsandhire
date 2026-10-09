@@ -7,6 +7,174 @@ Related: location-page work is tracked separately in `locationpagestask.md`; hid
 
 ---
 
+## Full Site Audit — 2026-10-09
+
+Audit of all 98 pages: SEO, technical SEO, typos/content, design, fonts, accessibility, CSS/JS.
+The site already converts — these are polish + fixes, no redesign. Ordered by impact within each group.
+Items marked **Owner input** need a business decision before changing.
+
+### 🔴 Fix first (broken things)
+
+- [ ] **Two item pages are cut off mid-footer** — `hire/items/marry-me-marquee-set.html` and
+  `hire/items/md-marquee-set.html` end at line 186 (no `</footer>`, `</body>`, scripts). Menu,
+  option buttons and WhatsApp bar don't work. Rebuild the footer + scripts from a sibling item page.
+- [ ] **Wrong canonical on `event-packages.html:22`** — points to `/packages.html` (doesn't exist).
+  Google may not index the packages page. Change to `/event-packages.html`.
+- [ ] **`event-packages.html` mobile menu doesn't work** — only loads `script.js` (line 548); missing
+  `navbar.js`, `backtotop.js`, `scripts.js`. Also "Get Quote" (`:151`) calls `scrollToForm()` but the
+  page has no form → JS error. Point it to `contact.html` or WhatsApp instead.
+- [ ] **Footer copyright year is blank on every page** — `<span class="year"> </span>` is empty and no
+  script fills it. Renders as "© | GPL…". Add a one-line `getFullYear()` script or hard-code 2026.
+- [ ] **JS errors on every page** — `scripts/script.js:88` queries `.header` (doesn't exist) on every
+  scroll; `scripts/scripts.js:84` reads `.testimonial-track` (only on index) with no null check.
+  Add null guards. Remove leftover `console.log` (`script.js:83,207,216`).
+- [ ] **Footer "Services" links → `#ourservices`** on 86 pages — that anchor only exists on index.
+  Change to `/index.html#ourservices` (or link to `event-packages.html`).
+- [ ] **Broken link** `hire/items/charger-side-plate-combo.html:229` → `about.html` (doesn't exist).
+  That page's footer has drifted — replace with the standard footer.
+- [ ] **`event-packages.html:183`** "View Our Package Options" button has `href=""`.
+
+### 🟠 SEO & Technical SEO
+
+- [ ] **sitemap.xml cleanup**
+  - Remove `hire-intent.html` (line 35 — file doesn't exist, 404 in sitemap)
+  - Add missing `hire/items/gold-rim-champagne-glass.html` and `gold-rim-wine-glass.html`
+  - Add `<lastmod>` dates
+- [ ] **Redirect the 3 merged hub pages** — create a Netlify `_redirects` file:
+  `/hire/accessories.html → /hire/table-decor.html 301`, `/hire/easels.html → /hire/welcome-board-stands.html 301`,
+  `/hire/plinths.html → /hire/flower-stands.html 301`. Remove them from sitemap. (They currently
+  show old/conflicting prices and are still indexed.)
+- [ ] **Decide on `hire-full.html`** — **Owner input.** It duplicates `hire.html` with an older price
+  list that conflicts with item pages (Correx R350–R650 vs R900; marquee numbers R150–R300 vs R350).
+  Recommend 301 → `hire.html`, or update prices.
+- [ ] **Compress huge images** (biggest page-speed win) — re-export ≤300 KB WebP or move to Cloudinary `f_auto,q_auto`:
+  `assets/combo.jpg` **18 MB** (also used as og:image!), `Asset 1@4x.png` **13 MB**, `correx.jpg` 7.5 MB,
+  `wineglass.jpg` 4.4 MB, `step-arch-backdrop.jpeg` 2.8 MB, `rosebank.jpeg` 1.9 MB, `welcome-board.jpeg` 1.6 MB,
+  `Untitled-2-01/02.webp` 1.4/1.2 MB, `correx2.jpg` 1.3 MB. Delete unused `image.png` and `IMG_7048.jpeg`.
+- [ ] **Don't lazy-load the main item image** — 31 item pages have `loading="lazy"` on `.img-primary`
+  (above the fold). Remove it / add `fetchpriority="high"` → faster LCP.
+- [ ] **Add Google Analytics to all pages** — GA only on `index.html` + `bespoke-gifting.html` (2 of 98).
+  You can't see which hire/location pages drive enquiries. Add GA4 + click events on `wa.me`, `tel:`, form submit.
+- [ ] **Shorten titles >60 chars** (42 pages — worst: `hire/table-decor` 98, `hire-full`/`flower-stands`/
+  `welcome-board-stands` 93, `event-packages` 88, `crockery` 85, `bespoke-gifting` 84, `kids` 83, `index` 78).
+- [ ] **Shorten meta descriptions >155 chars** (60 pages, mostly item pages — up to 287 chars).
+- [ ] **Fix Product schema on item pages**
+  - Missing price: `cutlery-set`, `golden-pattern-underplate`, `natural-mat-underplate`, `clear-acrylic-plinth`; `white-carpet` has no offer at all
+  - Schema price ≠ visible price: `arch-backdrop` (800 vs R550), `square-white-backdrop` (500 vs R1,100)
+  - Add `image` (missing on 65) and `priceValidUntil` (missing on all)
+- [ ] **Homepage canonical slash** — `index.html:17,23` use no trailing slash; sitemap + twitter:url use `/`. Make all `https://www.gpleventsandhire.co.za/`.
+- [ ] **Social share image** — 82 pages use a Cloudinary image from a different account
+  (`dhvalxorx/.../Giftspeoplelove/Asset_1_nbjykf.png`). **Owner input:** confirm it's the GPL brand image.
+  Item pages should use their own product photo.
+- [ ] **Align FAQ schema with visible FAQ text** (31 mismatched questions; some schema-only questions on
+  bespoke-gifting, contact, event-packages, hire-full, and 4 item pages).
+- [ ] **LocalBusiness schema on location pages** — each claims its suburb as `addressLocality`, implying
+  branches. Use the real Midrand address + `areaServed` for the suburb. (Links to locationpagestask.md Phase 2.)
+- [ ] **Render-blocking resources**
+  - Move Google Fonts from `@import` in `base.css:1` to `<link>` + preconnect in each page `<head>` (preconnect is only on index today)
+  - Load Font Awesome non-blocking, or only the icons used
+  - Add `defer` to scripts
+- [ ] **Add `width`/`height` to `<img>` tags** (483 missing) — prevents layout shift (CLS).
+- [ ] **Low:** add apple-touch-icon; twitter tags use `property=` instead of `name=`; footer logo alt
+  empty on bespoke-gifting:629, event-packages:460, hire-full:450; standardise phone display to `064 931 8467`.
+
+### 🟡 Typos & Content
+
+- [ ] **Typos**
+  - `giant-jenga.html:182` (+FAQ schema) "adult and kids" → "adults and kids"
+  - `table-decor.html:364` "centrepieces … creates" → "create"
+  - `index.html:660` "became reality" → "became a reality"
+  - `index.html:193–195` missing punctuation in "…your vision refined, memorable"
+- [ ] **"Whatsapp Us" → "WhatsApp Us"** on the floating button (93 pages).
+- [ ] **Brand name in footer** — "GPL Events and Hire" (82 pages) / "GPL events and Hire" (12) → "GPL Events & Hire".
+  Footer heading "copyright" → "Copyright".
+- [ ] **UK spelling** — `bespoke-gifting.html`: personalized ×7, Personalization ×2, customized ×2,
+  customization, "Party favors" → -ise/-isation/favours. `index.html`: "Specializing" (JSON-LD :62),
+  "centerpiece(s)" alt text (:542, :570). Mom vs Mum mixed on bespoke-gifting (356–402) — pick one.
+- [ ] **Décor accent** — `index.html:220, 288, 565` "decor" → "décor" (288 also "Hire Midrand" → "Hire in Midrand").
+- [ ] **Delivery contradiction** — **Owner input.** All category pages + hire-full say "Delivery, setup and
+  collection are included"; ~54 item pages say "quoted separately"; `correx-welcome-board.html:187` vs `:191`
+  contradict on the same page. Confirm the real policy, then make it one sentence everywhere.
+- [ ] **Package price contradiction** — **Owner input.** Location pages say birthday packages "From R1,200–R1,300"
+  (e.g. `sandton.html:199`); `event-packages.html:229` and `index.html:829` say packages start at R2,500.
+- [ ] **Card vs item page price mismatches** (mostly on the to-be-redirected hubs)
+  - Candle Holders: `accessories.html:201` says R200–R350, the item page says R100
+  - Wooden A-Frame Easel: `easels.html:175` vs its item page
+  - Gold Metal Easel: `easels.html:190` vs its item page
+  - White Carpet: unit "/ per day" on the item page only
+- [ ] **Wrong-item / contradictory copy**
+  - `charger-plates.html` — H1 says Dinner Plate, hero and WhatsApp say Charger Plates
+  - `crockery.html:275` — WhatsApp pre-fill names the wrong combo
+  - "Sets of 10" vs per-item pricing on plates/glasses
+  - `event-packages.html:178` / `hire-full.html:169` — taglines swapped
+  - `lawn-games.html:253,257` "all three games" → four listed
+  - Kids pages — ages 2–10 vs 3–12; 20-kids page chairs-only vs "tables and chairs"; 10-kids "tables" when there's one table
+  - `throne-chair.html:181` pair-only vs `furniture.html:358` singles available
+  - Glass washing — `champagne-flutes.html:185` vs `crockery.html:359`
+  - Selfie mirror printing — included (`selfie-mirrors.html:205`) vs "confirm" (`led-selfie-mirror-station.html:181`)
+  - `marquee-letters.html:354` names sets that differ from `popular-marquee-sets.html`
+  - `index.html:289` mentions Pretoria (not a service area elsewhere)
+  - `index.html:565` caption "Table Decor" on a ceremony photo
+- [ ] **Hero copy names hidden items** — `drinks-boards.html:151`, `welcome-board-stands.html:319`,
+  `crockery.html:160` (shot glasses has no card). Reword or un-hide.
+- [ ] **Orphan item pages** — `shot-glasses.html`, `white-champagne-board.html` have no category card linking
+  to them (latter says "for Hire" but "yours to keep"). Add a card or remove from sitemap.
+- [ ] **WhatsApp pre-fill greeting** — standardise to one format ("Hi GPL Events, I'm interested in…").
+- [ ] **Testimonials** — all dated Jan–Apr 2025 (18+ months old) and out of order. **Owner input:**
+  add newer Google reviews, or drop month labels.
+
+### 🔵 Design, Fonts & Accessibility
+
+- [ ] **Body font isn't what was intended** — `base.css:182–188` overrides `p`/`li` to Faustina, so all body copy
+  is serif; `body` has no `font-family` at all, so buttons/links outside `p` fall back to Times.
+  Fix: `body { font-family: var(--ff-primary); }` and remove the Faustina override on `p, li`.
+  Drop the unused Manrope 200 weight. Replace hardcoded `sans-serif` (`buttons.css:107`).
+- [ ] **WhatsApp button contrast** — white on #25d366 is 1.98:1 (fails). Use darker green #128c7e / #075e54
+  on item enquiry buttons (`collections.css:269,420`), sticky bar (`style.css:1065`), footer link (`footer.css:118`).
+  This is the main conversion button — make it pop.
+- [ ] **Other contrast fails**
+  - Red contact links on navy (`style.css:688`, 2.36:1)
+  - Hero USP red on dark overlay (`style.css:67`)
+  - Nav links #ef5350 on blush (`navbar.css:50`, 2.9:1)
+  - Navy on red quote button (`navbar.css:148`)
+  - Fix: use a darker red (#b71c1c) on light backgrounds, white on red
+- [ ] **Option buttons go blank on hover** — `base.css:271` `button:hover { background: navy }` beats
+  `.option-btn` → navy text on navy. Scope the global rule.
+- [ ] **Form labels + focus styles** — forms (`index.html:759–800`, `contact.html`) use placeholders only;
+  focus ring nearly invisible (`style.css:790–792`, `base.css:256`). Add visible labels + clear focus outline.
+  Add a Netlify honeypot field (`netlify-honeypot`) to cut spam.
+- [ ] **Footer/nav drift** — standardise footer on `contact.html` (different Services list), `giant-tic-tac-toe.html`,
+  `charger-side-plate-combo.html`; add missing WhatsApp float to `charger-side-plate-combo`, `gold-rim-champagne-glass`,
+  `gold-rim-wine-glass`; fix different nav markup on `giant-tic-tac-toe`, `gold-balloon-flower-arch`.
+- [ ] **Accessibility basics**
+  - Add a skip link and a `<main>` landmark
+  - Back-to-top is an `<img>`, so make it a `<button>`
+  - Remove `aria-label` on decorative `<i>` icons and `aria-hidden` wrapping focusable dots (`index.html:686`)
+  - Delivery modal needs focus management
+  - Testimonial marquee should respect `prefers-reduced-motion`
+- [ ] **Tiny tap targets / text** — `.option-btn` ~18px tall @0.65rem, `.delivery-info-trigger` 0.72rem,
+  `.service-tag` 0.52rem (~8px), testimonial dots 8px. Aim for ≥44px tap height, ≥12px text.
+- [ ] **CSS tidy-up (low)**
+  - Load `base.css` before `style.css`
+  - `contact.html` is missing `testimonial.css`
+  - Replace the hardcoded #1a237e (11×) / WhatsApp greens with vars
+  - Define or remove `--card-img`
+  - Delete dead selectors and unused vars
+  - Merge the duplicate `.cta-primary-btn` and `.hire-item-img` rules
+  - Fix the 768px breakpoint overlap (`footer.css:154`) and the 1024/768 order in `testimonial.css:59–80`
+  - Remove the dead `handleFormSubmit` / `scrollToContact` JS
+
+### 💡 Conversion ideas (optional, after fixes)
+
+- [ ] Make WhatsApp the primary CTA everywhere (darker green, pre-filled with page/item name).
+- [ ] Rename "Get an Instant Quote" (`index.html:197`) — it only scrolls to a form. Consider a 3-field quick-quote
+  (date, area, WhatsApp number) on package + location pages.
+- [ ] Trust signals near CTAs: Google rating + review count, real event photos on cards.
+- [ ] "Request these items" multi-select on hire pages that builds one WhatsApp message.
+- [ ] Replace the auto-scrolling testimonial marquee with static review cards.
+
+---
+
 ## UI / UX
 
 - [x] **Add a sticky WhatsApp CTA on mobile**
@@ -169,7 +337,7 @@ New files: `hire-intent.html` (hub), `css/collections.css`, and 14 pages under `
   `href="packages.html"` on line ~399 — file does not exist. Correct path is `event-packages.html`.
   Fix: `href="packages.html"` → `href="event-packages.html"`.
 
-- [ ] **Standardise the "Hire Items" link format across all pages**
+- [x] **Standardise the "Hire Items" link format across all pages** *(Done 2026-10-09 — all internal page links now use `.html`, matching canonicals; nav link titles fixed.)*
   The hub is now `hire.html` (superseding `hire-intent.html`), so links already reach the right page.
   But two formats are mixed: extensionless (`href='hire'`, `'../hire'`, `'../../hire'` — ~88 links)
   and `hire.html` (~101 links). Pick one style site-wide (match `canonical` URLs) and apply it.
