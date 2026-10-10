@@ -22,7 +22,7 @@
 }
 
 .enquiry-add:hover {
-    background: var(--clr-secondary-blush);
+    background: var(--clr-surface-warm);
 }
 
 .enquiry-add i {
@@ -139,7 +139,7 @@
     padding: 0;
     border: none;
     border-radius: 50%;
-    background: var(--clr-secondary-blush);
+    background: var(--clr-surface-warm);
     color: var(--clr-primary-navy);
     font-size: 1.2rem;
     line-height: 1;

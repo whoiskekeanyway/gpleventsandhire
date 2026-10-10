@@ -27,7 +27,7 @@
     align-items: flex-start;
     gap: 0.65rem;
     padding: 0.9rem 1rem;
-    background: var(--clr-secondary-blush);
+    background: var(--clr-surface-warm);
     border-radius: 14px;
     font-size: 0.9rem;
     line-height: 1.45;
@@ -135,7 +135,7 @@
 .pkg-media {
     position: relative;
     aspect-ratio: 4 / 3;
-    background: linear-gradient(135deg, var(--clr-secondary-blush), var(--clr-secondary-cream));
+    background: var(--clr-placeholder);
 }
 
 .pkg-media img {
@@ -271,7 +271,7 @@
     width: 1.15rem;
     height: 1.15rem;
     border-radius: 50%;
-    background: var(--clr-secondary-blush);
+    background: var(--clr-surface-warm);
     color: var(--clr-primary-navy);
     font-size: 0.72rem;
     font-weight: 800;
@@ -409,7 +409,7 @@
     min-height: 44px;
     padding: 0.5rem 1.1rem;
     border-radius: 30px;
-    background: var(--clr-secondary-blush);
+    background: var(--clr-surface-warm);
     color: var(--clr-primary-navy);
     font-weight: 600;
     text-decoration: none;
@@ -475,7 +475,7 @@
 }
 
 .pkg-chooser-btn:hover {
-    background: var(--clr-secondary-blush);
+    background: var(--clr-surface-warm);
 }
 
 .pkg-chooser-result {
@@ -521,7 +521,7 @@
     flex-wrap: wrap;
     padding: 2rem;
     border-radius: 20px;
-    background: var(--clr-secondary-blush);
+    background: var(--clr-surface-warm);
 }
 
 .pkg-custom h3 {
@@ -598,7 +598,7 @@
     gap: 0.35rem;
     padding: 1.6rem;
     border-radius: 18px;
-    background: var(--clr-secondary-blush);
+    background: var(--clr-surface-warm);
     color: var(--clr-primary-navy);
     text-decoration: none;
     transition: transform 0.2s ease;

@@ -94,7 +94,7 @@
 
 /* Full-width blush background; content kept to 1200px via side padding */
 .ft-main {
-    background: var(--clr-secondary-blush);
+    background: var(--clr-surface-warm);
     padding: 3rem max(1.25rem, calc((100% - 1200px) / 2)) 2rem;
     display: grid;
     grid-template-columns: 1.6fr 1fr 1fr 1.2fr;
@@ -152,7 +152,7 @@
     font-weight: 700;
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    color: var(--clr-secondary-red);
+    color: var(--clr-gold-text);
     margin: 0 0 0.9rem;
 }
 
@@ -186,7 +186,7 @@
 /* ----- Bottom bar ----- */
 
 .ft-bottom {
-    background: var(--clr-secondary-blush);
+    background: var(--clr-surface-warm);
     border-top: 1px solid rgba(26, 35, 126, 0.15);
     padding: 1.25rem max(1.25rem, calc((100% - 1200px) / 2));
     display: flex;

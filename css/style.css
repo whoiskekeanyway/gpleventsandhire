@@ -24,6 +24,8 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    /* On narrow screens, keep the glasses (right of frame) in view */
+    object-position: 70% center;
 }
 
 .hero-overlay {
@@ -132,13 +134,14 @@
 }
 
 .cta-primary {
-    background: linear-gradient(135deg, var(--clr-primary-red), var(--clr-accent-red));
+    background: var(--clr-primary-red);
     color: white;
 }
 
 .cta-primary:hover {
+    background: var(--clr-primary-red-dark);
     transform: translateY(-3px);
-    box-shadow: 0 10px 25px rgba(201, 176, 55, 0.4);
+    box-shadow: 0 10px 25px rgba(198, 40, 40, 0.28);
 }
 
 .cta-secondary {
@@ -148,7 +151,7 @@
 }
 
 .cta-secondary:hover {
-    background: var(--clr-secondary-red);
+    background: var(--clr-primary-red);
     color: var(--clr-secondary-cream);
     transform: translateY(-3px);
 }
@@ -378,7 +381,7 @@
 .benefit-item i {
     width: 50px;
     height: 50px;
-    background: linear-gradient(135deg, var(--clr-primary-red), var(--clr-accent-red));
+    background: var(--clr-primary-red);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -498,7 +501,7 @@
 .step-number {
     width: 80px;
     height: 80px;
-    background: linear-gradient(135deg, var(--clr-primary-red), var(--clr-accent-red));
+    background: var(--clr-primary-red);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -636,20 +639,21 @@
 }
 
 .cta-call:hover {
-    box-shadow: 0 5px 15px rgba(201, 176, 55, 0.4);
+    box-shadow: 0 5px 15px rgba(198, 40, 40, 0.28);
     transform: translateY(-2px);
-    background: var(--clr-secondary-red);
+    background: var(--clr-primary-red-dark);
     color: var(--clr-secondary-cream);
 }
 
 .cta-quote {
-    background: linear-gradient(135deg, var(--clr-primary-red), var(--clr-accent-red));
+    background: var(--clr-primary-red);
     color: white;
 }
 
 .cta-quote:hover {
+    background: var(--clr-primary-red-dark);
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(201, 176, 55, 0.4);
+    box-shadow: 0 5px 15px rgba(198, 40, 40, 0.28);
     border: 2px solid var(--clr-secondary-cream);
 
 }
@@ -851,7 +855,7 @@
 
 /* Breadcrumb navigation */
 .breadcrumb-nav {
-    background: var(--clr-secondary-blush);
+    background: var(--clr-surface-warm);
     padding: 0.5rem 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.06);
 }
@@ -897,7 +901,7 @@
 }
 
 .fa-star {
-    color: var(--clr-accent-red) !important;
+    color: var(--clr-gold) !important;
 }
 
 /* Hero entrance animation (CSS-only, replaces JS animateHero) */
@@ -981,7 +985,7 @@
 /* FAQ accordion (native <details>/<summary>) */
 .faq-section {
     padding: 4rem 0;
-    background: var(--clr-secondary-blush);
+    background: var(--clr-surface-warm);
 }
 
 .faq-list {

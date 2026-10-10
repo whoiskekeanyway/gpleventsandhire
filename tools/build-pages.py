@@ -124,16 +124,21 @@ def set_head(page, url, title, desc, keywords):
     return page
 
 
-HERO_URL = CL + "f_auto,q_auto:eco,w_{w}/v1759646924/IMG_3259_mysmrz.jpg"
-HERO_IMG = ('<img class="hero-photo" src="' + HERO_URL.format(w=900) + '"\n            srcset="' +
-            ", ".join(f"{HERO_URL.format(w=w)} {w}w" for w in (640, 900, 1400, 1920)) +
-            '"\n            sizes="(max-width: 768px) 340px, 100vw" width="1920" height="1440" fetchpriority="high" alt="">')
+def hero_img(photo, w_max, h_max):
+    url = CL + "f_auto,q_auto:eco,w_{w}/" + photo
+    return ('<img class="hero-photo" src="' + url.format(w=900) + '"\n            srcset="' +
+            ", ".join(f"{url.format(w=w)} {w}w" for w in (640, 900, 1400, w_max)) +
+            f'"\n            sizes="(max-width: 768px) 340px, 100vw" width="{w_max}" height="{h_max}" fetchpriority="high" alt="">')
 
 
-def hero(h1, sub, primary, secondary):
+HERO_IMG = hero_img("v1756563796/3162cc56-0c4b-452c-9c8d-5651b155405e_o5l4ko_eu5lsz.webp", 1600, 1066)          # champagne table — site-wide
+FESTIVE_IMG = hero_img("v1759646924/IMG_3259_mysmrz.jpg", 1920, 1440)     # Christmas table — year-end page only
+
+
+def hero(h1, sub, primary, secondary, photo=HERO_IMG):
     return f'''
     <section class="hero-options">
-        {HERO_IMG}
+        {photo}
         <div class="hero-overlay"></div>
         <div class="hero-content">
             <h1 class="hero-title">{esc(h1)}</h1>
@@ -281,7 +286,7 @@ def year_end():
     area_chips = "".join(f'\n                    <li><a href="locations/{s}.html">{n}</a></li>' for n, s in areas)
     main = hero("Year-End Function Décor & Styling",
                 "Branded, polished year-end functions for teams and clients across Johannesburg, Sandton, Midrand and Centurion — with setup included in every package.",
-                ("Book your year-end date", wa(msg_book)), ("See packages", "#packages")) + f'''
+                ("Book your year-end date", wa(msg_book)), ("See packages", "#packages"), FESTIVE_IMG) + f'''
     <div class="loc-page">
 
             <p class="ye-urgent"><i class="fas fa-calendar-check" aria-hidden="true"></i> December dates book up fast — a 70% deposit secures yours.</p>

@@ -9,7 +9,7 @@
     font-weight: 700;
     letter-spacing: 0.14em;
     text-transform: uppercase;
-    color: var(--clr-secondary-red);
+    color: var(--clr-gold-text);
     margin: 0 0 0.5rem;
 }
 
@@ -260,7 +260,7 @@
     margin-top: 1rem;
     padding: 0.6rem 1.1rem;
     border-radius: 30px;
-    background: var(--clr-secondary-blush);
+    background: var(--clr-surface-warm);
     color: var(--clr-primary-navy);
     font-family: var(--ff-primary);
     font-weight: 700;
@@ -277,7 +277,7 @@
 }
 
 .rv-stars i {
-    color: #f5a623 !important;
+    color: var(--clr-gold) !important;
     font-size: 0.95rem;
 }
 

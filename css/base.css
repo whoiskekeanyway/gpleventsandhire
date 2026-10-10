@@ -9,19 +9,27 @@
     /* Primary Brand Colors */
     --clr-primary-navy: #1a237e;
     /* Deep navy from logo */
-    --clr-primary-red: #e53e3e;
-    /* Vibrant red from heart */
+    --clr-primary-red: #c62828;
+    /* The one brand red (buttons, prices, labels) */
     --clr-primary-navy-light: #3949ab;
     /* Lighter navy for hover states */
-    --clr-primary-red-light: #ef5350;
+    --clr-primary-red-dark: #a91f1f;
+    /* Hover shade of the brand red */
 
     /* Secondary Brand Colors */
     --clr-secondary-navy: #0d47a1;
     /* Darker navy for depth */
-    --clr-secondary-red: #c62828;
-    /* Darker red for contrast */
+    --clr-secondary-red: var(--clr-primary-red);
     --clr-secondary-blush: #fce4ec;
-    /* Soft pink for romantic events */
+    /* Brand blush — header and portfolio only */
+    --clr-surface-warm: #f7f3ee;
+    /* Warm off-white for soft section backgrounds, chips and cards */
+    --clr-placeholder: #f1ece5;
+    /* "Photo coming soon" boxes */
+    --clr-gold: #c9a54a;
+    /* Luxury accent: stars and icons */
+    --clr-gold-text: #7a5c1c;
+    /* Gold for small text (passes contrast on white, off-white and blush) */
     --clr-secondary-cream: #fff8e1;
     /* Warm cream for elegance */
 
@@ -31,7 +39,7 @@
     --clr-secondary-orange: #ff6f00;
 
     /* Accent Colors */
-    --clr-accent-red: #d32f2f;
+    --clr-accent-red: var(--clr-primary-red);
     /* Premium/luxury events */
     --clr-accent-success: #2e7d32;
     /* Success messages */

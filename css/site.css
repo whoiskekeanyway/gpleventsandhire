@@ -103,6 +103,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: 70% center;
 }
 .hero-overlay {
     position: absolute;
@@ -196,12 +197,13 @@
     font-size: 1.1rem;
 }
 .cta-primary {
-    background: linear-gradient(135deg, var(--clr-primary-red), var(--clr-accent-red));
+    background: var(--clr-primary-red);
     color: white;
 }
 .cta-primary:hover {
+    background: var(--clr-primary-red-dark);
     transform: translateY(-3px);
-    box-shadow: 0 10px 25px rgba(201, 176, 55, 0.4);
+    box-shadow: 0 10px 25px rgba(198, 40, 40, 0.28);
 }
 .cta-secondary {
     background: transparent;
@@ -209,7 +211,7 @@
     border: 2px solid white;
 }
 .cta-secondary:hover {
-    background: var(--clr-secondary-red);
+    background: var(--clr-primary-red);
     color: var(--clr-secondary-cream);
     transform: translateY(-3px);
 }
@@ -403,7 +405,7 @@
 .benefit-item i {
     width: 50px;
     height: 50px;
-    background: linear-gradient(135deg, var(--clr-primary-red), var(--clr-accent-red));
+    background: var(--clr-primary-red);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -501,7 +503,7 @@
 .step-number {
     width: 80px;
     height: 80px;
-    background: linear-gradient(135deg, var(--clr-primary-red), var(--clr-accent-red));
+    background: var(--clr-primary-red);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -618,18 +620,19 @@
     border: 2px solid white;
 }
 .cta-call:hover {
-    box-shadow: 0 5px 15px rgba(201, 176, 55, 0.4);
+    box-shadow: 0 5px 15px rgba(198, 40, 40, 0.28);
     transform: translateY(-2px);
-    background: var(--clr-secondary-red);
+    background: var(--clr-primary-red-dark);
     color: var(--clr-secondary-cream);
 }
 .cta-quote {
-    background: linear-gradient(135deg, var(--clr-primary-red), var(--clr-accent-red));
+    background: var(--clr-primary-red);
     color: white;
 }
 .cta-quote:hover {
+    background: var(--clr-primary-red-dark);
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(201, 176, 55, 0.4);
+    box-shadow: 0 5px 15px rgba(198, 40, 40, 0.28);
     border: 2px solid var(--clr-secondary-cream);
 }
 .contact-form-container {
@@ -792,7 +795,7 @@
     }
 }
 .breadcrumb-nav {
-    background: var(--clr-secondary-blush);
+    background: var(--clr-surface-warm);
     padding: 0.5rem 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.06);
 }
@@ -831,7 +834,7 @@
     color: var(--clr-secondary-cream);
 }
 .fa-star {
-    color: var(--clr-accent-red) !important;
+    color: var(--clr-gold) !important;
 }
 @keyframes heroEnter {
     from {
@@ -898,7 +901,7 @@
 }
 .faq-section {
     padding: 4rem 0;
-    background: var(--clr-secondary-blush);
+    background: var(--clr-surface-warm);
 }
 .faq-list {
     max-width: 820px;
@@ -965,17 +968,21 @@ details.faq-item[open] summary.faq-question::after {
 }
 :root {
     --clr-primary-navy: #1a237e;
-    --clr-primary-red: #e53e3e;
+    --clr-primary-red: #c62828;
     --clr-primary-navy-light: #3949ab;
-    --clr-primary-red-light: #ef5350;
+    --clr-primary-red-dark: #a91f1f;
     --clr-secondary-navy: #0d47a1;
-    --clr-secondary-red: #c62828;
+    --clr-secondary-red: var(--clr-primary-red);
     --clr-secondary-blush: #fce4ec;
+    --clr-surface-warm: #f7f3ee;
+    --clr-placeholder: #f1ece5;
+    --clr-gold: #c9a54a;
+    --clr-gold-text: #7a5c1c;
     --clr-secondary-cream: #fff8e1;
     --clr-primary: var(--clr-primary-navy);
     --clr-accent: var(--clr-accent-red);
     --clr-secondary-orange: #ff6f00;
-    --clr-accent-red: #d32f2f;
+    --clr-accent-red: var(--clr-primary-red);
     --clr-accent-success: #2e7d32;
     --clr-accent-warning: #f57c00;
     --clr-accent-error: #d32f2f;
@@ -1299,8 +1306,9 @@ header {
     transition: all 0.3s ease;
 }
 .nav-quote-btn:hover {
+    background: var(--clr-primary-red-dark);
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(201, 176, 55, 0.4);
+    box-shadow: 0 5px 15px rgba(198, 40, 40, 0.28);
     color: var(--clr-secondary-blush);
 }
 .cta-homepage-btns {}
@@ -1427,7 +1435,7 @@ header {
 }
 .backToTopBtn:hover,
 .backToTopBtn:focus-visible {
-    background-color: var(--clr-secondary-blush);
+    background-color: var(--clr-surface-warm);
 }
 @media (max-width: 768px) {
     .backToTopBtn {
@@ -1455,12 +1463,13 @@ header {
     align-self: center;
 }
 .cta-primary-btn {
-    background: linear-gradient(135deg, var(--clr-accent-red), var(--clr-accent-red));
+    background: var(--clr-primary-red);
     color: white;
 }
 .cta-primary-btn:hover {
+    background: var(--clr-primary-red-dark);
     transform: translateY(-3px);
-    box-shadow: 0 10px 25px rgba(201, 176, 55, 0.4);
+    box-shadow: 0 10px 25px rgba(198, 40, 40, 0.28);
 }
 .whatsapp-float {
     position: fixed;
@@ -1541,7 +1550,7 @@ header {
     font-weight: 700;
     letter-spacing: 0.14em;
     text-transform: uppercase;
-    color: var(--clr-secondary-red);
+    color: var(--clr-gold-text);
     margin: 0 0 0.5rem;
 }
 .pf-btn {
@@ -1749,7 +1758,7 @@ header {
     margin-top: 1rem;
     padding: 0.6rem 1.1rem;
     border-radius: 30px;
-    background: var(--clr-secondary-blush);
+    background: var(--clr-surface-warm);
     color: var(--clr-primary-navy);
     font-family: var(--ff-primary);
     font-weight: 700;
@@ -1763,7 +1772,7 @@ header {
     gap: 0.15rem;
 }
 .rv-stars i {
-    color: #f5a623 !important;
+    color: var(--clr-gold) !important;
     font-size: 0.95rem;
 }
 .reviews-widget {
@@ -2019,7 +2028,7 @@ header {
     color: var(--clr-primary-navy);
 }
 .ft-main {
-    background: var(--clr-secondary-blush);
+    background: var(--clr-surface-warm);
     padding: 3rem max(1.25rem, calc((100% - 1200px) / 2)) 2rem;
     display: grid;
     grid-template-columns: 1.6fr 1fr 1fr 1.2fr;
@@ -2069,7 +2078,7 @@ header {
     font-weight: 700;
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    color: var(--clr-secondary-red);
+    color: var(--clr-gold-text);
     margin: 0 0 0.9rem;
 }
 .ft-col ul {
@@ -2096,7 +2105,7 @@ header {
     text-underline-offset: 3px;
 }
 .ft-bottom {
-    background: var(--clr-secondary-blush);
+    background: var(--clr-surface-warm);
     border-top: 1px solid rgba(26, 35, 126, 0.15);
     padding: 1.25rem max(1.25rem, calc((100% - 1200px) / 2));
     display: flex;
@@ -2230,7 +2239,7 @@ header {
 }
 .collection-card-img {
     aspect-ratio: 1 / 1;
-    background: linear-gradient(135deg, var(--clr-secondary-blush), var(--clr-secondary-cream));
+    background: var(--clr-placeholder);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2309,7 +2318,7 @@ header {
 }
 .hire-item-img {
     aspect-ratio: 1 / 1;
-    background: linear-gradient(135deg, var(--clr-secondary-blush), var(--clr-secondary-cream));
+    background: var(--clr-placeholder);
     overflow: hidden;
 }
 .hire-item-img img {
@@ -2520,7 +2529,7 @@ header {
 }
 .hire-item-detail-img {
     aspect-ratio: 1 / 1;
-    background: linear-gradient(135deg, var(--clr-secondary-blush), var(--clr-secondary-cream));
+    background: var(--clr-placeholder);
     border-radius: 16px;
     overflow: hidden;
     position: relative;
@@ -2602,7 +2611,7 @@ header {
     opacity: 1;
 }
 div.img-secondary {
-    background: linear-gradient(160deg, var(--clr-secondary-cream), var(--clr-secondary-blush));
+    background: var(--clr-placeholder);
 }
 .hire-search {
     max-width: 640px;
@@ -2678,7 +2687,7 @@ div.img-secondary {
     flex-shrink: 0;
     border-radius: 8px;
     object-fit: cover;
-    background: linear-gradient(135deg, var(--clr-secondary-blush), var(--clr-secondary-cream));
+    background: var(--clr-placeholder);
 }
 .hire-search-noimg {
     display: flex;
@@ -2731,7 +2740,7 @@ div.img-secondary {
     margin: 1rem 0 1.25rem;
     padding: 1rem 1.1rem;
     border-radius: 14px;
-    background: var(--clr-secondary-blush);
+    background: var(--clr-surface-warm);
 }
 .item-included-title {
     margin: 0 0 0.5rem;
@@ -2829,7 +2838,7 @@ div.img-secondary {
 .item-tags li {
     padding: 0.5rem 1rem;
     border-radius: 30px;
-    background: var(--clr-secondary-blush);
+    background: var(--clr-surface-warm);
     color: var(--clr-primary-navy);
     font-weight: 600;
     font-size: 0.92rem;
@@ -2870,7 +2879,7 @@ div.img-secondary {
     max-width: 820px;
     border-radius: 18px;
     overflow: hidden;
-    background: var(--clr-secondary-blush);
+    background: var(--clr-surface-warm);
     box-shadow: 0 10px 30px rgba(26, 35, 126, 0.1);
 }
 .item-event img {
@@ -2908,7 +2917,7 @@ div.img-secondary {
     cursor: pointer;
 }
 .enquiry-add:hover {
-    background: var(--clr-secondary-blush);
+    background: var(--clr-surface-warm);
 }
 .enquiry-add i {
     color: inherit !important;
@@ -3010,7 +3019,7 @@ div.img-secondary {
     padding: 0;
     border: none;
     border-radius: 50%;
-    background: var(--clr-secondary-blush);
+    background: var(--clr-surface-warm);
     color: var(--clr-primary-navy);
     font-size: 1.2rem;
     line-height: 1;
@@ -3089,7 +3098,7 @@ body.has-enquiry .sticky-whatsapp {
     align-items: flex-start;
     gap: 0.65rem;
     padding: 0.9rem 1rem;
-    background: var(--clr-secondary-blush);
+    background: var(--clr-surface-warm);
     border-radius: 14px;
     font-size: 0.9rem;
     line-height: 1.45;
@@ -3176,7 +3185,7 @@ body.has-enquiry .sticky-whatsapp {
 .pkg-media {
     position: relative;
     aspect-ratio: 4 / 3;
-    background: linear-gradient(135deg, var(--clr-secondary-blush), var(--clr-secondary-cream));
+    background: var(--clr-placeholder);
 }
 .pkg-media img {
     width: 100%;
@@ -3295,7 +3304,7 @@ body.has-enquiry .sticky-whatsapp {
     width: 1.15rem;
     height: 1.15rem;
     border-radius: 50%;
-    background: var(--clr-secondary-blush);
+    background: var(--clr-surface-warm);
     color: var(--clr-primary-navy);
     font-size: 0.72rem;
     font-weight: 800;
@@ -3412,7 +3421,7 @@ body.has-enquiry .sticky-whatsapp {
     min-height: 44px;
     padding: 0.5rem 1.1rem;
     border-radius: 30px;
-    background: var(--clr-secondary-blush);
+    background: var(--clr-surface-warm);
     color: var(--clr-primary-navy);
     font-weight: 600;
     text-decoration: none;
@@ -3467,7 +3476,7 @@ body.has-enquiry .sticky-whatsapp {
     cursor: pointer;
 }
 .pkg-chooser-btn:hover {
-    background: var(--clr-secondary-blush);
+    background: var(--clr-surface-warm);
 }
 .pkg-chooser-result {
     max-width: 640px;
@@ -3506,7 +3515,7 @@ body.has-enquiry .sticky-whatsapp {
     flex-wrap: wrap;
     padding: 2rem;
     border-radius: 20px;
-    background: var(--clr-secondary-blush);
+    background: var(--clr-surface-warm);
 }
 .pkg-custom h3 {
     color: var(--clr-primary-navy);
@@ -3569,7 +3578,7 @@ body.has-enquiry .sticky-whatsapp {
     gap: 0.35rem;
     padding: 1.6rem;
     border-radius: 18px;
-    background: var(--clr-secondary-blush);
+    background: var(--clr-surface-warm);
     color: var(--clr-primary-navy);
     text-decoration: none;
     transition: transform 0.2s ease;
@@ -3721,7 +3730,7 @@ body.has-enquiry .sticky-whatsapp {
     gap: 0.65rem;
     padding: 0.9rem 1rem;
     border-radius: 14px;
-    background: var(--clr-secondary-blush);
+    background: var(--clr-surface-warm);
     color: var(--clr-primary-navy);
     font-size: 0.9rem;
     font-weight: 600;
@@ -3839,7 +3848,7 @@ body.has-enquiry .sticky-whatsapp {
     min-height: 44px;
     padding: 0.5rem 1.15rem;
     border-radius: 30px;
-    background: var(--clr-secondary-blush);
+    background: var(--clr-surface-warm);
     color: var(--clr-primary-navy);
     font-weight: 600;
     text-decoration: none;
@@ -3855,7 +3864,7 @@ body.has-enquiry .sticky-whatsapp {
     margin-top: 3.5rem;
     padding: 1.75rem 2rem;
     border-radius: 20px;
-    background: var(--clr-secondary-blush);
+    background: var(--clr-surface-warm);
     max-width: calc(1200px - 2.5rem);
 }
 .loc-gifting > i {
@@ -4001,7 +4010,7 @@ body.has-enquiry .sticky-whatsapp {
     border-radius: 16px;
     overflow: hidden;
     aspect-ratio: 4 / 3;
-    background: var(--clr-secondary-blush);
+    background: var(--clr-surface-warm);
 }
 .loc-work-grid img {
     width: 100%;

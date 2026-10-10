@@ -128,8 +128,9 @@ header {
 }
 
 .nav-quote-btn:hover {
+    background: var(--clr-primary-red-dark);
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(201, 176, 55, 0.4);
+    box-shadow: 0 5px 15px rgba(198, 40, 40, 0.28);
     color: var(--clr-secondary-blush);
 }
 

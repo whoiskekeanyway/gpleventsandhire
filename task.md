@@ -573,6 +573,15 @@ Content in `tools/item-extras.json` → `python3 tools/build-item-extras.py` —
 
 - [x] Canonicals, sitemap, robots.txt, social tags and schema now all use `https://gpleventsandhire.co.za` (no www), matching the live domain *(2026-10-10)*
 
+## Colour Refresh — 2026-10-11
+
+- [x] One brand red `#c62828` (hover `#a91f1f`) — replaces five near-identical reds and two-tone button gradients
+- [x] Blush `#fce4ec` kept for the header and the homepage portfolio only; everything else soft uses warm off-white `#f7f3ee`
+- [x] Gold accent: `--clr-gold` `#c9a54a` (stars) and `--clr-gold-text` `#7a5c1c` (small labels, footer headings); leftover gold hover glow replaced by a red glow
+- [x] "Photo coming soon" placeholders are neutral `#f1ece5` (`--clr-placeholder`)
+- [x] New site-wide hero: champagne glasses on a white table (owner photo). Year-end page keeps the Christmas table (`FESTIVE_IMG` in `tools/build-pages.py`)
+- [ ] Owner sending more photos — cutlery photo (gold cutlery on white plates) is a good fit for `hire/items/cutlery-set.html`
+
 ## Future Category Pages — From Competitor Research (2026-06-20)
 
 Ideas sourced from Backdrop & Decor Hub and Cherri Hire. Not yet built — log here for future sprints.
