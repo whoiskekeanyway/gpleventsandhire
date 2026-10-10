@@ -525,6 +525,19 @@ Size: **1200 × 900 px (4:3)**, WebP or JPG, real setups/gifts. To add one: save
 
 ---
 
+## Top Hire Item Pages Upgrade — 2026-10-10
+
+10 key item pages now have What's included, How it works (where useful), Perfect for, Pair it with,
+service-area links and 4–6 FAQs (schema synced): marquee letters A–Z, marquee numbers, popular marquee sets,
+champagne wall, round circle arch, balloon arch, gold balloon/flower arch, A1 Correx welcome board,
+welcome board flower box, step arch backdrop (+ the retro audio guestbook, done by hand).
+Content in `tools/item-extras.json` → `python3 tools/build-item-extras.py` — add more items by adding entries.
+
+- [ ] Owner: review the drafted "Perfect for" / "Pair it with" lists and new FAQs
+- [ ] Next candidates: kids sets, crockery items, plinths/stands, carpets & stanchions
+
+---
+
 ## Future Category Pages — From Competitor Research (2026-06-20)
 
 Ideas sourced from Backdrop & Decor Hub and Cherri Hire. Not yet built — log here for future sprints.

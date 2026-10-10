@@ -1,0 +1,131 @@
+{
+  "_readme": "Extra content for top hire item pages. Edit, then run: python3 tools/build-item-extras.py. Links in 'pair' are relative to hire/items/. Optional 'title' (<=60) and 'description' (<=155) override the page's SEO tags.",
+
+  "items": {
+    "marquee-letters-az": {
+      "title": "Marquee Letter Hire (A–Z) in Midrand | GPL Events & Hire",
+      "description": "Light-up marquee letter hire in Midrand — 1m white letters A–Z with white bulbs, R300 per letter. Spell names, initials or LOVE for events across Gauteng.",
+      "included": ["1 metre tall white marquee letters, A–Z", "White bulbs that light up your display", "Freestanding — no extra stand needed", "Needs a standard power outlet nearby"],
+      "steps": [["Choose your letters", "WhatsApp us the name, initials or word you'd like to spell."], ["We confirm availability", "We check every letter is free for your event date."], ["Light it up", "Place them on the floor, a table or a plinth and plug in."]],
+      "perfect": ["Names & initials at weddings", "MR & MRS displays", "Birthday names", "Proposals — MARRY ME", "BABY at baby showers", "Brand initials at corporate events"],
+      "pair": [["Marquee Numbers (0–9)", "marquee-numbers.html"], ["Popular Marquee Sets", "popular-marquee-sets.html"], ["Step Arch Backdrop", "step-arch-backdrop.html"], ["Plinths & Stands", "../flower-stands.html"]],
+      "faqs": [
+        ["How much does marquee letter hire cost?", "Marquee letters are R300 per letter — for example, a 4-letter word like LOVE is R1,200. Delivery and collection are quoted separately."],
+        ["How do I know which letters are available?", "WhatsApp us with the letters you need (e.g. a name or word) and we'll confirm availability for your event date."],
+        ["Do the marquee letters require a stand?", "The letters are freestanding and can be placed on the floor or on a table or plinth. No additional stand is required."],
+        ["Do the letters need power?", "Yes — marquee letters need a standard power outlet. We recommend confirming your venue has accessible power near your display area."],
+        ["Can I combine letters and numbers?", "Yes — mix letters (R300 each) with marquee numbers (R350 each), for example a name and an age."],
+        ["Is delivery included?", "Delivery and collection are quoted separately. Free warehouse collection is available by appointment."]
+      ]
+    },
+    "marquee-numbers": {
+      "title": "Marquee Number Hire (0–9) in Midrand | GPL Events & Hire",
+      "description": "Light-up marquee number hire in Midrand — 1m white numbers 0–9 with white bulbs, R350 each. Perfect for 18th, 21st, 30th and milestone birthdays.",
+      "included": ["1 metre tall white marquee numbers, 0–9", "White bulbs that light up your display", "Stand on the floor, a table or a plinth", "Needs a standard power outlet nearby"],
+      "steps": [["Choose your digits", "Tell us the age, year or number you'd like to display."], ["We confirm availability", "We check your digits are free for your event date."], ["Light it up", "Place them where you want them and plug in."]],
+      "perfect": ["18th & 21st birthdays", "30th, 40th & 50th birthdays", "Anniversaries", "Graduations", "Year-end functions", "Milestone celebrations"],
+      "pair": [["Marquee Letters (A–Z)", "marquee-letters-az.html"], ["Popular Marquee Sets", "popular-marquee-sets.html"], ["Round Circle Arch", "round-circle-arch.html"], ["Balloon Arch", "balloon-arch.html"]],
+      "faqs": [
+        ["How much does marquee number hire cost?", "Each marquee number is R350 — so a 21 (two numbers) is R700. Delivery and collection are quoted separately."],
+        ["Can I hire multiple numbers?", "Yes — each number is priced individually at R350. Let us know which digits you need and we'll confirm availability."],
+        ["Do the marquee numbers require power?", "Yes — marquee letters and numbers require a standard power outlet. We recommend confirming your venue has accessible power near your display area."],
+        ["Can I add a name or word?", "Yes — combine numbers with our marquee letters (R300 per letter), for example a name and an age."],
+        ["Is delivery included?", "Delivery and collection are quoted separately. Free warehouse collection is available by appointment."]
+      ]
+    },
+    "popular-marquee-sets": {
+      "included": ["1 metre tall white letters with white bulbs", "R300 per letter, any combination", "Custom words from our A–Z and 0–9 range", "Needs a standard power outlet nearby"],
+      "perfect": ["Proposals — MARRY ME", "Weddings — MR & MRS", "Baby showers — BABY", "Anniversaries — LOVE", "Initials — e.g. MD"],
+      "pair": [["Marquee Letters (A–Z)", "marquee-letters-az.html"], ["Marquee Numbers (0–9)", "marquee-numbers.html"], ["Champagne Wall", "champagne-wall.html"], ["Welcome Board (Flower Box)", "welcome-board-flower-box.html"]],
+      "faqs": [
+        ["What popular sets are available?", "Popular sets include LOVE and BABY (4 letters each, R1,200), MR & MRS (5 letters, R1,500) and MARRY ME (7 letters, R2,100). The rate is R300 per letter."],
+        ["Can I choose my own word or name?", "Yes — custom letter sets can be put together from our full A–Z and 0–9 inventory, subject to availability. WhatsApp us with your combination."],
+        ["Which set is best for a proposal?", "MARRY ME (7 letters, R2,100) is our classic proposal set — it pairs beautifully with a champagne wall or a floral backdrop."],
+        ["Do the letters need power?", "Yes — marquee letters need a standard power outlet. We recommend confirming your venue has accessible power near your display area."],
+        ["Is delivery included?", "Delivery and collection are quoted separately. Free warehouse collection is available by appointment."]
+      ]
+    },
+    "champagne-wall": {
+      "included": ["White champagne wall display rack", "Approximately 2.1m tall × 90cm wide", "Choice of square top or arch top", "Glasses available at an additional cost"],
+      "steps": [["Choose your top", "Pick the clean square top or the softer arch top."], ["Add glasses (optional)", "Ask us to quote for the wall with glasses included."], ["Serve in style", "Guests help themselves from a statement self-serve display."]],
+      "perfect": ["Wedding receptions & welcome drinks", "Engagement parties", "Milestone birthdays", "Bridal & baby showers", "Corporate launches", "Year-end functions"],
+      "pair": [["Champagne Flutes", "champagne-flutes.html"], ["Gold Rim Champagne Glass", "gold-rim-champagne-glass.html"], ["Popular Marquee Sets", "popular-marquee-sets.html"], ["Welcome Board (Flower Box)", "welcome-board-flower-box.html"]],
+      "faqs": [
+        ["How much does the champagne wall cost to hire?", "The champagne wall is R950 per day in either square top or arch top. Glasses are extra, and delivery and collection are quoted separately."],
+        ["What are the dimensions of the champagne wall?", "The champagne wall stands approximately 2.1m tall and 90cm wide — tall enough to make a statement while fitting comfortably into most venue spaces."],
+        ["Are champagne glasses included in the hire price?", "Glasses are not included in the standard R950 hire price but can be added at an additional cost. WhatsApp us and we'll quote for the wall with glasses included."],
+        ["What is the difference between the square top and arch top?", "Both versions are the same size and hold the same number of glasses — the only difference is the silhouette. The square top suits modern, minimalist styling; the arch top feels softer and more romantic."],
+        ["Is delivery and collection included in the price?", "Delivery and collection are quoted separately based on your location. You're also welcome to collect from our warehouse free of charge — by appointment only."]
+      ]
+    },
+    "round-circle-arch": {
+      "included": ["Round circle arch frame (hired empty)", "Ready for balloons, florals, fabric or greenery", "Decoration quoted separately if you'd like us to dress it"],
+      "perfect": ["Wedding ceremony backdrops", "Cake & dessert table backdrops", "Event entrances", "Photo walls", "Baby showers", "Milestone birthdays"],
+      "pair": [["Step Arch Backdrop", "step-arch-backdrop.html"], ["Balloon Arch", "balloon-arch.html"], ["Marquee Letters (A–Z)", "marquee-letters-az.html"], ["Plinths & Stands", "../flower-stands.html"]],
+      "faqs": [
+        ["How much does the round circle arch cost to hire?", "The round circle arch is R250 per day for the frame. Decoration is quoted separately, and delivery and collection are quoted based on your location."],
+        ["What can I decorate the round circle arch with?", "Balloon garlands, floral arrangements, fabric draping and greenery all work beautifully on the round circle arch. It's a versatile frame that suits almost any event style."],
+        ["Does the arch hire price include decoration?", "The arch frame is hired empty — decoration is quoted separately depending on your chosen styling (balloons, florals, fabric). WhatsApp us and we'll put together a quote."],
+        ["Can I decorate the arch myself?", "Yes — hire the frame on its own and style it yourself, or ask us to quote for a fully dressed arch."],
+        ["Is delivery included?", "Delivery and collection are quoted separately based on your location. Free collection from our warehouse is available by appointment."]
+      ]
+    },
+    "balloon-arch": {
+      "included": ["Balloon arch frame", "Balloons quoted separately, or bring your own", "Suits organic garlands and classic balloon styling"],
+      "perfect": ["Birthday parties", "Baby showers", "Kids' parties", "Event entrances", "Photo backdrops", "School & community events"],
+      "pair": [["Round Circle Arch", "round-circle-arch.html"], ["Marquee Numbers (0–9)", "marquee-numbers.html"], ["Kids Party Hire", "../kids.html"], ["Welcome Board (Flower Box)", "welcome-board-flower-box.html"]],
+      "faqs": [
+        ["How much does the balloon arch cost to hire?", "The balloon arch frame is R150. Balloons are quoted separately, and delivery and collection are quoted based on your location."],
+        ["How many balloons do I need for a balloon arch?", "The number of balloons depends on the arch size and arrangement style. A typical organic balloon garland uses 100–150 balloons. WhatsApp us and we'll guide you."],
+        ["Can I hire just the arch frame without balloons?", "Yes — the arch frame is available to hire on its own. You can source your own balloons or we can quote for a fully dressed arch."],
+        ["Is delivery included?", "Delivery and collection are quoted separately. Free warehouse collection is available by appointment."]
+      ]
+    },
+    "gold-balloon-flower-arch": {
+      "included": ["Gold arch frame", "Designed for balloon or floral styling", "Decoration options confirmed when you enquire"],
+      "perfect": ["Wedding ceremonies", "Engagement parties", "Milestone birthdays", "Baby showers", "Photo walls", "Event entrances"],
+      "pair": [["Round Circle Arch", "round-circle-arch.html"], ["Step Arch Backdrop", "step-arch-backdrop.html"], ["Marquee Letters (A–Z)", "marquee-letters-az.html"], ["Plinths & Stands", "../flower-stands.html"]],
+      "faqs": [
+        ["How much is the Gold Balloon/Flower Arch?", "The arch is R450 per day. Contact us to confirm availability and decoration options."],
+        ["Are balloons or flowers included?", "Please contact us to confirm balloon and floral decoration options for your event."],
+        ["Can I style the arch myself?", "Yes — you can hire the arch on its own and style it yourself, or ask us about decoration options."],
+        ["Is delivery included?", "Delivery and collection are quoted separately based on your location. Free warehouse collection is available by appointment."]
+      ]
+    },
+    "correx-welcome-board": {
+      "included": ["Custom design with your names & event details", "Full-colour print on an A1 Correx board", "Yours to keep after the event", "Easel stand available separately"],
+      "steps": [["Send your details", "Names, date, event and any colours or theme you love."], ["We design it", "Your board is designed and printed in full colour."], ["Display & keep", "Stand it on an easel at your entrance — and keep it afterwards."]],
+      "perfect": ["Weddings", "Milestone birthdays", "Baby showers", "Corporate events", "Luncheons & award evenings"],
+      "pair": [["Wooden A-Frame Easel", "wooden-aframe-easel.html"], ["Decorative Gold Metal Easel", "gold-metal-easel.html"], ["Welcome Board (Flower Box)", "welcome-board-flower-box.html"], ["Marquee Letters (A–Z)", "marquee-letters-az.html"]],
+      "faqs": [
+        ["What's included in the R900 Correx board price?", "The R900 price includes custom design and full-colour printing on an A1 Correx board, personalised with your names and event details. An easel stand is not included."],
+        ["Do I need an easel?", "To stand the board up, add a Wooden A-Frame Easel (R150) or a Decorative Gold Metal Easel (from R150) to your order."],
+        ["Can I keep the board after the event?", "Yes — the Correx board is a once-off printed item, not a returnable hire. The R900 price covers design and print (delivery is quoted separately). It's yours to keep."],
+        ["Is delivery included in the price?", "Delivery and collection are quoted separately based on your location. You're also welcome to collect from our warehouse free of charge — by appointment only."]
+      ]
+    },
+    "welcome-board-flower-box": {
+      "included": ["Welcome board flower box frame — from R300 per day", "Style it with your own florals and custom vinyl text", "Or fully dressed with flowers & vinyl — from R980"],
+      "perfect": ["Wedding entrances", "Baby showers", "Bridal showers", "Milestone birthdays", "Corporate welcomes"],
+      "pair": [["A1 Correx Welcome Board", "correx-welcome-board.html"], ["Decorative Gold Metal Easel", "gold-metal-easel.html"], ["Champagne Wall", "champagne-wall.html"], ["Popular Marquee Sets", "popular-marquee-sets.html"]],
+      "faqs": [
+        ["How much is the welcome board flower box?", "The frame is from R300 per day. Fully dressed with flowers and custom vinyl text, it's from R980."],
+        ["Are flowers and vinyl included in the R300 hire price?", "No — the R300 hire price covers the box frame only. Flowers and vinyl text are quoted separately, or choose the fully dressed option from R980."],
+        ["Can I hire the flower box without a full event package?", "Yes — all items are available for individual hire, with no requirement to book a full styling package."],
+        ["Is delivery and collection included in the price?", "Delivery and collection are quoted separately based on your location. You're also welcome to collect from our warehouse free of charge — by appointment only."]
+      ]
+    },
+    "step-arch-backdrop": {
+      "included": ["Nude step arch backdrop", "Approximately 2m tall × 1.8m wide", "Striking bare, or dressed with balloons, florals or greenery"],
+      "perfect": ["Wedding ceremony backdrops", "Cake & dessert tables", "Photo walls", "Event entrances", "Styled shoots", "Corporate photo backdrops"],
+      "pair": [["Marquee Letters (A–Z)", "marquee-letters-az.html"], ["Round Circle Arch", "round-circle-arch.html"], ["3pc Clear Acrylic Plinth Set", "3pc-acrylic-plinth-set.html"], ["Welcome Board (Flower Box)", "welcome-board-flower-box.html"]],
+      "faqs": [
+        ["How much does the step arch backdrop cost to hire?", "The step arch backdrop is R1,200 per day. Decoration is quoted separately, and delivery and collection are quoted based on your location."],
+        ["What are the dimensions of the step arch backdrop?", "The step arch stands approximately 2m tall and 1.8m wide — large enough to frame a couple, a cake table or a full photo setup comfortably."],
+        ["Can the step arch be decorated with florals or balloons?", "Yes — the tiered frame is designed to be dressed with balloon garlands, floral arrangements, greenery or fabric draping. It also looks striking left bare."],
+        ["Does it work with marquee letters?", "Yes — marquee letters or numbers in front of the step arch make a popular photo backdrop for birthdays and weddings."],
+        ["Is delivery and collection included in the price?", "Delivery and collection are quoted separately based on your location. You're also welcome to collect from our warehouse free of charge — by appointment only."]
+      ]
+    }
+  }
+}
