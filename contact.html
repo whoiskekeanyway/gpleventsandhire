@@ -326,9 +326,22 @@
                 <p class="subtitle">Based in Midrand — serving Johannesburg, Sandton, Centurion, Waterfall, Carlswald
                     and Fourways</p>
             </div>
-            <iframe src="https://maps.google.com/maps?q=Midrand,+Gauteng,+South+Africa&output=embed&z=12"
+            <iframe data-src="https://maps.google.com/maps?q=Midrand,+Gauteng,+South+Africa&output=embed&z=12"
                 title="GPL Events & Hire — Midrand, Gauteng service area" loading="lazy" allowfullscreen>
             </iframe>
+            <script>
+                /* Load the Google map only when it's about to scroll into view (it's ~400 KB) */
+                (function () {
+                    var f = document.querySelector('.contact-map iframe[data-src]');
+                    if (!f) return;
+                    function load() { f.src = f.getAttribute('data-src'); f.removeAttribute('data-src'); }
+                    if (!('IntersectionObserver' in window)) return load();
+                    var io = new IntersectionObserver(function (e) {
+                        if (e[0].isIntersecting) { io.disconnect(); load(); }
+                    }, { rootMargin: '300px' });
+                    io.observe(f);
+                })();
+            </script>
             <p class="map-link"><a href="https://share.google/hgqL3xBRj575rXru5" target="_blank" rel="noopener noreferrer"><i class="fas fa-location-dot" aria-hidden="true"></i> View GPL Events &amp; Hire on Google — directions, photos and reviews</a></p>
         </div>
     </section>

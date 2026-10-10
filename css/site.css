@@ -838,6 +838,7 @@
     border: 0;
     border-radius: 16px;
     display: block;
+    background: var(--clr-placeholder);
 }
 .faq-section {
     padding: 4rem 0;

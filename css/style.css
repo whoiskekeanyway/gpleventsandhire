@@ -913,6 +913,7 @@
     border: 0;
     border-radius: 16px;
     display: block;
+    background: var(--clr-placeholder);
 }
 
 /* FAQ accordion (native <details>/<summary>) */
