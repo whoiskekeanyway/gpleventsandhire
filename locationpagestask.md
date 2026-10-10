@@ -1,6 +1,6 @@
 # Location Pages Task List
 
-> **Rebuilt 2026-10-10.** Content for all 7 pages lives in `tools/locations-data.json` → `python3 tools/build-locations.py`. Still open: real photos, local testimonials, venue names, and an optional service-areas hub page (+ a Kyalami page — it's a free gift-delivery zone with no page yet).
+> **Rebuilt 2026-10-10.** Content for all 7 pages lives in `tools/locations-data.json` → `python3 tools/build-locations.py`. Kyalami page + `service-areas.html` hub added 2026-10-10 (footer links to both). Still open: real photos, local testimonials, venue names.
 
 **Goal:** Make the seven location pages useful for local search visitors and guide them to a relevant enquiry.
 
@@ -28,7 +28,7 @@ Pages: `locations/midrand.html`, `locations/johannesburg.html`, `locations/sandt
 - [ ] **Owner input:** Add genuine event photos from completed work, with permission and accurate location captions where known.
 - [ ] **Owner input:** Add customer testimonials or project examples only when the customer, location, and permission are confirmed.
 - [x] Add concise location-specific FAQs using the confirmed policies; avoid copying the same generic answers across every page. *(Done — each page has its own FAQs; ~2 of ~20 sentences shared between pages.)*
-- [ ] Review whether a central service-areas page would help visitors compare locations, and link it to all seven pages if created.
+- [x] Review whether a central service-areas page would help visitors compare locations, and link it to all seven pages if created. *(Done — service-areas.html, linked from the footer on every page.)*
 
 ## Phase 4: Verify
 

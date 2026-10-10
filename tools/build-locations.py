@@ -155,6 +155,8 @@ def build(area):
     for attr in ('name="description"', 'property="og:description"', 'name="twitter:description"'):
         page = re.sub(r'(<meta ' + re.escape(attr) + r'\s+content=")[^"]*', lambda m: m.group(1) + esc(area["description"]), page, flags=re.S)
     page = re.sub(r'(<meta name="keywords"\s+content=")[^"]*', lambda m: m.group(1) + esc(area["keywords"]), page, flags=re.S)
+    page = re.sub(r'(<link rel="canonical" href=")[^"]*', lambda m: m.group(1) + url, page)
+    page = re.sub(r'(<meta (?:property="og:url"|name="twitter:url") content=")[^"]*', lambda m: m.group(1) + url, page)
 
     # ----- hero
     hero_msg = f"Hi GPL Events, I'm planning an event in {area['name']}. Please share pricing and availability."
@@ -225,7 +227,152 @@ def build(area):
     print("built", "locations/" + area["slug"] + ".html")
 
 
+SA_TITLE = "Areas We Serve in Gauteng | GPL Events & Hire"
+SA_DESC = ("Event styling, décor hire and bespoke gifts across Midrand, Waterfall, Carlswald, Kyalami, Fourways, "
+           "Sandton, Centurion and Johannesburg.")
+SA_FAQS = [
+    ["Which areas do you serve?", "We're based in Midrand and serve " + ", ".join(a["name"] for a in AREAS[:-1]) +
+     " and " + AREAS[-1]["name"] + ". For other parts of Gauteng, send us your venue address and we'll confirm."],
+    ["How much is event delivery and collection?", "For event packages, delivery and collection is usually around R1,600 for most Gauteng venues. We confirm the exact amount for your venue in your quote."],
+    ["Where is gift delivery free?", "Gift delivery is free in " + FREE_GIFT_AREAS + ", and a R150 flat rate anywhere else in Gauteng."],
+    ["Can I collect hire items myself?", "Yes — hire items can be collected from us in Midrand by appointment."],
+]
+
+
+def service_areas_main():
+    cards = ""
+    for a in AREAS:
+        badge = ("Free gift delivery" if a["giftDelivery"] == "free" else "R150 gift delivery")
+        cards += f'''
+                    <a class="sa-card" href="locations/{a['slug']}.html">
+                        <span class="sa-name">{esc(a['name'])}</span>
+                        <span class="sa-desc">{esc(a['heroSub'])}</span>
+                        <span class="sa-badge{' is-free' if a['giftDelivery'] == 'free' else ''}"><i class="fas fa-gift" aria-hidden="true"></i> {badge}</span>
+                        <span class="sa-link">Events in {esc(a['name'])} →</span>
+                    </a>'''
+    faqs = "".join(f'''
+                <details class="faq-item">
+                    <summary class="faq-question">{esc(q)}</summary>
+                    <p class="faq-answer">{esc(a)}</p>
+                </details>''' for q, a in SA_FAQS)
+    ask = wa("Hi GPL Events, I'm planning an event at this venue/area: ")
+    return f'''<main id="main">
+    <!-- SA:START -->
+
+    <section class="hero-options">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Areas We Serve</h1>
+            <p class="hero-subtitle">From our base in Midrand we style events, deliver décor hire and send bespoke gifts across Gauteng.</p>
+            <div class="hero-cta">
+                <a class="cta-primary" href="{ask}" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp" aria-hidden="true"></i> Check my area</a>
+                <a class="cta-secondary" href="event-packages.html">View packages</a>
+            </div>
+        </div>
+    </section>
+
+    <nav aria-label="Breadcrumb" class="breadcrumb-nav">
+        <div class="container">
+            <ol class="breadcrumb-list">
+                <li class="breadcrumb-item"><a href="/">Home</a></li>
+                <li class="breadcrumb-item breadcrumb-current" aria-current="page">Areas We Serve</li>
+            </ol>
+        </div>
+    </nav>
+
+    <div class="loc-page">
+            <section class="loc-intro" aria-labelledby="sa-title">
+                <h2 class="title" id="sa-title">Event styling across Gauteng</h2>
+                <p>We're based in Midrand, so we're closest to Midrand, Waterfall, Carlswald and Kyalami — and we also travel
+                    to Fourways, Sandton, Centurion and greater Johannesburg. Choose your area to see popular packages, hire items
+                    and delivery details.</p>
+                <ul class="loc-facts">
+                    <li><i class="fas fa-location-dot" aria-hidden="true"></i><span>Based in Midrand, Gauteng</span></li>
+                    <li><i class="fas fa-wand-magic-sparkles" aria-hidden="true"></i><span>Setup included in every event package</span></li>
+                    <li><i class="fas fa-truck" aria-hidden="true"></i><span>Event delivery &amp; collection usually around R1,600</span></li>
+                    <li><i class="fas fa-gift" aria-hidden="true"></i><span>Free gift delivery in 5 areas · R150 elsewhere in Gauteng</span></li>
+                </ul>
+            </section>
+
+            <section class="sa-areas" aria-label="Service areas">
+                <div class="sa-grid">{cards}
+                </div>
+            </section>
+
+            <section class="loc-gifting">
+                <i class="fas fa-map-location-dot" aria-hidden="true"></i>
+                <div>
+                    <h2>Don't see your area?</h2>
+                    <p>Send us your venue address on WhatsApp and we'll confirm whether we can accommodate your event.</p>
+                </div>
+                <a class="loc-btn loc-btn-wa" href="{ask}" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp" aria-hidden="true"></i> Ask us</a>
+            </section>
+
+            <section class="faq-section loc-faq">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="title">Service Area FAQs</h2>
+                        <p class="subtitle">Delivery, collection and coverage</p>
+                    </div>
+                    <div class="faq-list">{faqs}
+                    </div>
+                </div>
+            </section>
+    </div>
+
+    <!-- SA:END -->
+    </main>'''
+
+
+def build_service_areas():
+    path = os.path.join(ROOT, "service-areas.html")
+    url = SITE + "service-areas.html"
+    if os.path.exists(path):
+        page = open(path, encoding="utf-8").read()
+    else:
+        # First run: start from contact.html's shell (head, nav, footer)
+        page = open(os.path.join(ROOT, "contact.html"), encoding="utf-8").read()
+        page = re.sub(r'\s*<script type="application/ld\+json">.*?</script>', "", page, flags=re.S)
+        page = re.sub(r"<a href='#contactus' aria-current=\"page\"\s+title=\"Contact us for a quote\">Contact</a>",
+                      "<a href='contact.html' title=\"Contact us for a quote\">Contact</a>", page)
+        page = page.replace('    <link rel="stylesheet" href="css/hero-option.css">\n',
+                            '    <link rel="stylesheet" href="css/hero-option.css">\n    <link rel="stylesheet" href="css/locations.css">\n', 1)
+    page = re.sub(r"<title>.*?</title>", "<title>" + SA_TITLE + "</title>", page, count=1)
+    for attr in ('name="title"', 'property="og:title"', 'name="twitter:title"'):
+        page = re.sub(r'(<meta ' + re.escape(attr) + r' content=")[^"]*', lambda m: m.group(1) + esc(SA_TITLE), page)
+    for attr in ('name="description"', 'property="og:description"', 'name="twitter:description"'):
+        page = re.sub(r'(<meta ' + re.escape(attr) + r'\s+content=")[^"]*', lambda m: m.group(1) + esc(SA_DESC), page, flags=re.S)
+    page = re.sub(r'(<meta name="keywords"\s+content=")[^"]*', lambda m: m.group(1) + esc(
+        "event planner Gauteng, décor hire Midrand, event décor Sandton, party hire Fourways, event styling Centurion, service areas"), page, flags=re.S)
+    page = re.sub(r'(<link rel="canonical" href=")[^"]*', lambda m: m.group(1) + url, page)
+    page = re.sub(r'(<meta (?:property="og:url"|name="twitter:url") content=")[^"]*', lambda m: m.group(1) + url, page)
+    page = re.sub(r'<main id="main">.*?</main>', lambda m: service_areas_main(), page, count=1, flags=re.S)
+    page = set_schema(page, {
+        "@context": "https://schema.org", "@type": "LocalBusiness", "name": "GPL Events & Hire",
+        "description": "Event styling packages, décor hire and bespoke gifting from Midrand, serving greater Gauteng.",
+        "url": SITE, "telephone": "+27649318467", "email": "gpleventsandhire@gmail.com",
+        "address": {"@type": "PostalAddress", "addressLocality": "Midrand", "addressRegion": "Gauteng",
+                    "postalCode": "1685", "addressCountry": "ZA"},
+        "areaServed": [{"@type": "City", "name": a["name"]} for a in AREAS],
+        "sameAs": ["https://share.google/hgqL3xBRj575rXru5"],
+    })
+    page = set_schema(page, {
+        "@context": "https://schema.org", "@type": "BreadcrumbList",
+        "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": SITE},
+                            {"@type": "ListItem", "position": 2, "name": "Areas We Serve", "item": url}],
+    })
+    page = set_schema(page, {
+        "@context": "https://schema.org", "@type": "FAQPage",
+        "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in SA_FAQS],
+    })
+    assert page.rstrip().endswith("</html>")
+    open(path, "w", encoding="utf-8").write(page)
+    print("built service-areas.html")
+
+
 for a in AREAS:
     assert len(a["title"]) <= 60, (a["slug"], len(a["title"]))
     assert len(a["description"]) <= 155, (a["slug"], len(a["description"]))
     build(a)
+assert len(SA_TITLE) <= 60 and len(SA_DESC) <= 155
+build_service_areas()
