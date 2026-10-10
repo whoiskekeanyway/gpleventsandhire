@@ -2397,7 +2397,7 @@ header {
     bottom: 0;
     left: 0;
     right: 0;
-    background: #e65100;
+    background: #b84500;
     color: #fff;
     font-family: var(--ff-primary);
     font-size: 0.65rem;
@@ -2571,7 +2571,7 @@ header {
     font-family: var(--ff-primary);
     font-size: 0.8rem;
     color: var(--clr-primary-navy);
-    opacity: 0.6;
+    opacity: 0.8;
     text-decoration: underline;
 }
 .hire-item-detail-back:hover {
