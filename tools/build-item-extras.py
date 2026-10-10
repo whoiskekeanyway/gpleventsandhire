@@ -119,6 +119,22 @@ def build(slug, data):
         start = p.index('<div class="faq-list">', faq) + len('<div class="faq-list">')
         end = p.index("\n            </div>", start)
         return start, end
+    if '<section class="faq-section">' not in page:
+        # Page has no FAQ section yet — add one right after the extra content
+        section = (f'''
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="title">{esc(product)} Hire FAQs</h2>
+                <p class="subtitle">Common questions about {esc(product.lower())} hire in Midrand</p>
+            </div>
+            <div class="faq-list">
+            </div>
+        </div>
+    </section>
+''')
+        end = page.index("<!-- EXTRA:END -->") + len("<!-- EXTRA:END -->")
+        page = page[:end] + section + page[end:]
     if "<!-- FAQ:START -->" in page:
         page = re.sub(r"<!-- FAQ:START -->.*?<!-- FAQ:END -->",
                       lambda m: "<!-- FAQ:START -->" + faq_items(data["faqs"]) + "<!-- FAQ:END -->", page, flags=re.S)
@@ -126,12 +142,14 @@ def build(slug, data):
         s, e = faq_list(page)
         page = page[:s] + "\n                <!-- FAQ:START -->" + faq_items(data["faqs"]) + "<!-- FAQ:END -->" + page[e:]
 
+    obj = {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
+        {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in data["faqs"]]}
     for m in re.finditer(r'(<script type="application/ld\+json">)(.*?)(</script>)', page, re.S):
         if json.loads(m.group(2)).get("@type") == "FAQPage":
-            obj = {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
-                {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in data["faqs"]]}
             page = page[:m.start(2)] + dump(obj) + page[m.end(2):]
             break
+    else:
+        page = page.replace("</head>", '    <script type="application/ld+json">' + dump(obj) + "</script>\n</head>", 1)
 
     assert page.rstrip().endswith("</html>"), slug
     open(path, "w", encoding="utf-8").write(page)
