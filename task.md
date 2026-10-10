@@ -582,6 +582,16 @@ Content in `tools/item-extras.json` → `python3 tools/build-item-extras.py` —
 - [x] New site-wide hero: champagne glasses on a white table (owner photo). Year-end page keeps the Christmas table (`FESTIVE_IMG` in `tools/build-pages.py`)
 - [ ] Owner sending more photos — cutlery photo (gold cutlery on white plates) is a good fit for `hire/items/cutlery-set.html`
 
+## Contact Page + Homepage Services Redesign — 2026-10-11
+
+- [x] Contact: compact hero (WhatsApp first), 3 quick-contact buttons, one phone format (064 931 8467), Google Business link under the map, map loads only near the viewport. On phones the form now starts in the first screen (was ~2½ screens down)
+- [x] Homepage "Everything for Your Celebration": real photos, titles + starting prices (packages from R3,500, gifting from R700, hire per item/day), 3 points per card, level buttons, cutlery photo for hire
+- [x] WhatsApp icons/buttons green everywhere; footer shows just the number
+- [ ] Owner: Google Maps embed code for the business pin (Google Maps → Share → Embed a map) to replace the Midrand area map
+- [ ] Option: same compact contact block for the homepage "Let's Plan Your Perfect Event" section
+- [ ] Option: inner-page heroes are full screen height on phones (`.hero-options` 100dvh) — make them shorter site-wide
+- Note: contact page Lighthouse ~79 is a scoring artefact (gtag finishing just before first paint); observed first paint is 2.3 s, same as other pages
+
 ## Future Category Pages — From Competitor Research (2026-06-20)
 
 Ideas sourced from Backdrop & Decor Hub and Cherri Hire. Not yet built — log here for future sprints.
