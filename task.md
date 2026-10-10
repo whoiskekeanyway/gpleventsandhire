@@ -122,7 +122,7 @@ Items marked **Owner input** need a business decision before changing.
   `crockery.html:160` (shot glasses has no card). Reword or un-hide.
 - [x] **Orphan item pages** *(Resolved 2026-10-09 — both hidden/noindexed.)* — `shot-glasses.html`, `white-champagne-board.html` have no category card linking
   to them (latter says "for Hire" but "yours to keep"). Add a card or remove from sitemap.
-- [ ] **WhatsApp pre-fill greeting** — standardise to one format ("Hi GPL Events, I'm interested in…").
+- [x] **WhatsApp pre-fill greeting** *(Done 2026-10-10 — all 760 pre-filled links open with "Hi GPL Events,"; 241 blank links now carry a default message; option-button messages in scripts.js updated.)* — standardise to one format ("Hi GPL Events, I'm interested in…").
 - [ ] **Testimonials** — all dated Jan–Apr 2025 (18+ months old) and out of order. **Owner input:**
   add newer Google reviews, or drop month labels.
 
@@ -157,7 +157,7 @@ Items marked **Owner input** need a business decision before changing.
   - Testimonial marquee should respect `prefers-reduced-motion`
 - [x] **Tiny tap targets / text** *(Done 2026-10-09 — option buttons 36px, delivery link 0.82rem, service tags 0.68rem, testimonial dots 24px tap area.)* — `.option-btn` ~18px tall @0.65rem, `.delivery-info-trigger` 0.72rem,
   `.service-tag` 0.52rem (~8px), testimonial dots 8px. Aim for ≥44px tap height, ≥12px text.
-- [ ] **CSS tidy-up (low)**
+- [x] **CSS tidy-up (low)** *(Done 2026-10-10 — 23 unused rules removed (old buttons, nav phone, old package/footer classes); `.ti-widget` kept for Trustindex.)*
   - Load `base.css` before `style.css`
   - `contact.html` is missing `testimonial.css`
   - Replace the hardcoded #1a237e (11×) / WhatsApp greens with vars
@@ -534,7 +534,7 @@ welcome board flower box, step arch backdrop (+ the retro audio guestbook, done 
 Content in `tools/item-extras.json` → `python3 tools/build-item-extras.py` — add more items by adding entries.
 
 - [ ] Owner: review the drafted "Perfect for" / "Pair it with" lists and new FAQs
-- [ ] Next candidates: kids sets, crockery items, plinths/stands, carpets & stanchions
+- [x] Next candidates: kids sets, crockery items, plinths/stands, carpets & stanchions *(Done 2026-10-10 — 24 more pages; 34 item pages upgraded in total.)*
 
 ---
 

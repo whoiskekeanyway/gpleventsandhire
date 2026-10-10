@@ -5,7 +5,6 @@
     box-sizing: border-box;
 }
 
-
 :root {
     /* Primary Brand Colors */
     --clr-primary-navy: #1a237e;
@@ -25,7 +24,6 @@
     /* Soft pink for romantic events */
     --clr-secondary-cream: #fff8e1;
     /* Warm cream for elegance */
-
 
     /* Aliases for legacy usage */
     --clr-primary: var(--clr-primary-navy);
@@ -62,7 +60,6 @@
     --ff-secondary: "Faustina",
         serif;
 
-
 }
 
 html {
@@ -92,8 +89,6 @@ figure,
 picture {
     margin: 0;
 }
-
-
 
 /* Set up the body */
 body {
@@ -166,9 +161,6 @@ select {
 
 /* Typography */
 
-
-
-
 h1,
 h2,
 h3,
@@ -192,13 +184,10 @@ figcaption {
 
 /* Section Headers */
 
-
 .section-header {
     text-align: center;
     margin: 2.5rem 0 2rem;
 }
-
-
 
 .section-header p {
     font-family: var(--ff-primary);
@@ -207,7 +196,6 @@ figcaption {
     position: relative;
     line-height: 1.5;
 }
-
 
 /* Responsive Design */
 /* Breakpoints */
@@ -284,9 +272,6 @@ body {
     }
 }
 
-
-
-
 /* Accessibility Enhancements */
 
 :focus {
@@ -302,7 +287,6 @@ a:focus-visible {
     outline: 2px dashed var(--clr-accent);
     outline-offset: 4px;
 }
-
 
 .title {
     color: var(--clr-primary-navy);

@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 var nameEl = container.querySelector('.hire-item-name') || container.querySelector('h2');
                 if (!nameEl) return;
                 var name = nameEl.textContent.trim();
-                var msg = "Hi, I'm interested in the " + name + " (" + this.dataset.size + "). Please confirm availability and pricing.";
+                var msg = "Hi GPL Events, I'm interested in the " + name + " (" + this.dataset.size + "). Please confirm availability and pricing.";
                 waLink.href = 'https://wa.me/27649318467?text=' + encodeURIComponent(msg);
             }
         });
