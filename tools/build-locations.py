@@ -77,6 +77,8 @@ def region(area):
     ]
     facts_html = "".join(f'\n                    <li><i class="fas {i}" aria-hidden="true"></i><span>{esc(t)}</span></li>' for i, t in facts)
     cards = "".join(package_card(area, cid) for cid in area["focus"])
+    ye = (' &nbsp;·&nbsp; <a href="../year-end-functions.html">Year-end functions →</a>'
+          if "corporate" in area["focus"] else "")
     hire = "".join(f'\n                    <li><a href="../{esc(u)}">{esc(label)}</a></li>' for label, u in area["hire"])
     faqs = "".join(f'''
                 <details class="faq-item">
@@ -120,7 +122,7 @@ def region(area):
                 <p class="subtitle">Three tiers for every occasion — pick a starting point and we'll tailor it to your theme.</p>
                 <div class="loc-cards">{cards}
                 </div>
-                <p class="loc-more"><a href="../event-packages.html">See all event packages →</a></p>
+                <p class="loc-more"><a href="../event-packages.html">See all event packages →</a>{ye}</p>
             </section>
 
             <section class="loc-hire" aria-labelledby="loc-hire-title">

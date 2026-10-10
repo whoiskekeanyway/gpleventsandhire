@@ -725,3 +725,12 @@
         padding: 1.25rem;
     }
 }
+
+.pkg-cat-link {
+    margin-top: 0.5rem !important;
+}
+
+.pkg-cat-link a {
+    color: var(--clr-primary-navy);
+    font-weight: 700;
+}

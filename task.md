@@ -540,6 +540,20 @@ Content in `tools/item-extras.json` → `python3 tools/build-item-extras.py` —
 
 ---
 
+## Year-End Functions + Our Work pages — 2026-10-10
+
+- `year-end-functions.html` — corporate packages (live prices), Equinix gallery, year-end add-ons, staff/client gifting,
+  booking timeline, 7 FAQs, Service + FAQ schema. Linked from footer, corporate packages, corporate gifts, and the
+  Sandton / Johannesburg / Centurion / Waterfall location pages.
+- `our-work.html` — Equinix JNO case study (what we styled, items used, 7-photo masonry gallery + lightbox) and
+  "More recent setups". Linked from the footer and the homepage portfolio.
+- Both built by `python3 tools/build-pages.py`. **To add a new case study:** add an entry to `WORK` in that file
+  (client, title, place, summary, what we styled, items, Cloudinary photo ids) and re-run.
+- [ ] After the festive season (January): swap the year-end page's urgency line or point it at next year
+- [ ] Owner: send photos from each new event → new case study on Our Work
+
+---
+
 ## Future Category Pages — From Competitor Research (2026-06-20)
 
 Ideas sourced from Backdrop & Decor Hub and Cherri Hire. Not yet built — log here for future sprints.

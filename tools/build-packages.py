@@ -85,11 +85,13 @@ def categories(cats, kind, note):
     out = ""
     for c in cats:
         cards = "".join(card(c, t, kind) for t in c["tiers"])
+        link = (f'\n                    <p class="pkg-cat-link"><a href="{esc(c["link"][1])}">{esc(c["link"][0])}</a></p>'
+                if c.get("link") else "")
         out += f'''
             <section class="pkg-category" id="{c['id']}" aria-labelledby="{c['id']}-title">
                 <div class="pkg-cat-head">
                     <h3 id="{c['id']}-title">{esc(c['title'])}</h3>
-                    <p>{esc(c['intro'])}</p>
+                    <p>{esc(c['intro'])}</p>{link}
                 </div>
                 <div class="pkg-cards">{cards}
                 </div>
