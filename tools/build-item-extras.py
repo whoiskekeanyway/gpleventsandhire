@@ -49,6 +49,15 @@ def included(data):
 
 def extra(slug, data, product):
     out = '\n    <section class="item-extra" aria-label="More about this item">\n        <div class="item-extra-inner">'
+    if data.get("event"):
+        e = data["event"]
+        out += f'''
+            <h2 class="title">Seen at a real event</h2>
+            <figure class="item-event">
+                <img src="{esc(e['src'])}" width="1200" height="800" loading="lazy" alt="{esc(e['alt'])}">
+                <figcaption>{esc(e['caption'])}</figcaption>
+            </figure>
+'''
     if data.get("steps"):
         steps = "".join(
             f'\n                <li><span class="item-step-num">{i}</span><strong>{esc(a)}</strong><span>{esc(b)}</span></li>'

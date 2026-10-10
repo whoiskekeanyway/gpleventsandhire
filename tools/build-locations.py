@@ -90,6 +90,21 @@ def region(area):
     else:
         gift_line = (f"Gift hampers and fresh bouquets are delivered to {name} for a <strong>R150 flat rate</strong> "
                      f"(free in {FREE_GIFT_AREAS}).")
+    work = ""
+    if area.get("work"):
+        w = area["work"]
+        figs = "".join(
+            f'\n                    <figure><img src="{esc(src)}" width="900" height="675" loading="lazy" alt="{esc(alt)}"></figure>'
+            for src, alt in w["photos"])
+        work = f'''
+
+            <section class="loc-work" aria-labelledby="loc-work-title">
+                <h2 class="title" id="loc-work-title">{esc(w['title'])}</h2>
+                <p class="subtitle">{esc(w['text'])}</p>
+                <div class="loc-work-grid">{figs}
+                </div>
+                <p class="loc-more"><a href="../event-packages.html#corporate">See our corporate packages →</a></p>
+            </section>'''
     return f'''<div class="loc-page">
 
             <section class="loc-intro" aria-labelledby="loc-intro-title">
@@ -97,6 +112,8 @@ def region(area):
                 <ul class="loc-facts">{facts_html}
                 </ul>
             </section>
+
+{work}
 
             <section class="loc-packages" aria-labelledby="loc-pkg-title">
                 <h2 class="title" id="loc-pkg-title">Popular packages in {name}</h2>

@@ -380,3 +380,32 @@
         grid-template-columns: 1fr;
     }
 }
+
+/* ===== RECENT WORK GALLERY (location pages with a "work" entry) ===== */
+
+.loc-work-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.75rem;
+}
+
+.loc-work-grid figure {
+    margin: 0;
+    border-radius: 16px;
+    overflow: hidden;
+    aspect-ratio: 4 / 3;
+    background: var(--clr-secondary-blush);
+}
+
+.loc-work-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+@media (max-width: 960px) {
+    .loc-work-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}

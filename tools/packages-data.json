@@ -212,7 +212,8 @@
               "Panel photo backdrop",
               "Setup before your guests arrive"
             ],
-            "photo": ""
+            "photo": "https://res.cloudinary.com/dp24kap9x/image/upload/f_auto,q_auto,c_fill,g_auto,w_1200,h_900/v1791606060/JNO7_wldcfj.jpg",
+            "photoAlt": "Welcome to JNO branded welcome board with florals at the Equinix office opening in Johannesburg"
           },
           {
             "tier": "Signature",
@@ -227,7 +228,8 @@
               "Balloon arch in your brand colours",
               "Table décor for up to 12 tables"
             ],
-            "photo": ""
+            "photo": "https://res.cloudinary.com/dp24kap9x/image/upload/f_auto,q_auto,c_fill,g_auto,w_1200,h_900/v1791606018/JNO1_fwougk.jpg",
+            "photoAlt": "Equinix JNO grand opening ribbon between gold stanchions — VIP entrance styling"
           },
           {
             "tier": "Luxe",
@@ -244,7 +246,8 @@
               "Crockery & glassware hire",
               "Styling consultation"
             ],
-            "photo": ""
+            "photo": "https://res.cloudinary.com/dp24kap9x/image/upload/f_auto,q_auto,c_fill,g_auto,w_1200,h_900/v1791606018/JNO5_ppe7f3.jpg",
+            "photoAlt": "Light-up JNO marquee letters with a green, gold and yellow balloon garland at the Equinix office opening"
           }
         ]
       }

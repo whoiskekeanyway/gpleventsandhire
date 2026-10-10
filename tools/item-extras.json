@@ -75,7 +75,12 @@
           "Is delivery included?",
           "Delivery and collection are quoted separately. Free warehouse collection is available by appointment."
         ]
-      ]
+      ],
+      "event": {
+        "src": "https://res.cloudinary.com/dp24kap9x/image/upload/f_auto,q_auto,c_fill,g_auto,w_1200,h_800/v1791606018/JNO5_ppe7f3.jpg",
+        "alt": "Light-up JNO marquee letters with a green, gold and yellow balloon garland at the Equinix office opening",
+        "caption": "JNO in light-up marquee letters with a balloon garland in the brand colours — Equinix office opening, Johannesburg."
+      }
     },
     "marquee-numbers": {
       "title": "Marquee Number Hire (0–9) in Midrand | GPL Events & Hire",
@@ -272,7 +277,12 @@
           "Is delivery and collection included in the price?",
           "Delivery and collection are quoted separately based on your location. You're also welcome to collect from our warehouse free of charge — by appointment only."
         ]
-      ]
+      ],
+      "event": {
+        "src": "https://res.cloudinary.com/dp24kap9x/image/upload/f_auto,q_auto,c_fill,g_auto,w_1200,h_800/v1791606019/JNO6_zeqpbi.jpg",
+        "alt": "Branded champagne wall styled beside the badge drop at the Equinix JNO office opening",
+        "caption": "Our champagne wall, branded for the Equinix office opening in Johannesburg."
+      }
     },
     "round-circle-arch": {
       "included": [
@@ -1792,7 +1802,12 @@
           "Is delivery included?",
           "Delivery and collection are quoted separately based on your location. Free warehouse collection is available by appointment."
         ]
-      ]
+      ],
+      "event": {
+        "src": "https://res.cloudinary.com/dp24kap9x/image/upload/f_auto,q_auto,c_fill,g_auto,w_1200,h_800/v1791606018/JNO1_fwougk.jpg",
+        "alt": "Equinix JNO grand opening ribbon between gold stanchions",
+        "caption": "Gold stanchions framing the ribbon cutting at the Equinix office opening in Johannesburg."
+      }
     }
   }
 }

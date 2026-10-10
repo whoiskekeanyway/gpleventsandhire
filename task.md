@@ -467,6 +467,8 @@ Client-side JSON search on `hire.html` (the hire hub) — no backend, no depende
 
 ## Event Packages + Bespoke Gifting Rebuild — 2026-10-09
 
+> **Real event photos added 2026-10-10 (Equinix JNO office opening, Johannesburg):** corporate package cards, homepage portfolio (3 new tiles, JNO marquee featured), Johannesburg location page "Recent work" gallery, and "Seen at a real event" photos on the champagne wall, marquee letters and stanchion pages. Photos JNO2, JNO3 and JNO4 are unused — keep for later.
+
 Both pages rebuilt with **Essential · Signature · Luxe** tiers (Signature = "Most popular"), category tabs,
 mobile swipe-to-compare cards, "From R…" pricing, booking/ordering steps, enquiry-list buttons and updated FAQs.
 **All package content lives in `tools/packages-data.json`** — edit it, then run `python3 tools/build-packages.py`.
@@ -486,7 +488,7 @@ corporate: no minimum, branding available, bulk discounts.
 - [x] **Guest guides** — owner set 2026-10-09: Essential up to 20, Signature 20–50, Luxe 50–80 (birthday, baby shower); wedding + corporate up to 50 / 50–100 / 100–150; table counts in inclusions scaled to match
 - [x] Homepage FAQs, contact FAQ and the 7 location pages updated to the new prices/terms
 
-### Photos needed (30) — placeholders show "Photo coming soon" until added
+### Photos needed (30 — 3 done: corporate tiers use the Equinix JNO opening photos, 2026-10-10) — placeholders show "Photo coming soon" until added
 Size: **1200 × 900 px (4:3)**, WebP or JPG, real setups/gifts. To add one: save it at the path below, set
 `"photo": "assets/packages/<file>"` on that tier in `tools/packages-data.json`, run `python3 tools/build-packages.py`.
 
@@ -501,9 +503,9 @@ Size: **1200 × 900 px (4:3)**, WebP or JPG, real setups/gifts. To add one: save
 | Wedding | Essential | Essential Wedding | `assets/packages/wedding-essential.webp` |
 | Wedding | Signature | Signature Wedding | `assets/packages/wedding-signature.webp` |
 | Wedding | Luxe | Luxe Wedding | `assets/packages/wedding-luxe.webp` |
-| Corporate | Essential | Essential Corporate | `assets/packages/corporate-essential.webp` |
-| Corporate | Signature | Signature Corporate | `assets/packages/corporate-signature.webp` |
-| Corporate | Luxe | Luxe Corporate | `assets/packages/corporate-luxe.webp` |
+| Corporate | Essential | Essential Corporate | ✅ done — Equinix JNO photo (Cloudinary) |
+| Corporate | Signature | Signature Corporate | ✅ done — Equinix JNO photo (Cloudinary) |
+| Corporate | Luxe | Luxe Corporate | ✅ done — Equinix JNO photo (Cloudinary) |
 | For Him | Essential | Classic Gentleman's Hamper | `assets/packages/him-essential.webp` |
 | For Him | Signature | Executive Gift Set | `assets/packages/him-signature.webp` |
 | For Him | Luxe | Sports & Wellness Hamper | `assets/packages/him-luxe.webp` |

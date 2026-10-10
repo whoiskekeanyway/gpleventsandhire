@@ -35,7 +35,7 @@ def price_label(price):
 def card(cat, t, kind):
     popular = t["tier"] == "Signature"
     if t.get("photo"):
-        media = f'<img src="{esc(t["photo"])}" width="1200" height="900" loading="lazy" alt="{esc(t["name"])} by GPL Events &amp; Hire">'
+        media = f'<img src="{esc(t["photo"])}" width="1200" height="900" loading="lazy" alt="{esc(t.get("photoAlt") or t["name"] + " by GPL Events & Hire")}">'
     else:
         media = ('<div class="pkg-placeholder" aria-hidden="true">'
                  '<i class="fas fa-camera"></i><span>Photo coming soon</span></div>')

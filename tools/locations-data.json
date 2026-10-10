@@ -519,7 +519,29 @@
           "How far in advance should I book?",
           "As early as possible — weekends and the festive season book up quickly. WhatsApp us your date to check availability."
         ]
-      ]
+      ],
+      "work": {
+        "title": "Recent work in Johannesburg: Equinix office opening",
+        "text": "For the grand opening of Equinix's JNO office in Johannesburg we styled a branded welcome board, a VIP ribbon-cutting entrance with gold stanchions, light-up JNO marquee letters with a balloon garland in the brand's colours, and a branded champagne wall beside the badge drop.",
+        "photos": [
+          [
+            "https://res.cloudinary.com/dp24kap9x/image/upload/f_auto,q_auto,c_fill,g_auto,w_900,h_675/v1791606018/JNO5_ppe7f3.jpg",
+            "Light-up JNO marquee letters with green, gold and yellow balloon garland at the Equinix office opening"
+          ],
+          [
+            "https://res.cloudinary.com/dp24kap9x/image/upload/f_auto,q_auto,c_fill,g_auto,w_900,h_675/v1791606019/JNO6_zeqpbi.jpg",
+            "Branded champagne wall beside the badge drop station at the Equinix JNO opening"
+          ],
+          [
+            "https://res.cloudinary.com/dp24kap9x/image/upload/f_auto,q_auto,c_fill,g_auto,w_900,h_675/v1791606060/JNO7_wldcfj.jpg",
+            "Welcome to JNO arch-top welcome board with florals at the Equinix office opening"
+          ],
+          [
+            "https://res.cloudinary.com/dp24kap9x/image/upload/f_auto,q_auto,c_fill,g_auto,w_900,h_675/v1791606018/JNO1_fwougk.jpg",
+            "Equinix JNO 2026 grand opening ribbon between gold stanchions"
+          ]
+        ]
+      }
     }
   ]
 }
