@@ -16,7 +16,7 @@ import urllib.parse
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 AREAS = json.load(open(os.path.join(ROOT, "tools", "locations-data.json"), encoding="utf-8"))["areas"]
 PACKAGES = {c["id"]: c for c in json.load(open(os.path.join(ROOT, "tools", "packages-data.json"), encoding="utf-8"))["events"]["categories"]}
-SITE = "https://www.gpleventsandhire.co.za/"
+SITE = "https://gpleventsandhire.co.za/"
 WA = "https://wa.me/27649318467?text="
 FREE_GIFT_AREAS = "Midrand, Waterfall, Carlswald, Kyalami and Fourways"
 

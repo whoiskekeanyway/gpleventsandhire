@@ -3,4 +3,4 @@ Allow: /
 Disallow: /old.html
 Disallow: /d.html
 
-Sitemap: https://www.gpleventsandhire.co.za/sitemap.xml
+Sitemap: https://gpleventsandhire.co.za/sitemap.xml

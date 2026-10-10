@@ -571,7 +571,7 @@ Content in `tools/item-extras.json` → `python3 tools/build-item-extras.py` —
 | Champagne wall | ~75 | 88 |
 | Year-end functions | 72 | 90 |
 
-- [ ] Canonicals/sitemap/schema use `www.` but the live site serves the bare domain (`www` redirects) — pick one and make them match
+- [x] Canonicals, sitemap, robots.txt, social tags and schema now all use `https://gpleventsandhire.co.za` (no www), matching the live domain *(2026-10-10)*
 
 ## Future Category Pages — From Competitor Research (2026-06-20)
 

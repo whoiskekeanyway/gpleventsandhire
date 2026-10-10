@@ -14,7 +14,7 @@ import re
 import urllib.parse
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-SITE = "https://www.gpleventsandhire.co.za/"
+SITE = "https://gpleventsandhire.co.za/"
 WA = "https://wa.me/27649318467?text="
 CL = "https://res.cloudinary.com/dp24kap9x/image/upload/"
 PACKAGES = {c["id"]: c for c in json.load(open(os.path.join(ROOT, "tools", "packages-data.json"), encoding="utf-8"))["events"]["categories"]}

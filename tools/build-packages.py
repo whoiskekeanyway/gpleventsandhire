@@ -16,7 +16,7 @@ import urllib.parse
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = json.load(open(os.path.join(ROOT, "tools", "packages-data.json"), encoding="utf-8"))
-SITE = "https://www.gpleventsandhire.co.za/"
+SITE = "https://gpleventsandhire.co.za/"
 WA = "https://wa.me/27649318467?text="
 
 
