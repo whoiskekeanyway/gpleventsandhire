@@ -486,85 +486,6 @@
     margin-bottom: 2.5rem;
     opacity: 0.9;
 }
-.contact-methods {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    margin-bottom: 2.5rem;
-}
-.contact-method {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-.contact-method i {
-    width: 50px;
-    height: 50px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.2rem;
-    color: var(--clr-accent-red);
-}
-.contact-method h3 {
-    color: white;
-    margin-bottom: 0.25rem;
-}
-.contact-method a {
-    color: #ffcdd2;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: clamp(20px, 3vw, 20px) !important;
-}
-.contact-method a:hover {
-    color: var(--clr-secondary-cream);
-}
-.contact-method p {
-    color: rgba(255, 255, 255, 0.9);
-    margin: 0;
-}
-.cta-buttons {
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-}
-.cta-call,
-.cta-quote {
-    padding: 1rem 2rem;
-    border-radius: 50px;
-    font-weight: 600;
-    text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    transition: all 0.3s ease;
-    border: none;
-    cursor: pointer;
-    font-size: 1rem;
-}
-.cta-call {
-    background: transparent;
-    color: white;
-    border: 2px solid white;
-}
-.cta-call:hover {
-    box-shadow: 0 5px 15px rgba(198, 40, 40, 0.28);
-    transform: translateY(-2px);
-    background: var(--clr-primary-red-dark);
-    color: var(--clr-secondary-cream);
-}
-.cta-quote {
-    background: var(--clr-primary-red);
-    color: white;
-}
-.cta-quote:hover {
-    background: var(--clr-primary-red-dark);
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(198, 40, 40, 0.28);
-    border: 2px solid var(--clr-secondary-cream);
-}
 .contact-form-container {
     background: white;
     border-radius: 20px;
@@ -759,19 +680,8 @@
     font-weight: 500;
 }
 .hero-content .fas,
-.contact .fas,
-.contact-method .fas {
+.contact .fas {
     color: var(--clr-secondary-cream);
-}
-.contact-method .fa-whatsapp {
-    color: #25d366;
-}
-.cta-quote.cta-wa {
-    background: var(--clr-whatsapp);
-}
-.cta-quote.cta-wa:hover {
-    background: var(--clr-whatsapp-dark);
-    box-shadow: 0 5px 15px rgba(7, 94, 84, 0.3);
 }
 .fa-star {
     color: var(--clr-gold) !important;
@@ -905,9 +815,13 @@ details.faq-item[open] summary.faq-question::after {
     min-height: 340px;
     padding-block: 4rem 3.5rem;
 }
-.cta-primary.cta-whatsapp {
+.cta-primary.cta-whatsapp,
+a.cta-primary[href*="wa.me"],
+a.cta-primary-btn[href*="wa.me"] {
     background: var(--clr-whatsapp);
 }
+a.cta-primary[href*="wa.me"]:hover,
+a.cta-primary-btn[href*="wa.me"]:hover,
 .cta-primary.cta-whatsapp:hover {
     background: var(--clr-whatsapp-dark);
     box-shadow: 0 10px 25px rgba(7, 94, 84, 0.3);
@@ -915,14 +829,14 @@ details.faq-item[open] summary.faq-question::after {
 .hero-content .cta-whatsapp .fab {
     color: #fff;
 }
-.contact-page {
+.contact-compact {
     padding: 4.5rem 0;
 }
-.contact-page .contact-info h2 {
+.contact-compact .contact-info h2 {
     margin-bottom: 0.75rem;
     line-height: 1.2;
 }
-.contact-page .contact-info > p {
+.contact-compact .contact-info > p {
     margin-bottom: 1.75rem;
 }
 .quick-contact {
@@ -1007,13 +921,13 @@ details.faq-item[open] summary.faq-question::after {
         min-height: 0;
         padding-block: 3rem 2.5rem;
     }
-    .contact-page {
+    .contact-compact {
         padding: 2.5rem 0 3rem;
     }
-    .contact-page .contact-info h2 {
+    .contact-compact .contact-info h2 {
         font-size: 2rem;
     }
-    .contact-page .contact-form-container h3 {
+    .contact-compact .contact-form-container h3 {
         font-size: 1.8rem;
         line-height: 1.2;
     }
@@ -2340,7 +2254,9 @@ header {
 }
 @media (max-width: 768px) {
     .hero-options {
-        height: 100dvh;
+        height: auto;
+        min-height: 0;
+        padding-block: 3.5rem 3rem;
     }
     .packages-container {
         padding: 1rem;

@@ -588,8 +588,10 @@ Content in `tools/item-extras.json` → `python3 tools/build-item-extras.py` —
 - [x] Homepage "Everything for Your Celebration": real photos, titles + starting prices (packages from R3,500, gifting from R700, hire per item/day), 3 points per card, level buttons, cutlery photo for hire
 - [x] WhatsApp icons/buttons green everywhere; footer shows just the number
 - [ ] Owner: Google Maps embed code for the business pin (Google Maps → Share → Embed a map) to replace the Midrand area map
-- [ ] Option: same compact contact block for the homepage "Let's Plan Your Perfect Event" section
-- [ ] Option: inner-page heroes are full screen height on phones (`.hero-options` 100dvh) — make them shorter site-wide
+- [x] Homepage "Let's Plan Your Perfect Event" uses the same compact contact block (`.contact-compact`) *(2026-10-11)*
+- [x] Inner-page heroes are content-height on phones (was full screen) *(2026-10-11)*
+- [x] Every WhatsApp button is green (CSS matches `a[href*="wa.me"]` on `.cta-primary`/`.cta-primary-btn`)
+- Forms: submissions go to Netlify → Forms (`contact`, `corporate-gifting`); email notification for all forms goes to the GPL Gmail. `handleFormSubmit` in `scripts/script.js` is unused leftover code (not attached)
 - Note: contact page Lighthouse ~79 is a scoring artefact (gtag finishing just before first paint); observed first paint is 2.3 s, same as other pages
 
 ## Future Category Pages — From Competitor Research (2026-06-20)

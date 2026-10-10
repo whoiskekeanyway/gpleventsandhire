@@ -55,8 +55,11 @@
 
 @media (max-width: 768px) {
 
+    /* Content-height hero on phones so the page starts within the first screen */
     .hero-options {
-        height: 100dvh;
+        height: auto;
+        min-height: 0;
+        padding-block: 3.5rem 3rem;
     }
 
     .packages-container {
