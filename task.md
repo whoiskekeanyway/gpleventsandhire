@@ -71,7 +71,7 @@ Items marked **Owner input** need a business decision before changing.
   Item pages should use their own product photo.
 - [x] **Align FAQ schema with visible FAQ text** *(Done 2026-10-09 — FAQPage schema rebuilt from the visible FAQs on 17 pages (41 differences); visible FAQ sections added to gold-balloon-flower-arch + white-carpet, which had schema only.)* (31 mismatched questions; some schema-only questions on
   bespoke-gifting, contact, event-packages, hire-full, and 4 item pages).
-- [ ] **LocalBusiness schema on location pages** — each claims its suburb as `addressLocality`, implying
+- [x] **LocalBusiness schema on location pages** *(Done 2026-10-10 — Midrand address + areaServed.)* — each claims its suburb as `addressLocality`, implying
   branches. Use the real Midrand address + `areaServed` for the suburb. (Links to locationpagestask.md Phase 2.)
 - [x] **Render-blocking resources** *(Done 2026-10-09 — Google Fonts already moved to `<link>` + preconnect; Font Awesome now loads non-blocking (`media="print"` swap + `<noscript>` fallback); `defer` on all 393 local script tags.)*
   - Move Google Fonts from `@import` in `base.css:1` to `<link>` + preconnect in each page `<head>` (preconnect is only on index today)
@@ -100,7 +100,7 @@ Items marked **Owner input** need a business decision before changing.
   contradict on the same page. Confirm the real policy, then make it one sentence everywhere.
 - [x] **Package price contradiction** *(Done 2026-10-09 — owner confirmed birthday packages start from R2,500; all 7 location pages updated.)* — **Owner input.** Location pages say birthday packages "From R1,200–R1,300"
   (e.g. `sandton.html:199`); `event-packages.html:229` and `index.html:829` say packages start at R2,500.
-- [ ] **Card vs item page price mismatches** (mostly on the to-be-redirected hubs)
+- [x] **Card vs item page price mismatches** *(Resolved — the mismatched hub pages were redirected; remaining cards match.)* (mostly on the to-be-redirected hubs)
   - Candle Holders: `accessories.html:201` says R200–R350, the item page says R100
   - Wooden A-Frame Easel: `easels.html:175` vs its item page
   - Gold Metal Easel: `easels.html:190` vs its item page
@@ -120,7 +120,7 @@ Items marked **Owner input** need a business decision before changing.
   - `index.html:565` caption "Table Decor" on a ceremony photo
 - [x] **Hero copy names hidden items** *(Done 2026-10-09 — drinks-boards now describes the champagne wall; crockery lists visible items.)* — `drinks-boards.html:151`, `welcome-board-stands.html:319`,
   `crockery.html:160` (shot glasses has no card). Reword or un-hide.
-- [ ] **Orphan item pages** — `shot-glasses.html`, `white-champagne-board.html` have no category card linking
+- [x] **Orphan item pages** *(Resolved 2026-10-09 — both hidden/noindexed.)* — `shot-glasses.html`, `white-champagne-board.html` have no category card linking
   to them (latter says "for Hire" but "yours to keep"). Add a card or remove from sitemap.
 - [ ] **WhatsApp pre-fill greeting** — standardise to one format ("Hi GPL Events, I'm interested in…").
 - [ ] **Testimonials** — all dated Jan–Apr 2025 (18+ months old) and out of order. **Owner input:**
@@ -233,7 +233,7 @@ Items marked **Owner input** need a business decision before changing.
 - [ ] **Add `hreflang` if you ever add other language versions**
   Not urgent now, but keep in mind for future growth. *(No action needed until other languages are added.)*
 
-- [ ] **Thicken location pages**
+- [x] **Thicken location pages** *(Done 2026-10-10 — see locationpagestask.md.)*
   Each location page currently has only 3 cards + a bullet list. Google ranks thin pages poorly.
   Suggested additions per location page:
   - 1–2 local testimonials (client from that area)

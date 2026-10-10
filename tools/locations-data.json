@@ -1,0 +1,223 @@
+{
+  "_readme": "Unique content for each location page. Edit here, then run: python3 tools/build-locations.py. Package prices come from tools/packages-data.json automatically. 'giftDelivery' is 'free' or 'flat'. When you have local venues or reviews, add them to 'intro' or 'faqs'.",
+
+  "areas": [
+    {
+      "slug": "midrand",
+      "name": "Midrand",
+      "title": "Event Planner & Décor Hire in Midrand | GPL Events & Hire",
+      "description": "Midrand event styling, packages and décor hire from our local team — weddings, birthdays, baby showers and corporate events. Setup included in packages.",
+      "keywords": "event planner Midrand, décor hire Midrand, party hire Midrand, event packages Midrand, wedding décor Midrand, balloon décor Midrand",
+      "h1": "Event Planning & Décor Hire in Midrand",
+      "heroSub": "We're based right here in Midrand — styled event packages, décor hire and bespoke gifts for homes, gardens, office parks and function venues across the area.",
+      "usp": "Local Midrand team • Setup included in packages • Collection by appointment",
+      "baseFact": "Based in Midrand — your local event team",
+      "giftDelivery": "free",
+      "intro": [
+        "Midrand is home for GPL Events & Hire, so local events are where planning is easiest. Being close by means quick answers on WhatsApp while you plan, delivery that doesn't travel far, and the option to collect hire items from us by appointment.",
+        "From backyard birthdays and baby showers to weddings and year-end functions in Midrand's office parks, we style everything from a single welcome board to a full venue transformation — with setup included in every event package."
+      ],
+      "focus": ["birthday", "baby-shower", "wedding"],
+      "hire": [
+        ["Marquee letters & numbers", "hire/marquee-letters.html"],
+        ["Arches", "hire/arches.html"],
+        ["Welcome boards & easels", "hire/welcome-board-stands.html"],
+        ["Kids party hire", "hire/kids.html"],
+        ["Crockery & glassware", "hire/crockery.html"]
+      ],
+      "faqs": [
+        ["Are you based in Midrand?", "Yes — GPL Events & Hire is based in Midrand. Hire items can be collected from us by appointment, or we can deliver and collect for you."],
+        ["How much is event delivery and collection in Midrand?", "For event packages, delivery and collection is usually around R1,600 for most Gauteng venues. We confirm the exact amount for your Midrand venue in your quote before you book."],
+        ["Do you deliver gifts in Midrand?", "Yes — gift delivery is free in Midrand, as well as in Waterfall, Carlswald, Kyalami and Fourways."],
+        ["Can I hire décor without booking a full package?", "Yes — you can hire individual items such as marquee letters, arches or welcome boards. Setup isn't included for hire items, and delivery and collection are quoted separately."],
+        ["How far in advance should I book?", "As early as you can — weekends and the festive season book up quickly. WhatsApp us your date and we'll confirm availability straight away."]
+      ]
+    },
+    {
+      "slug": "waterfall",
+      "name": "Waterfall",
+      "title": "Event Planner & Décor Hire in Waterfall | GPL Events & Hire",
+      "description": "Event styling and décor hire in Waterfall — home celebrations, estate events and corporate functions, from our Midrand base right next door.",
+      "keywords": "event planner Waterfall, décor hire Waterfall Midrand, party décor Waterfall Estate, corporate events Waterfall City, baby shower décor Waterfall",
+      "h1": "Event Planning & Décor Hire in Waterfall",
+      "heroSub": "Styled home celebrations, estate events and corporate functions in Waterfall — from our Midrand base, right next door.",
+      "usp": "Estate & home celebrations • Corporate functions • Free gift delivery",
+      "baseFact": "Our Midrand base is right next door",
+      "giftDelivery": "free",
+      "intro": [
+        "Waterfall sits right beside Midrand, which makes it one of the easiest areas for us to serve. Whether you're hosting at home in one of Waterfall's estates or planning a function near Waterfall City, we bring the décor, style the space and take care of setup on every package booking.",
+        "Popular celebrations here include milestone birthdays at home, baby showers, intimate weddings and office functions — and gift orders are delivered free in Waterfall, so it's easy to add hampers or a fresh bouquet."
+      ],
+      "focus": ["birthday", "baby-shower", "corporate"],
+      "hire": [
+        ["Arches", "hire/arches.html"],
+        ["Marquee letters & numbers", "hire/marquee-letters.html"],
+        ["Champagne wall", "hire/items/champagne-wall.html"],
+        ["Audio guestbook", "hire/items/retro-telephone-guestbook.html"],
+        ["Table décor", "hire/table-decor.html"]
+      ],
+      "faqs": [
+        ["Do you style events in Waterfall estates?", "Yes — we style events at homes and estates across Waterfall. Let us know about any estate access or delivery rules when you book, and we'll plan our arrival around them."],
+        ["Can you style corporate events near Waterfall City?", "Yes — our corporate packages include branded welcome boards, photo backdrops, VIP red carpet entrances and table styling for launches and year-end functions."],
+        ["How much is event delivery and collection in Waterfall?", "Delivery and collection for event packages is usually around R1,600 for most Gauteng venues, and we confirm the exact amount for your Waterfall address in your quote."],
+        ["Is gift delivery free in Waterfall?", "Yes — gift delivery is free in Waterfall, Midrand, Carlswald, Kyalami and Fourways."],
+        ["How far in advance should I book?", "As early as possible — weekends book up quickly. WhatsApp us your date to check availability."]
+      ]
+    },
+    {
+      "slug": "carlswald",
+      "name": "Carlswald",
+      "title": "Event Planner & Décor Hire in Carlswald | GPL Events & Hire",
+      "description": "Garden parties, kids' birthdays and family celebrations in Carlswald — event packages and décor hire from our nearby Midrand team.",
+      "keywords": "event planner Carlswald, party décor Carlswald, kids party hire Carlswald, garden party décor Midrand, baby shower décor Carlswald",
+      "h1": "Event Planning & Décor Hire in Carlswald",
+      "heroSub": "Garden parties, kids' birthdays and family celebrations in Carlswald, styled by your Midrand neighbours.",
+      "usp": "Garden & home parties • Kids' party hire • Free gift delivery",
+      "baseFact": "Part of greater Midrand — close to our base",
+      "giftDelivery": "free",
+      "intro": [
+        "Carlswald is part of the greater Midrand area, which makes it quick and easy for us to deliver, set up and collect. Many Carlswald celebrations happen at home or in the garden — perfect for balloon arches, welcome boards, kids' party furniture and lawn games.",
+        "Whether it's a first birthday, a baby shower or an intimate garden wedding, choose a styled package with setup included, or hire individual pieces and style it yourself."
+      ],
+      "focus": ["birthday", "baby-shower", "wedding"],
+      "hire": [
+        ["Kids party hire", "hire/kids.html"],
+        ["Lawn games", "hire/lawn-games.html"],
+        ["Arches", "hire/arches.html"],
+        ["Welcome boards & easels", "hire/welcome-board-stands.html"],
+        ["Plinths & stands", "hire/flower-stands.html"]
+      ],
+      "faqs": [
+        ["Can you set up a party in my garden?", "Yes — our packages work beautifully outdoors. Tell us about your space when you book and we'll plan the layout so everything looks its best."],
+        ["Do you hire kids' party furniture in Carlswald?", "Yes — we hire Tiffany kiddies chairs and wooden kids' tables for children aged 2–12, individually or as sets for 10 or 20 kids."],
+        ["Is gift delivery free in Carlswald?", "Yes — gift delivery is free in Carlswald, Midrand, Waterfall, Kyalami and Fourways."],
+        ["How much is event delivery and collection in Carlswald?", "Delivery and collection for event packages is usually around R1,600 for most Gauteng venues, and we confirm the exact amount for your address in your quote."],
+        ["How far in advance should I book?", "As early as possible — weekends and school holidays book up quickly. WhatsApp us your date to check availability."]
+      ]
+    },
+    {
+      "slug": "fourways",
+      "name": "Fourways",
+      "title": "Event Planner & Décor Hire in Fourways | GPL Events & Hire",
+      "description": "Garden weddings, birthdays and family celebrations in Fourways — styled event packages and décor hire, with free gift delivery in Fourways.",
+      "keywords": "event planner Fourways, décor hire Fourways, garden wedding décor Fourways, party hire Fourways, birthday décor Fourways",
+      "h1": "Event Planning & Décor Hire in Fourways",
+      "heroSub": "Weddings, garden celebrations and family events in Fourways — styled packages and décor hire, with setup included on every package.",
+      "usp": "Garden weddings • Family celebrations • Free gift delivery",
+      "baseFact": "A short drive from our Midrand base",
+      "giftDelivery": "free",
+      "intro": [
+        "Fourways is known for its garden venues, estates and family homes — and it's a short drive from our Midrand base. We style everything from garden weddings to milestone birthdays and kids' parties across Fourways and the surrounding suburbs.",
+        "Gift orders are delivered free in Fourways, so it's easy to add bespoke hampers, guest favours or a fresh bouquet to your celebration."
+      ],
+      "focus": ["wedding", "birthday", "baby-shower"],
+      "hire": [
+        ["Arches", "hire/arches.html"],
+        ["Backdrops", "hire/backdrops.html"],
+        ["Champagne wall", "hire/items/champagne-wall.html"],
+        ["Marquee letters & numbers", "hire/marquee-letters.html"],
+        ["Lawn games", "hire/lawn-games.html"]
+      ],
+      "faqs": [
+        ["Do you style garden weddings in Fourways?", "Yes — our wedding packages cover ceremony arches, aisle décor, couple's table styling and centrepieces, and they work beautifully at garden venues. Tell us your venue when you enquire."],
+        ["Is gift delivery free in Fourways?", "Yes — gift delivery is free in Fourways, Midrand, Waterfall, Carlswald and Kyalami."],
+        ["How much is event delivery and collection in Fourways?", "Delivery and collection for event packages is usually around R1,600 for most Gauteng venues, and we confirm the exact amount for your Fourways venue in your quote."],
+        ["Can I hire décor without booking a full package?", "Yes — hire individual items such as arches, backdrops or marquee letters. Setup isn't included for hire items, and delivery and collection are quoted separately."],
+        ["How far in advance should I book?", "For weddings, as early as possible — peak season books up months ahead. For parties, WhatsApp us your date to check availability."]
+      ]
+    },
+    {
+      "slug": "sandton",
+      "name": "Sandton",
+      "title": "Event Planner & Décor Hire in Sandton | GPL Events & Hire",
+      "description": "Corporate launches, year-end functions, weddings and private parties in Sandton — styled event packages and décor hire from just up the N1 in Midrand.",
+      "keywords": "event planner Sandton, corporate event décor Sandton, year-end function décor Sandton, wedding décor Sandton, décor hire Sandton",
+      "h1": "Event Planning & Décor Hire in Sandton",
+      "heroSub": "Corporate launches, year-end functions, weddings and upmarket private parties — styled for Sandton's hotels, offices and homes.",
+      "usp": "Corporate functions • Weddings • VIP entrances & branded décor",
+      "baseFact": "Just up the N1 in Midrand",
+      "giftDelivery": "flat",
+      "intro": [
+        "Sandton is South Africa's business hub — the perfect fit for our corporate packages. Product launches, year-end functions and client events get polished, on-brand styling: branded welcome boards, photo backdrops, VIP red carpet entrances and table styling.",
+        "We also style weddings, milestone birthdays and private celebrations at Sandton homes and function venues. We're just up the N1 in Midrand, so getting to you is easy."
+      ],
+      "focus": ["corporate", "wedding", "birthday"],
+      "hire": [
+        ["Red carpet & stanchions", "hire/furniture.html"],
+        ["Marquee letters & numbers", "hire/marquee-letters.html"],
+        ["Backdrops", "hire/backdrops.html"],
+        ["Champagne wall", "hire/items/champagne-wall.html"],
+        ["Crockery & glassware", "hire/crockery.html"]
+      ],
+      "faqs": [
+        ["Do you style corporate events in Sandton?", "Yes — our corporate packages start from R5,000 and include branded welcome boards, styled entrances, photo backdrops and, on higher tiers, VIP red carpets and brand-themed venue styling."],
+        ["Can you work with my venue's setup times?", "Yes — tell us your venue's access and setup window when you book, and we'll schedule our team around it."],
+        ["How much is event delivery and collection in Sandton?", "Delivery and collection for event packages is usually around R1,600 for most Gauteng venues, and we confirm the exact amount for your Sandton venue in your quote."],
+        ["How much is gift delivery to Sandton?", "Gift orders are delivered to Sandton for a R150 flat rate. Corporate gift orders have no minimum and can be branded with your logo."],
+        ["How far in advance should I book?", "For year-end functions and weddings, as early as possible — November and December book up fast. WhatsApp us your date to check availability."]
+      ]
+    },
+    {
+      "slug": "centurion",
+      "name": "Centurion",
+      "title": "Event Planner & Décor Hire in Centurion | GPL Events & Hire",
+      "description": "Weddings, family celebrations and corporate events in Centurion — styled event packages and décor hire, just north of our Midrand base on the N1.",
+      "keywords": "event planner Centurion, décor hire Centurion, wedding décor Centurion, party hire Centurion, baby shower décor Centurion",
+      "h1": "Event Planning & Décor Hire in Centurion",
+      "heroSub": "Weddings, family celebrations and corporate events in Centurion — just north of our Midrand base on the N1.",
+      "usp": "Weddings • Family celebrations • Corporate functions",
+      "baseFact": "Just north of our Midrand base on the N1",
+      "giftDelivery": "flat",
+      "intro": [
+        "Centurion sits between Midrand and Pretoria, making it an easy trip for our team. We style weddings at garden and country-style venues, birthdays and baby showers at home, and corporate functions across Centurion's business parks.",
+        "Pick a styled package with setup included, or hire individual décor like arches, marquee letters and welcome boards. Gift hampers and bouquets are delivered to Centurion for a R150 flat rate."
+      ],
+      "focus": ["wedding", "birthday", "corporate"],
+      "hire": [
+        ["Arches", "hire/arches.html"],
+        ["Marquee letters & numbers", "hire/marquee-letters.html"],
+        ["Welcome boards & easels", "hire/welcome-board-stands.html"],
+        ["Backdrops", "hire/backdrops.html"],
+        ["Kids party hire", "hire/kids.html"]
+      ],
+      "faqs": [
+        ["Do you travel to Centurion?", "Yes — Centurion is one of our regular service areas, just north of our Midrand base on the N1."],
+        ["Do you go further than Centurion, into Pretoria?", "For venues beyond Centurion, send us the address and we'll confirm whether we can accommodate your location."],
+        ["How much is event delivery and collection in Centurion?", "Delivery and collection for event packages is usually around R1,600 for most Gauteng venues, and we confirm the exact amount for your Centurion venue in your quote."],
+        ["How much is gift delivery to Centurion?", "Gift orders are delivered to Centurion for a R150 flat rate."],
+        ["How far in advance should I book?", "As early as possible — weekends and wedding season book up quickly. WhatsApp us your date to check availability."]
+      ]
+    },
+    {
+      "slug": "johannesburg",
+      "name": "Johannesburg",
+      "title": "Event Décor & Hire in Johannesburg | GPL Events & Hire",
+      "description": "Styled event packages, décor hire and bespoke gifts for weddings, birthdays and corporate events across Johannesburg, from our Midrand base.",
+      "keywords": "event planner Johannesburg, décor hire Johannesburg, party hire Johannesburg, event packages Johannesburg, wedding décor Johannesburg",
+      "h1": "Event Planning & Décor Hire in Johannesburg",
+      "heroSub": "Styled event packages, décor hire and bespoke gifts for celebrations across Johannesburg — especially the northern suburbs.",
+      "usp": "Weddings • Birthdays • Corporate events • Gifting",
+      "baseFact": "Serving Johannesburg from our Midrand base",
+      "giftDelivery": "flat",
+      "intro": [
+        "From our base in Midrand we style events across Johannesburg — the northern suburbs, including Sandton and Fourways, are closest to us. Weddings, birthdays, baby showers and corporate functions all get the same attention to detail, with setup included on every event package.",
+        "Not sure if we cover your venue? Send us the address on WhatsApp and we'll confirm availability and the delivery and collection fee in your quote. Gifts are delivered across Johannesburg for a R150 flat rate (free in Midrand and Fourways)."
+      ],
+      "focus": ["birthday", "wedding", "corporate"],
+      "hire": [
+        ["Marquee letters & numbers", "hire/marquee-letters.html"],
+        ["Arches", "hire/arches.html"],
+        ["Backdrops", "hire/backdrops.html"],
+        ["Crockery & glassware", "hire/crockery.html"],
+        ["Audio guestbook", "hire/items/retro-telephone-guestbook.html"]
+      ],
+      "faqs": [
+        ["Which parts of Johannesburg do you cover?", "We're based in Midrand, so the northern suburbs — including Sandton and Fourways — are closest. For other areas, send us your venue address and we'll confirm whether we can accommodate you."],
+        ["How much is event delivery and collection in Johannesburg?", "Delivery and collection for event packages is usually around R1,600 for most Gauteng venues. The exact amount depends on your venue, and we confirm it in your quote."],
+        ["How much is gift delivery in Johannesburg?", "Gift delivery is a R150 flat rate across Johannesburg and Gauteng, and free in Midrand, Waterfall, Carlswald, Kyalami and Fourways."],
+        ["Can I hire décor without booking a full package?", "Yes — hire individual items like marquee letters, arches or crockery. Setup isn't included for hire items, and delivery and collection are quoted separately."],
+        ["How far in advance should I book?", "As early as possible — weekends and the festive season book up quickly. WhatsApp us your date to check availability."]
+      ]
+    }
+  ]
+}
