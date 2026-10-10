@@ -174,7 +174,7 @@ Items marked **Owner input** need a business decision before changing.
   (date, area, WhatsApp number) on package + location pages.
 - [ ] Trust signals near CTAs: Google rating + review count, real event photos on cards.
 - [x] "Request these items" multi-select on hire pages that builds one WhatsApp message. *(Done 2026-10-09 — `scripts/enquiry-list.js`: "Add to list" on every visible card + item page, list kept across pages (localStorage), floating bar → one WhatsApp message with items, sizes, prices + date/venue prompts; GA4 `add_to_enquiry` event.)*
-- [x] Replace the auto-scrolling testimonial marquee with static review cards. *(Done 2026-10-09 — homepage Portfolio redesigned (photo grid + lightbox, swipe carousel on mobile, real captions, CTA; broken Cloudinary photo removed) and Reviews redesigned (cards, mobile carousel, Google summary + links). **Google reviews:** `<div id="google-reviews">` in index.html is the slot for the Trustindex widget — paste its `<script>` there; fallback cards hide automatically once it renders.)*
+- [x] Replace the auto-scrolling testimonial marquee with static review cards. *(Done 2026-10-09 — homepage Portfolio redesigned (photo grid + lightbox, swipe carousel on mobile, real captions, CTA; broken Cloudinary photo removed) and Reviews redesigned (cards, mobile carousel, Google summary + links). **Google reviews:** `<div id="google-reviews">` in index.html is the slot for the Trustindex widget — paste its `<script>` there; fallback cards hide automatically once it renders.)* ✅ *Trustindex widget live 2026-10-11 (6 Google reviews). It loads on the visitor's first scroll/tap, so the fallback cards show until then.*
 
 ---
 
