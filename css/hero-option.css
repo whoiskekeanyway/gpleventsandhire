@@ -43,31 +43,6 @@
     margin-bottom: 1rem;
 }
 
-.packages-container {
-    display: block;
-    max-width: 1240px;
-    margin: 0 auto;
-    padding: 1.5rem 1rem;
-}
-
-.packages-container section {
-    background-color: transparent;
-    max-height: none;
-    margin: 0 0 0.75rem;
-    padding: 0;
-}
-
-.packages-container>section:nth-of-type(2) {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1.5rem;
-    align-items: stretch;
-}
-
-.packages-container>section:nth-of-type(2)>.service-card {
-    height: 100%;
-}
-
 @media (max-width: 1024px) {
     .packages-container {
         padding: 1.25rem 0.75rem;

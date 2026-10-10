@@ -238,10 +238,8 @@ def build(area):
     })
 
     # ----- stylesheet
-    if "css/locations.css" not in page:
-        page = page.replace('    <link rel="stylesheet" href="../css/hero-option.css">\n',
-                            '    <link rel="stylesheet" href="../css/hero-option.css">\n    <link rel="stylesheet" href="../css/locations.css">\n', 1)
-    assert "css/locations.css" in page and page.rstrip().endswith("</html>"), path
+    # All styles come from the bundle (tools/build-css.py)
+    assert "css/site.css" in page and page.rstrip().endswith("</html>"), path
     open(path, "w", encoding="utf-8").write(page)
     print("built", "locations/" + area["slug"] + ".html")
 

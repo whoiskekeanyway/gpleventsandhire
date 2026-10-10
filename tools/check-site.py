@@ -50,6 +50,13 @@ for u in re.findall(r"<loc>\s*https://www\.gpleventsandhire\.co\.za/([^<\s]*)\s*
 
 json.load(open("hire-items.json", encoding="utf-8"))
 
+# The CSS bundle must be rebuilt after any stylesheet edit (python3 tools/build-css.py)
+import glob
+bundle_time = os.path.getmtime("css/site.css")
+for css in glob.glob("css/*.css"):
+    if not css.endswith("site.css") and os.path.getmtime(css) > bundle_time + 1:
+        problems.append(("CSS BUNDLE STALE", css, "run python3 tools/build-css.py"))
+
 for p in problems:
     print(*p)
 print(f"{len(files)} pages checked, {len(problems)} problem(s)")
