@@ -1,0 +1,90 @@
+/* ===================================================
+   ICONS — subset of Font Awesome Free 6.4.0 (https://fontawesome.com, CC BY 4.0 / SIL OFL 1.1)
+   Only the icons this site uses (fonts in assets/fonts/). To add an icon, re-run the subset
+   step described in task.md and add its :before rule below.
+   =================================================== */
+
+@font-face {
+    font-family: "Font Awesome 6 Free";
+    font-style: normal;
+    font-weight: 900;
+    font-display: block;
+    src: url("/assets/fonts/fa-solid-subset.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Font Awesome 6 Brands";
+    font-style: normal;
+    font-weight: 400;
+    font-display: block;
+    src: url("/assets/fonts/fa-brands-subset.woff2") format("woff2");
+}
+
+.fa, .fas, .fa-solid, .fab, .fa-brands {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+    text-rendering: auto;
+}
+
+.fa, .fas, .fa-solid {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+}
+
+.fab, .fa-brands {
+    font-family: "Font Awesome 6 Brands";
+    font-weight: 400;
+}
+
+.fa-archway:before { content: "\f557"; }
+.fa-arrow-right:before { content: "\f061"; }
+.fa-birthday-cake:before { content: "\f1fd"; }
+.fa-building:before { content: "\f1ad"; }
+.fa-building-columns:before { content: "\f19c"; }
+.fa-calculator:before { content: "\f1ec"; }
+.fa-calendar-check:before { content: "\f274"; }
+.fa-camera:before { content: "\f030"; }
+.fa-champagne-glasses:before { content: "\f79f"; }
+.fa-check:before { content: "\f00c"; }
+.fa-child:before { content: "\f1ae"; }
+.fa-clock:before { content: "\f017"; }
+.fa-compass:before { content: "\f14e"; }
+.fa-couch:before { content: "\f4b8"; }
+.fa-cube:before { content: "\f1b2"; }
+.fa-dice:before { content: "\f522"; }
+.fa-envelope:before { content: "\f0e0"; }
+.fa-font:before { content: "\f031"; }
+.fa-gem:before { content: "\f3a5"; }
+.fa-gift:before { content: "\f06b"; }
+.fa-google:before { content: "\f1a0"; }
+.fa-hands-helping:before { content: "\f4c4"; }
+.fa-heart:before { content: "\f004"; }
+.fa-home:before { content: "\f015"; }
+.fa-image:before { content: "\f03e"; }
+.fa-layer-group:before { content: "\f5fd"; }
+.fa-location-dot:before { content: "\f3c5"; }
+.fa-map-location-dot:before { content: "\f5a0"; }
+.fa-map-marker-alt:before { content: "\f3c5"; }
+.fa-map-pin:before { content: "\f276"; }
+.fa-masks-theater:before { content: "\f630"; }
+.fa-palette:before { content: "\f53f"; }
+.fa-paper-plane:before { content: "\f1d8"; }
+.fa-phone:before { content: "\f095"; }
+.fa-plus:before { content: "\2b"; }
+.fa-quote-left:before { content: "\f10d"; }
+.fa-scroll:before { content: "\f70e"; }
+.fa-search:before { content: "\f002"; }
+.fa-sign-hanging:before { content: "\f4d9"; }
+.fa-star:before { content: "\f005"; }
+.fa-tag:before { content: "\f02b"; }
+.fa-tree:before { content: "\f1bb"; }
+.fa-truck:before { content: "\f0d1"; }
+.fa-users:before { content: "\f0c0"; }
+.fa-utensils:before { content: "\f2e7"; }
+.fa-wand-magic-sparkles:before { content: "\e2ca"; }
+.fa-whatsapp:before { content: "\f232"; }
+.fa-wine-glass:before { content: "\f4e3"; }
