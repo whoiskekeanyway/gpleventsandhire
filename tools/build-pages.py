@@ -70,12 +70,12 @@ WORK = [EQUINIX]
 
 # Older portfolio photos (also on the homepage)
 OTHER = [
-    ["assets/Untitled-2-01.webp", 1396, 938, "Pink and red balloon backdrop with heart balloons for a campus carnival", "Balloon backdrop", "Campus carnival"],
-    ["assets/Untitled-2-02.webp", 1396, 938, "Blue, white and silver balloon arch framing a custom welcome sign at a corporate event", "Balloon arch & signage", "Corporate event"],
+    ["assets/Untitled-2-01-800.webp", 800, 538, "Pink and red balloon backdrop with heart balloons for a campus carnival", "Balloon backdrop", "Campus carnival"],
+    ["assets/Untitled-2-02-800.webp", 800, 538, "Blue, white and silver balloon arch framing a custom welcome sign at a corporate event", "Balloon arch & signage", "Corporate event"],
     [img("v1779356961/Untitled-2_cggq8l", "f_auto,q_auto,w_900"), 900, 605, "Festive dinner table styled with red candles, a greenery centrepiece and gold-rim plates", "Table styling", "Festive dinner"],
-    ["assets/correx.jpg", 1600, 1600, "Custom printed welcome board for an 18th birthday celebration", "Custom welcome board", "18th birthday"],
-    ["assets/correx2.jpg", 1600, 1600, "Greenery welcome board for an educators’ luncheon", "Welcome board", "Educators’ luncheon"],
-    ["assets/welcome-board.jpeg", 1600, 1600, "Floral welcome flower box at an event entrance", "Welcome flower box", "Event entrance"],
+    ["assets/correx-800.jpg", 800, 800, "Custom printed welcome board for an 18th birthday celebration", "Custom welcome board", "18th birthday"],
+    ["assets/correx2-800.jpg", 800, 800, "Greenery welcome board for an educators’ luncheon", "Welcome board", "Educators’ luncheon"],
+    ["assets/welcome-board-800.jpeg", 800, 800, "Floral welcome flower box at an event entrance", "Welcome flower box", "Event entrance"],
 ]
 
 
@@ -124,9 +124,16 @@ def set_head(page, url, title, desc, keywords):
     return page
 
 
+HERO_URL = CL + "f_auto,q_auto:eco,w_{w}/v1759646924/IMG_3259_mysmrz.jpg"
+HERO_IMG = ('<img class="hero-photo" src="' + HERO_URL.format(w=900) + '"\n            srcset="' +
+            ", ".join(f"{HERO_URL.format(w=w)} {w}w" for w in (640, 900, 1400, 1920)) +
+            '"\n            sizes="(max-width: 768px) 340px, 100vw" width="1920" height="1440" fetchpriority="high" alt="">')
+
+
 def hero(h1, sub, primary, secondary):
     return f'''
     <section class="hero-options">
+        {HERO_IMG}
         <div class="hero-overlay"></div>
         <div class="hero-content">
             <h1 class="hero-title">{esc(h1)}</h1>
@@ -188,7 +195,7 @@ def gallery_figs(photos, event, transform="f_auto,q_auto,w_1200"):
         out += f'''
                 <figure class="pf-item">
                     <button type="button" class="pf-open" aria-label="View larger: {esc(cap)}">
-                        <img src="{img(pid, transform)}" width="{w}" height="{h}" loading="lazy" alt="{esc(alt)}">
+                        <img src="{img(pid, "f_auto,q_auto,w_900")}" srcset="{img(pid, "f_auto,q_auto,w_600")} 600w, {img(pid, "f_auto,q_auto,w_900")} 900w, {img(pid, "f_auto,q_auto,w_1200")} 1200w" sizes="(max-width: 640px) 50vw, 33vw" width="{w}" height="{h}" loading="lazy" alt="{esc(alt)}">
                     </button>
                     <figcaption><span class="pf-tag">{esc(cap)}</span><span class="pf-event">{esc(event)}</span></figcaption>
                 </figure>'''

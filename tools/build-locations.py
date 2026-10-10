@@ -258,6 +258,12 @@ SA_FAQS = [
 ]
 
 
+HERO_URL = "https://res.cloudinary.com/dp24kap9x/image/upload/f_auto,q_auto:eco,w_{w}/v1759646924/IMG_3259_mysmrz.jpg"
+HERO_IMG = ('<img class="hero-photo" src="' + HERO_URL.format(w=900) + '"\n            srcset="' +
+            ", ".join(f"{HERO_URL.format(w=w)} {w}w" for w in (640, 900, 1400, 1920)) +
+            '"\n            sizes="(max-width: 768px) 340px, 100vw" width="1920" height="1440" fetchpriority="high" alt="">')
+
+
 def service_areas_main():
     cards = ""
     for a in AREAS:
@@ -279,6 +285,7 @@ def service_areas_main():
     <!-- SA:START -->
 
     <section class="hero-options">
+        {HERO_IMG}
         <div class="hero-overlay"></div>
         <div class="hero-content">
             <h1 class="hero-title">Areas We Serve</h1>

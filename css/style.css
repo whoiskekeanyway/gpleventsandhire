@@ -8,7 +8,7 @@
 
 .hero {
     height: 100vh;
-    background: url('https://res.cloudinary.com/dp24kap9x/image/upload/f_auto,q_auto,w_1920/v1759646924/IMG_3259_mysmrz.jpg') center/cover no-repeat;
+    background: #2b2b2b;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -17,13 +17,13 @@
     overflow: hidden;
 }
 
-/* Hidden img for Google image indexing — visual presentation handled by CSS background */
-.hero-bg-img {
+/* Hero photo — a real <img> (fetchpriority=high) so the browser finds it immediately */
+.hero-photo {
     position: absolute;
-    width: 1px;
-    height: 1px;
-    opacity: 0;
-    pointer-events: none;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .hero-overlay {
@@ -886,7 +886,7 @@
 }
 
 .breadcrumb-current {
-    color: #777;
+    color: #555;
     font-weight: 500;
 }
 
@@ -1047,10 +1047,4 @@ details.faq-item[open] summary.faq-question::after {
     line-height: 1.75;
     color: #444;
     border-top: 1px solid rgba(0, 0, 0, 0.06);
-}
-/* Smaller hero photo on phones */
-@media (max-width: 768px) {
-    .hero {
-        background-image: url('https://res.cloudinary.com/dp24kap9x/image/upload/f_auto,q_auto,w_900/v1759646924/IMG_3259_mysmrz.jpg');
-    }
 }
