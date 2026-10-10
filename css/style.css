@@ -900,6 +900,20 @@
     color: var(--clr-secondary-cream);
 }
 
+/* WhatsApp keeps its own green everywhere */
+.contact-method .fa-whatsapp {
+    color: #25d366;
+}
+
+.cta-quote.cta-wa {
+    background: var(--clr-whatsapp);
+}
+
+.cta-quote.cta-wa:hover {
+    background: var(--clr-whatsapp-dark);
+    box-shadow: 0 5px 15px rgba(7, 94, 84, 0.3);
+}
+
 .fa-star {
     color: var(--clr-gold) !important;
 }

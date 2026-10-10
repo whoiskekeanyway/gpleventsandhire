@@ -833,6 +833,16 @@
 .contact-method .fas {
     color: var(--clr-secondary-cream);
 }
+.contact-method .fa-whatsapp {
+    color: #25d366;
+}
+.cta-quote.cta-wa {
+    background: var(--clr-whatsapp);
+}
+.cta-quote.cta-wa:hover {
+    background: var(--clr-whatsapp-dark);
+    box-shadow: 0 5px 15px rgba(7, 94, 84, 0.3);
+}
 .fa-star {
     color: var(--clr-gold) !important;
 }
@@ -2066,6 +2076,9 @@ header {
     width: 1.1rem;
     text-align: center;
     color: var(--clr-primary-navy) !important;
+}
+.ft-contact i.fa-whatsapp {
+    color: var(--clr-whatsapp) !important;
 }
 .ft-contact a {
     color: var(--clr-primary-navy);

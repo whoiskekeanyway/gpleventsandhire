@@ -140,6 +140,10 @@
     color: var(--clr-primary-navy) !important;
 }
 
+.ft-contact i.fa-whatsapp {
+    color: var(--clr-whatsapp) !important;
+}
+
 .ft-contact a {
     color: var(--clr-primary-navy);
     text-decoration: none;
