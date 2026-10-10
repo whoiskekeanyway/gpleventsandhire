@@ -554,6 +554,25 @@ Content in `tools/item-extras.json` → `python3 tools/build-item-extras.py` —
 
 ---
 
+## Page Speed (Lighthouse, mobile) — 2026-10-10
+
+- [x] Hero is now a real responsive `<img class="hero-photo">` with `srcset` + `fetchpriority=high` (was a CSS background)
+- [x] Google Fonts load without blocking; Font Awesome replaced by a self-hosted 9 KB subset (`css/icons.css`, `assets/fonts/`)
+- [x] Gifting card image 480 KB → 36 KB; portfolio/gallery photos right-sized with `srcset`
+- [x] All stylesheets bundled into one request: **`css/site.css`**. ⚠️ After editing any file in `css/`, run `python3 tools/build-css.py` (check-site flags "CSS BUNDLE STALE" if you forget)
+- [x] Contrast fixes → accessibility 100 on all tested pages
+
+| Page | Before | After |
+|---|---|---|
+| Home | 60 | 90 |
+| Hire | 65 | 90 |
+| Event packages | ~75 | 91 |
+| Sandton | ~75 | 89 |
+| Champagne wall | ~75 | 88 |
+| Year-end functions | 72 | 90 |
+
+- [ ] Canonicals/sitemap/schema use `www.` but the live site serves the bare domain (`www` redirects) — pick one and make them match
+
 ## Future Category Pages — From Competitor Research (2026-06-20)
 
 Ideas sourced from Backdrop & Decor Hub and Cherri Hire. Not yet built — log here for future sprints.
