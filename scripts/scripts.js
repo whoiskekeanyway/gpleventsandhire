@@ -34,6 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 '<p>Delivery and collection are quoted separately based on your location, and setup is not included in hire prices. ' +
                 'You\'re also welcome to collect your order from our warehouse free of charge — ' +
                 'by appointment only. Simply select your preferred option when requesting your quote.</p>' +
+                '<p class="delivery-modal-terms"><a href="/terms-and-conditions.html">Read our hire terms &amp; conditions</a></p>' +
             '</div>' +
         '</div>'
     );

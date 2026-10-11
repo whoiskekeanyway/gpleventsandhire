@@ -1270,3 +1270,17 @@ a.cta-primary-btn[href*="wa.me"]:hover,
         grid-template-columns: 1fr;
     }
 }
+
+/* "By sending this form, you agree to our terms" */
+.form-terms {
+    margin: 0.75rem 0 0;
+    font-size: 0.82rem;
+    color: #555;
+    text-align: center;
+}
+
+.form-terms a {
+    color: var(--clr-primary-navy);
+    font-weight: 600;
+    text-underline-offset: 2px;
+}

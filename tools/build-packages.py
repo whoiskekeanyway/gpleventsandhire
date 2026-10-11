@@ -122,7 +122,7 @@ def events_block():
                 <h2 class="title">Choose Your Package</h2>
                 <p class="subtitle">Three tiers for every occasion — pick a starting point and we'll tailor it to your theme.</p>
             </div>{facts(d["facts"])}{tabs(d["categories"], "Package categories")}
-{categories(d["categories"], "events", "Prices are starting points — your final quote depends on your theme, guest count and venue. Delivery &amp; collection are charged separately.")}
+{categories(d["categories"], "events", "Prices are starting points — your final quote depends on your theme, guest count and venue. Delivery &amp; collection are charged separately. See our <a href=\"terms-and-conditions.html\">terms &amp; conditions</a>.")}
 {steps(d["steps"], "How booking works")}
 
             <section class="pkg-addons" aria-labelledby="addons-title">
@@ -180,7 +180,7 @@ def gifting_block():
                 <h2 class="title">Choose Your Gift</h2>
                 <p class="subtitle">Curated hampers and fresh bouquets in three tiers — every gift can be personalised.</p>
             </div>{facts(d["facts"])}{tabs(d["categories"], "Gift categories")}
-{categories(d["categories"], "gifting", "Prices are starting points — every hamper can be customised to your budget. Delivery is free in Midrand, Waterfall, Carlswald, Kyalami &amp; Fourways and R150 elsewhere in Gauteng.")}
+{categories(d["categories"], "gifting", "Prices are starting points — every hamper can be customised to your budget. Delivery is free in Midrand, Waterfall, Carlswald, Kyalami &amp; Fourways and R150 elsewhere in Gauteng. See our <a href=\"terms-and-conditions.html\">terms &amp; conditions</a>.")}
 {steps(d["steps"], "How ordering works")}
 
             <section class="pkg-custom" aria-labelledby="custom-title">
@@ -244,6 +244,7 @@ def gifting_block():
                         <textarea id="corp-message" name="message" rows="3"></textarea>
                     </div>
                     <button type="submit" class="form-submit"><i class="fas fa-paper-plane" aria-hidden="true"></i> Request a corporate quote</button>
+                    <p class="form-terms">By sending this form, you agree to our <a href="/terms-and-conditions.html">terms &amp; conditions</a>.</p>
                 </form>
             </section>
 

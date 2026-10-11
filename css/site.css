@@ -1139,6 +1139,17 @@ a.cta-primary-btn[href*="wa.me"]:hover,
         grid-template-columns: 1fr;
     }
 }
+.form-terms {
+    margin: 0.75rem 0 0;
+    font-size: 0.82rem;
+    color: #555;
+    text-align: center;
+}
+.form-terms a {
+    color: var(--clr-primary-navy);
+    font-weight: 600;
+    text-underline-offset: 2px;
+}
 
 /* --- base.css --- */
 *,
@@ -3108,6 +3119,14 @@ div.img-secondary {
     font-weight: 600;
     text-align: center;
 }
+.delivery-modal .delivery-modal-terms {
+    margin-top: 0.9rem;
+}
+.delivery-modal-terms a {
+    color: var(--clr-primary-navy);
+    font-weight: 600;
+    text-underline-offset: 3px;
+}
 
 /* --- enquiry.css --- */
 .enquiry-add {
@@ -4630,5 +4649,42 @@ body.has-enquiry .sticky-whatsapp {
     }
     .post-cta {
         padding: 1.6rem 1.25rem;
+    }
+}
+.legal-intro {
+    font-size: 1.1rem;
+    color: #444;
+}
+.legal-toc {
+    margin: 0 0 2rem;
+    padding: 1.25rem 1.5rem;
+    border-radius: 14px;
+    background: var(--clr-surface-warm);
+}
+.legal-toc-title {
+    margin: 0 0 0.6rem;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--clr-gold-text);
+}
+.post-body .legal-toc ol {
+    margin: 0;
+    padding-left: 1.3rem;
+    columns: 2;
+    column-gap: 2rem;
+    font-size: 0.95rem;
+}
+.post-body .legal-toc li {
+    margin-bottom: 0.35rem;
+    break-inside: avoid;
+}
+.legal .post-body h2 {
+    font-size: 1.4rem;
+}
+@media (max-width: 600px) {
+    .post-body .legal-toc ol {
+        columns: 1;
     }
 }

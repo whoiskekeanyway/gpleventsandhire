@@ -607,6 +607,13 @@ Content in `tools/item-extras.json` → `python3 tools/build-item-extras.py` —
 - [x] Direct review link https://g.page/r/CZBWCxiVogqfEBM/review — on the review cards, the messages and the homepage "Leave a review" link *(2026-10-11)*
 - [x] Instagram + TikTok (@gpleventsandhire): footer icons on every page, "Follow us" line in the contact blocks, and `sameAs` in all LocalBusiness schema (`SAME_AS` in tools/build-locations.py). Brand icon font re-subset with instagram + tiktok *(2026-10-11)*
 
+## Terms & Conditions, Cabana Tent, Share Image — 2026-10-11
+
+- [x] `terms-and-conditions.html` (static page; edit it directly): quotes & bookings, event packages, décor hire, security deposit, gifting, cancellations, weather, photos, liability, force majeure, POPIA, general. Linked from the footer bar (every page), the delivery & collection pop-up (`scripts/scripts.js`), all three forms, and the package/gifting price notes (`tools/build-packages.py`)
+- [ ] Owner to confirm the clauses that weren't existing site policy: lost/damaged items charged at repair/replacement cost; late returns charged per extra day; hire cancellations "as shown on your quote"; gift cancellations before preparation starts; photos of setups on social media; liability limited to the amount paid; notice period for event deposit refunds
+- [x] New hire item: Cabana Tent 3×6m (Beige), R2,500, in Furniture (`hire/items/cabana-tent.html`, extras in `tools/item-extras.json`). [ ] Owner: photo; per day? setup included?
+- [x] Fixed social share image: og:image/twitter:image on every page pointed at a Cloudinary account that now returns 401 (dhvalxorx). Now the champagne-table hero at 1200×630 from dp24kap9x; LocalBusiness logo now the current logo
+
 ## Future Category Pages — From Competitor Research (2026-06-20)
 
 Ideas sourced from Backdrop & Decor Hub and Cherri Hire. Not yet built — log here for future sprints.

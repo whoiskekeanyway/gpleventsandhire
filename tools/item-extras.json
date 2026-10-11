@@ -1808,6 +1808,57 @@
         "alt": "Equinix JNO grand opening ribbon between gold stanchions",
         "caption": "Gold stanchions framing the ribbon cutting at the Equinix office opening in Johannesburg."
       }
+    },
+    "cabana-tent": {
+      "title": "Cabana Tent Hire in Midrand | GPL Events & Hire",
+      "description": "Hire a beige 3×6m cabana tent in Midrand for about 20 guests — R2,500. Shade and style for garden parties, baby showers and outdoor events in Gauteng.",
+      "included": [
+        "Beige cabana tent — 3×6 metres",
+        "Room for about 20 guests",
+        "R2,500"
+      ],
+      "perfect": [
+        "Garden parties",
+        "Baby showers",
+        "Small weddings",
+        "Outdoor birthdays"
+      ],
+      "pair": [
+        [
+          "Kids Table & 10 Chairs",
+          "kids-table-and-10-chairs.html"
+        ],
+        [
+          "Giant Jenga",
+          "giant-jenga.html"
+        ],
+        [
+          "Balloon Arch",
+          "balloon-arch.html"
+        ],
+        [
+          "Marquee Letters A–Z",
+          "marquee-letters-az.html"
+        ]
+      ],
+      "faqs": [
+        [
+          "How much does the cabana tent cost to hire?",
+          "The beige 3×6m cabana tent is R2,500. Delivery and collection are quoted separately based on your venue's location."
+        ],
+        [
+          "How many guests does the cabana tent fit?",
+          "The tent measures 3×6 metres and fits about 20 guests."
+        ],
+        [
+          "What colour is the cabana tent?",
+          "The cabana tent is beige, a neutral colour that suits most themes and décor."
+        ],
+        [
+          "Is delivery included?",
+          "Delivery and collection are quoted separately based on your venue's location. WhatsApp us your venue and date to check availability."
+        ]
+      ]
     }
   }
 }

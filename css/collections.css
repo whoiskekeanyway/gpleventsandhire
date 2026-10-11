@@ -806,3 +806,13 @@ div.img-secondary {
     font-weight: 600;
     text-align: center;
 }
+
+.delivery-modal .delivery-modal-terms {
+    margin-top: 0.9rem;
+}
+
+.delivery-modal-terms a {
+    color: var(--clr-primary-navy);
+    font-weight: 600;
+    text-underline-offset: 3px;
+}
