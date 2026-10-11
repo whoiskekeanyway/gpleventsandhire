@@ -600,7 +600,8 @@ Content in `tools/item-extras.json` → `python3 tools/build-item-extras.py` —
 - [x] Blog at `/blog/` built by `python3 tools/build-blog.py` from Markdown posts in `tools/blog/*.md` (format documented at the top of the script). Posts get BlogPosting + Breadcrumb (+ FAQPage) schema, sitemap entries and a WhatsApp call-to-action. Footer "Explore" links to the blog
 - [x] First post: "How Much Does a Baby Shower Cost in Gauteng? (2026 Guide)" — prices from `packages-data.json`
 - [x] Post 2: "12 Year-End Function Ideas for Johannesburg Offices" (linked from year-end-functions.html) *(2026-10-11)*
-- [ ] Next posts: wedding décor hire checklist, corporate gift ideas, champagne wall ideas, Equinix event story
+- [x] Post 3: "Wedding Décor Hire Checklist: What to Hire and What to Buy" (linked from the wedding packages tab; baby shower tab now links to the cost guide) *(2026-10-11)*
+- [ ] Next posts: corporate gift ideas, champagne wall ideas, Equinix event story
 - [ ] Owner: real baby shower photo for the post (currently the balloon backdrop photo)
 - [ ] Option later: Decap CMS so the owner can publish posts at /admin
 - [x] Review cards in `print/` (git-ignored, local only): A6 PDF, A4 sheet of 4, WhatsApp image, message templates

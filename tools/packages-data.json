@@ -82,6 +82,10 @@
         "tab": "Baby Shower",
         "title": "Baby Shower Packages",
         "intro": "Soft, elegant setups to celebrate the mom-to-be.",
+        "link": [
+          "What does a baby shower cost? Read our price guide →",
+          "blog/baby-shower-cost-gauteng.html"
+        ],
         "tiers": [
           {
             "tier": "Essential",
@@ -138,6 +142,10 @@
         "tab": "Wedding",
         "title": "Wedding Packages",
         "intro": "Ceremony and reception styling, from intimate to grand.",
+        "link": [
+          "Planning your wedding décor? Read our hire checklist →",
+          "blog/wedding-decor-hire-checklist.html"
+        ],
         "tiers": [
           {
             "tier": "Essential",

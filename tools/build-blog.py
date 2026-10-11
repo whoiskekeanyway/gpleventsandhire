@@ -401,8 +401,9 @@ def update_sitemap(posts):
 
 
 os.makedirs(os.path.join(ROOT, "blog"), exist_ok=True)
+# Newest first; posts with the same date are ordered by when their file was last saved
 POSTS = sorted((read_post(p) for p in glob.glob(os.path.join(ROOT, "tools", "blog", "*.md"))),
-               key=lambda p: p["date"], reverse=True)
+               key=lambda p: (p["date"], os.path.getmtime(os.path.join(ROOT, "tools", "blog", p["slug"] + ".md"))), reverse=True)
 for post in POSTS:
     build_post(post, POSTS)
 build_index(POSTS)
