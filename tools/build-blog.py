@@ -20,6 +20,7 @@ Post format — front matter, then Markdown:
     imageWidth: 1000
     imageHeight: 672
     imageAlt: What the photo shows
+    imageSrcset: optional smaller copies, e.g. assets/a-800.webp 800w, assets/a-1000.webp 1000w
     excerpt: One or two sentences for the blog index card
     waText: Optional WhatsApp message for the call-to-action
     ---
@@ -280,7 +281,7 @@ def build_post(meta, posts):
         </div>
 
         <figure class="post-hero">
-            <img src="{esc(src)}" width="{meta.get("imageWidth", "1200")}" height="{meta.get("imageHeight", "800")}"
+            <img src="{esc(src)}"{srcset(meta)} width="{meta.get("imageWidth", "1200")}" height="{meta.get("imageHeight", "800")}"
                 fetchpriority="high" alt="{esc(meta["imageAlt"])}">
         </figure>
 
@@ -320,13 +321,24 @@ def build_post(meta, posts):
     print(f"built blog/{meta['slug']}.html ({minutes} min read, {len(faqs)} FAQs)")
 
 
+def srcset(meta, sizes="(max-width: 768px) 100vw, 736px"):
+    """Optional 'imageSrcset: assets/a-800.webp 800w, assets/a-1000.webp 1000w' (site-root paths)."""
+    if not meta.get("imageSrcset"):
+        return ""
+    parts = []
+    for part in meta["imageSrcset"].split(","):
+        path, width = part.split()
+        parts.append(f"{path if path.startswith('http') else '../' + path} {width}")
+    return f' srcset="{esc(", ".join(parts))}" sizes="{sizes}"'
+
+
 def card(p, prefix):
     img = p["image"]
     src = img if img.startswith("http") else "../" + img
     return f'''
                 <article class="blog-card">
                     <a class="blog-card-link" href="{prefix}{p['slug']}.html">
-                        <img src="{esc(src)}" width="{p.get('imageWidth', '1200')}" height="{p.get('imageHeight', '800')}" loading="lazy" alt="{esc(p['imageAlt'])}">
+                        <img src="{esc(src)}"{srcset(p, "(max-width: 768px) 100vw, 360px")} width="{p.get('imageWidth', '1200')}" height="{p.get('imageHeight', '800')}" loading="lazy" alt="{esc(p['imageAlt'])}">
                         <span class="blog-card-body">
                             <span class="blog-card-cat">{esc(p['category'])}</span>
                             <span class="blog-card-title">{esc(p['title'])}</span>

@@ -8,6 +8,7 @@ image: assets/Untitled-2-01-1000.webp
 imageWidth: 1000
 imageHeight: 672
 imageAlt: Pink and red balloon backdrop styled by GPL Events & Hire
+imageSrcset: assets/Untitled-2-01-800.webp 800w, assets/Untitled-2-01-1000.webp 1000w
 excerpt: Décor package prices from R6,500, what's included at each level, the other costs to plan for, and simple ways to make your budget go further.
 ---
 
