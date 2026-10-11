@@ -12,7 +12,7 @@
     "category": "Arches",
     "categoryUrl": "hire/arches.html",
     "itemUrl": "hire/items/round-circle-arch.html",
-    "price": "R250",
+    "price": "R400",
     "image": "assets/Round-Ballon-arhc.webp"
   },
   {
@@ -20,7 +20,7 @@
     "category": "Arches",
     "categoryUrl": "hire/arches.html",
     "itemUrl": "hire/items/balloon-arch.html",
-    "price": "R150",
+    "price": "R250",
     "image": "assets/slim-arch.file"
   },
   {
@@ -28,7 +28,7 @@
     "category": "Arches",
     "categoryUrl": "hire/arches.html",
     "itemUrl": "hire/items/square-arch.html",
-    "price": "R150",
+    "price": "R600",
     "image": null
   },
   {
@@ -36,7 +36,7 @@
     "category": "Arches",
     "categoryUrl": "hire/arches.html",
     "itemUrl": "hire/items/gold-balloon-flower-arch.html",
-    "price": "R450 / per day",
+    "price": "R700 / per day",
     "image": "assets/arch-1.jpg"
   },
   {

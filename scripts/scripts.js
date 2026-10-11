@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
             '<div class="delivery-modal">' +
                 '<button type="button" class="delivery-modal-close" aria-label="Close">&times;</button>' +
                 '<h3 id="deliveryModalTitle">Delivery &amp; Collection</h3>' +
-                '<p>Delivery and collection are quoted separately based on your location, and setup is not included in hire prices. ' +
+                '<p>Delivery and collection are quoted separately based on your location, and setup is not included in hire prices unless the item says otherwise. ' +
                 'You\'re also welcome to collect your order from our warehouse free of charge — ' +
                 'by appointment only. Simply select your preferred option when requesting your quote.</p>' +
                 '<p class="delivery-modal-terms"><a href="/terms-and-conditions.html">Read our hire terms &amp; conditions</a></p>' +

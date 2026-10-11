@@ -319,7 +319,7 @@
       "faqs": [
         [
           "How much does the round circle arch cost to hire?",
-          "The round circle arch is R250 per day for the frame. Decoration is quoted separately, and delivery and collection are quoted based on your location."
+          "The round circle arch is R400 per day for the frame. Decoration is quoted separately, and delivery and collection are quoted based on your location."
         ],
         [
           "What can I decorate the round circle arch with?",
@@ -374,7 +374,7 @@
       "faqs": [
         [
           "How much does the balloon arch cost to hire?",
-          "The balloon arch frame is R150. Balloons are quoted separately, and delivery and collection are quoted based on your location."
+          "The balloon arch frame is R250 per day. Balloons are quoted separately, and delivery and collection are quoted based on your location."
         ],
         [
           "How many balloons do I need for a balloon arch?",
@@ -425,7 +425,7 @@
       "faqs": [
         [
           "How much is the Gold Balloon/Flower Arch?",
-          "The arch is R450 per day. Contact us to confirm availability and decoration options."
+          "The arch is R700 per day. Contact us to confirm availability and decoration options."
         ],
         [
           "Are balloons or flowers included?",
@@ -1811,11 +1811,12 @@
     },
     "cabana-tent": {
       "title": "Cabana Tent Hire in Midrand | GPL Events & Hire",
-      "description": "Hire a beige 3×6m cabana tent in Midrand for about 20 guests — R2,500. Shade and style for garden parties, baby showers and outdoor events in Gauteng.",
+      "description": "Hire a beige 3×6m cabana tent in Midrand for about 20 guests — R2,500 per day, with draping and installation included. For outdoor events in Gauteng.",
       "included": [
         "Beige cabana tent — 3×6 metres",
         "Room for about 20 guests",
-        "R2,500"
+        "Draping and installation by our team",
+        "R2,500 per day"
       ],
       "perfect": [
         "Garden parties",
@@ -1844,7 +1845,15 @@
       "faqs": [
         [
           "How much does the cabana tent cost to hire?",
-          "The beige 3×6m cabana tent is R2,500. Delivery and collection are quoted separately based on your venue's location."
+          "The beige 3×6m cabana tent is R2,500 per day, including draping and installation by our team. Delivery and collection are quoted separately based on your venue's location."
+        ],
+        [
+          "Do you set up the cabana tent?",
+          "Yes. The price includes draping and installation, so our team puts the tent up for you."
+        ],
+        [
+          "Is the cabana tent waterproof?",
+          "No. Please note that the cabana tent is not waterproof. It's designed for shade and styling, so plan a back-up for rain."
         ],
         [
           "How many guests does the cabana tent fit?",
@@ -1853,10 +1862,6 @@
         [
           "What colour is the cabana tent?",
           "The cabana tent is beige, a neutral colour that suits most themes and décor."
-        ],
-        [
-          "Is delivery included?",
-          "Delivery and collection are quoted separately based on your venue's location. WhatsApp us your venue and date to check availability."
         ]
       ]
     }
