@@ -1119,3 +1119,144 @@ a.cta-primary-btn[href*="wa.me"]:hover,
     justify-content: center;
     font-size: 1rem;
 }
+
+/* ----- Thank-you page ----- */
+.thanks {
+    padding: 5rem 0 6rem;
+    background: var(--clr-surface-warm);
+}
+
+.thanks-inner {
+    max-width: 46rem;
+    text-align: center;
+}
+
+.thanks-icon {
+    width: 72px;
+    height: 72px;
+    margin: 0 auto 1.25rem;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: var(--clr-whatsapp);
+    color: #fff;
+    font-size: 2rem;
+}
+
+.thanks-icon .fas {
+    color: #fff !important;
+}
+
+.thanks-lead {
+    font-size: 1.1rem;
+    color: #444;
+    margin: 0.75rem auto 2rem;
+    max-width: 36rem;
+}
+
+.thanks-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem 1.5rem;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3.5rem;
+}
+
+.thanks-call {
+    color: var(--clr-primary-navy);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.thanks-call:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.thanks-subtitle {
+    font-family: var(--ff-secondary);
+    color: var(--clr-primary-navy);
+    font-size: 1.5rem;
+    margin: 0 0 1.25rem;
+}
+
+.thanks-steps {
+    list-style: none;
+    margin: 0 0 3rem;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    text-align: left;
+}
+
+.thanks-steps li {
+    background: #fff;
+    border-radius: 14px;
+    padding: 1.25rem;
+    box-shadow: 0 2px 12px rgba(26, 35, 126, 0.08);
+    display: grid;
+    gap: 0.3rem;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.thanks-steps strong {
+    color: var(--clr-primary-navy);
+    font-size: 1rem;
+}
+
+.thanks-num {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background: var(--clr-primary-red);
+    color: #fff;
+    font-weight: 700;
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+}
+
+.thanks-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    justify-content: center;
+}
+
+.thanks-links a {
+    display: inline-block;
+    padding: 0.55rem 1.1rem;
+    border-radius: 50px;
+    border: 2px solid var(--clr-primary-navy);
+    color: var(--clr-primary-navy);
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-decoration: none;
+}
+
+.thanks-links a:hover {
+    background: var(--clr-primary-navy);
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .thanks {
+        padding: 3rem 0 4rem;
+    }
+
+    .thanks .title {
+        font-size: 2rem;
+        line-height: 1.25;
+    }
+
+    .thanks-steps {
+        grid-template-columns: 1fr;
+    }
+}

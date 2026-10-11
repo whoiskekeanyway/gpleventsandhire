@@ -191,6 +191,7 @@ document.addEventListener("click", function (e) {
   else if (href.startsWith("mailto:")) trackEnquiry("email", label);
 });
 
+// Forms: remember which form was sent; the lead is counted on /thank-you once Netlify accepts it
 document.addEventListener("submit", function (e) {
-  trackEnquiry("form", e.target.getAttribute("name") || "form");
+  try { sessionStorage.setItem("gplFormName", e.target.getAttribute("name") || "form"); } catch (err) {}
 });

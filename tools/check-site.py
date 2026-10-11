@@ -41,7 +41,10 @@ for f in files:
 sitemap = open("sitemap.xml", encoding="utf-8").read()
 if sitemap.count("<url>") != sitemap.count("<loc>"):
     problems.append(("SITEMAP", "<url> without <loc>"))
-for u in re.findall(r"<loc>\s*https://www\.gpleventsandhire\.co\.za/([^<\s]*)\s*</loc>", sitemap):
+locs = re.findall(r"<loc>\s*https://gpleventsandhire\.co\.za/([^<\s]*)\s*</loc>", sitemap)
+if len(locs) != sitemap.count("<loc>"):
+    problems.append(("SITEMAP", "every <loc> must use https://gpleventsandhire.co.za/ (no www)"))
+for u in locs:
     page = u or "index.html"
     if not os.path.exists(page):
         problems.append(("SITEMAP MISSING PAGE", page))

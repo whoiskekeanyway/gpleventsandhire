@@ -592,6 +592,7 @@ Content in `tools/item-extras.json` → `python3 tools/build-item-extras.py` —
 - [x] Inner-page heroes are content-height on phones (was full screen) *(2026-10-11)*
 - [x] Every WhatsApp button is green (CSS matches `a[href*="wa.me"]` on `.cta-primary`/`.cta-primary-btn`)
 - Forms: submissions go to Netlify → Forms (`contact`, `corporate-gifting`); email notification for all forms goes to the GPL Gmail. `handleFormSubmit` in `scripts/script.js` is unused leftover code (not attached)
+- [x] Branded `/thank-you` page (noindex, not in sitemap): all three forms use `action="/thank-you"`. GA4 `generate_lead` (method "form", `form_name`) now fires on the thank-you page, so only accepted submissions count *(2026-10-11)*
 - Note: contact page Lighthouse ~79 is a scoring artefact (gtag finishing just before first paint); observed first paint is 2.3 s, same as other pages
 
 ## Future Category Pages — From Competitor Research (2026-06-20)
