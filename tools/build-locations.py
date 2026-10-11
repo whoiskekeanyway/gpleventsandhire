@@ -18,6 +18,7 @@ AREAS = json.load(open(os.path.join(ROOT, "tools", "locations-data.json"), encod
 PACKAGES = {c["id"]: c for c in json.load(open(os.path.join(ROOT, "tools", "packages-data.json"), encoding="utf-8"))["events"]["categories"]}
 SITE = "https://gpleventsandhire.co.za/"
 WA = "https://wa.me/27649318467?text="
+SAME_AS = ["https://share.google/hgqL3xBRj575rXru5", "https://www.instagram.com/gpleventsandhire/", "https://www.tiktok.com/@gpleventsandhire"]  # Google Business, Instagram, TikTok
 FREE_GIFT_AREAS = "Midrand, Waterfall, Carlswald, Kyalami and Fourways"
 
 
@@ -221,7 +222,7 @@ def build(area):
                     "postalCode": "1685", "addressCountry": "ZA"},
         "areaServed": [{"@type": "City", "name": area["name"]}] +
                       [{"@type": "City", "name": o["name"]} for o in AREAS if o["slug"] != area["slug"]],
-        "sameAs": ["https://share.google/hgqL3xBRj575rXru5"],
+        "sameAs": SAME_AS,
     })
     page = set_schema(page, {
         "@context": "https://schema.org",
@@ -378,7 +379,7 @@ def build_service_areas():
         "address": {"@type": "PostalAddress", "addressLocality": "Midrand", "addressRegion": "Gauteng",
                     "postalCode": "1685", "addressCountry": "ZA"},
         "areaServed": [{"@type": "City", "name": a["name"]} for a in AREAS],
-        "sameAs": ["https://share.google/hgqL3xBRj575rXru5"],
+        "sameAs": SAME_AS,
     })
     page = set_schema(page, {
         "@context": "https://schema.org", "@type": "BreadcrumbList",

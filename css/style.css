@@ -983,6 +983,16 @@ a.cta-primary-btn[href*="wa.me"]:hover,
     opacity: 0.9;
 }
 
+.contact-facts a {
+    color: #fff;
+    font-weight: 600;
+    text-underline-offset: 3px;
+}
+
+.contact-facts .fab {
+    color: var(--clr-secondary-cream);
+}
+
 .contact-facts i {
     width: 1.2rem;
     margin-right: 0.4rem;

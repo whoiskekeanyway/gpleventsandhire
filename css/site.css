@@ -79,6 +79,8 @@
 .fa-utensils:before { content: "\f2e7"; }
 .fa-wand-magic-sparkles:before { content: "\e2ca"; }
 .fa-whatsapp:before { content: "\f232"; }
+.fa-instagram:before { content: "\f16d"; }
+.fa-tiktok:before { content: "\e07b"; }
 .fa-wine-glass:before { content: "\f4e3"; }
 
 /* --- style.css --- */
@@ -896,6 +898,14 @@ a.cta-primary-btn[href*="wa.me"]:hover,
     gap: 0.5rem;
     font-size: 0.95rem;
     opacity: 0.9;
+}
+.contact-facts a {
+    color: #fff;
+    font-weight: 600;
+    text-underline-offset: 3px;
+}
+.contact-facts .fab {
+    color: var(--clr-secondary-cream);
 }
 .contact-facts i {
     width: 1.2rem;
@@ -2331,6 +2341,33 @@ header {
         flex-direction: column;
         text-align: center;
     }
+}
+.ft-social {
+    list-style: none;
+    margin: 1.1rem 0 0;
+    padding: 0;
+    display: flex;
+    gap: 0.6rem;
+}
+.ft-social a {
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: var(--clr-primary-navy);
+    color: #fff;
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+.ft-social a:hover,
+.ft-social a:focus-visible {
+    background: var(--clr-primary-red);
+    transform: translateY(-2px);
+}
+.ft-social .fab {
+    color: #fff !important;
 }
 
 /* --- hero-option.css --- */

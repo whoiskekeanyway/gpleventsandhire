@@ -604,6 +604,7 @@ Content in `tools/item-extras.json` → `python3 tools/build-item-extras.py` —
 - [ ] Option later: Decap CMS so the owner can publish posts at /admin
 - [x] Review cards in `print/` (git-ignored, local only): A6 PDF, A4 sheet of 4, WhatsApp image, message templates
 - [x] Direct review link https://g.page/r/CZBWCxiVogqfEBM/review — on the review cards, the messages and the homepage "Leave a review" link *(2026-10-11)*
+- [x] Instagram + TikTok (@gpleventsandhire): footer icons on every page, "Follow us" line in the contact blocks, and `sameAs` in all LocalBusiness schema (`SAME_AS` in tools/build-locations.py). Brand icon font re-subset with instagram + tiktok *(2026-10-11)*
 
 ## Future Category Pages — From Competitor Research (2026-06-20)
 

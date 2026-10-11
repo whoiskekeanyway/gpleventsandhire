@@ -257,3 +257,35 @@
         text-align: center;
     }
 }
+
+/* ----- Social links ----- */
+.ft-social {
+    list-style: none;
+    margin: 1.1rem 0 0;
+    padding: 0;
+    display: flex;
+    gap: 0.6rem;
+}
+
+.ft-social a {
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: var(--clr-primary-navy);
+    color: #fff;
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.ft-social a:hover,
+.ft-social a:focus-visible {
+    background: var(--clr-primary-red);
+    transform: translateY(-2px);
+}
+
+.ft-social .fab {
+    color: #fff !important;
+}
