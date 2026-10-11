@@ -309,7 +309,7 @@ def year_end():
                 <p class="subtitle">Three tiers to suit your team size and budget — every package can be tailored to your brand.</p>
                 <div class="loc-cards">{cards}
                 </div>
-                <p class="loc-more"><a href="event-packages.html#corporate">Compare all corporate packages →</a></p>
+                <p class="loc-more"><a href="event-packages.html#corporate">Compare all corporate packages →</a> &nbsp;·&nbsp; <a href="blog/year-end-function-ideas-johannesburg.html">12 year-end function ideas →</a></p>
             </section>
 
             <section class="loc-work" aria-labelledby="ye-work">

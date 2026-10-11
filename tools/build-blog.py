@@ -326,9 +326,10 @@ def srcset(meta, sizes="(max-width: 768px) 100vw, 736px"):
     if not meta.get("imageSrcset"):
         return ""
     parts = []
-    for part in meta["imageSrcset"].split(","):
-        path, width = part.split()
+    # URLs can contain commas (Cloudinary transforms), so match "url 800w" pairs instead of splitting
+    for path, width in re.findall(r"(\S+?),?\s+(\d+w)", meta["imageSrcset"]):
         parts.append(f"{path if path.startswith('http') else '../' + path} {width}")
+    assert parts, "imageSrcset: expected 'url 800w, url 1200w'"
     return f' srcset="{esc(", ".join(parts))}" sizes="{sizes}"'
 
 
