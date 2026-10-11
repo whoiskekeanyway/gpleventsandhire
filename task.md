@@ -595,6 +595,16 @@ Content in `tools/item-extras.json` → `python3 tools/build-item-extras.py` —
 - [x] Branded `/thank-you` page (noindex, not in sitemap): all three forms use `action="/thank-you"`. GA4 `generate_lead` (method "form", `form_name`) now fires on the thank-you page, so only accepted submissions count *(2026-10-11)*
 - Note: contact page Lighthouse ~79 is a scoring artefact (gtag finishing just before first paint); observed first paint is 2.3 s, same as other pages
 
+## Blog + Review Cards — 2026-10-11
+
+- [x] Blog at `/blog/` built by `python3 tools/build-blog.py` from Markdown posts in `tools/blog/*.md` (format documented at the top of the script). Posts get BlogPosting + Breadcrumb (+ FAQPage) schema, sitemap entries and a WhatsApp call-to-action. Footer "Explore" links to the blog
+- [x] First post: "How Much Does a Baby Shower Cost in Gauteng? (2026 Guide)" — prices from `packages-data.json`
+- [ ] Next posts: year-end function ideas (Johannesburg offices), wedding décor hire checklist, corporate gift ideas, champagne wall ideas, Equinix event story
+- [ ] Owner: real baby shower photo for the post (currently the balloon backdrop photo)
+- [ ] Option later: Decap CMS so the owner can publish posts at /admin
+- [x] Review cards in `print/` (git-ignored, local only): A6 PDF, A4 sheet of 4, WhatsApp image, message templates
+- [ ] Owner: Google "Ask for reviews" link (g.page/r/…/review) → regenerate cards (`print/cards-generator.mjs`) and update the site's "Leave a review" links (currently the profile share link)
+
 ## Future Category Pages — From Competitor Research (2026-06-20)
 
 Ideas sourced from Backdrop & Decor Hub and Cherri Hire. Not yet built — log here for future sprints.

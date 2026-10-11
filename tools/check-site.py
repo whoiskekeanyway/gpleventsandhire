@@ -45,7 +45,7 @@ locs = re.findall(r"<loc>\s*https://gpleventsandhire\.co\.za/([^<\s]*)\s*</loc>"
 if len(locs) != sitemap.count("<loc>"):
     problems.append(("SITEMAP", "every <loc> must use https://gpleventsandhire.co.za/ (no www)"))
 for u in locs:
-    page = u or "index.html"
+    page = (u or "") + "index.html" if (u or "").endswith("/") or not u else u
     if not os.path.exists(page):
         problems.append(("SITEMAP MISSING PAGE", page))
     elif 'content="noindex' in open(page, encoding="utf-8").read():
