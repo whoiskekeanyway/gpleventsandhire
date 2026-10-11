@@ -603,7 +603,7 @@ Content in `tools/item-extras.json` → `python3 tools/build-item-extras.py` —
 - [ ] Owner: real baby shower photo for the post (currently the balloon backdrop photo)
 - [ ] Option later: Decap CMS so the owner can publish posts at /admin
 - [x] Review cards in `print/` (git-ignored, local only): A6 PDF, A4 sheet of 4, WhatsApp image, message templates
-- [ ] Owner: Google "Ask for reviews" link (g.page/r/…/review) → regenerate cards (`print/cards-generator.mjs`) and update the site's "Leave a review" links (currently the profile share link)
+- [x] Direct review link https://g.page/r/CZBWCxiVogqfEBM/review — on the review cards, the messages and the homepage "Leave a review" link *(2026-10-11)*
 
 ## Future Category Pages — From Competitor Research (2026-06-20)
 
