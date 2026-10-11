@@ -610,8 +610,8 @@ Content in `tools/item-extras.json` → `python3 tools/build-item-extras.py` —
 ## Terms & Conditions, Cabana Tent, Share Image — 2026-10-11
 
 - [x] `terms-and-conditions.html` (static page; edit it directly): quotes & bookings, event packages, décor hire, security deposit, gifting, cancellations, weather, photos, liability, force majeure, POPIA, general. Linked from the footer bar (every page), the delivery & collection pop-up (`scripts/scripts.js`), all three forms, and the package/gifting price notes (`tools/build-packages.py`)
-- [ ] Owner to confirm the clauses that weren't existing site policy: lost/damaged items charged at repair/replacement cost; late returns charged per extra day; hire cancellations "as shown on your quote"; gift cancellations before preparation starts; photos of setups on social media; liability limited to the amount paid; 
-- [x] New hire item: Cabana Tent 3×6m (Beige), R2,500 per day incl. draping + installation, not waterproof, in Furniture (`hire/items/cabana-tent.html`, extras in `tools/item-extras.json`). [ ] Owner: own photo (retailer image not used — copyright)
+- [x] Owner approved all T&C clauses (damage, late returns, hire/gift cancellations, photos, liability) *(2026-10-11)*
+- [x] New hire item: Cabana Tent 3×6m (Beige), R2,500 per day incl. draping + installation, not waterproof, in Furniture (`hire/items/cabana-tent.html`, extras in `tools/item-extras.json`). Photo: retailer product image, used with the owner's approval (`assets/cabana-tent.jpg`); swap for an own photo when available
 - [x] Event deposit notice period: 14 days (T&Cs + event packages FAQ) *(2026-10-11)*
 - [x] Arch prices: Round Circle R400/day, Balloon R250/day, Square R600/day, Gold Balloon/Flower R700/day *(2026-10-11)*
 - [x] Fixed social share image: og:image/twitter:image on every page pointed at a Cloudinary account that now returns 401 (dhvalxorx). Now the champagne-table hero at 1200×630 from dp24kap9x; LocalBusiness logo now the current logo

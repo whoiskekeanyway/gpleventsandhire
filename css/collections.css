@@ -832,3 +832,10 @@ div.img-secondary {
 .item-note strong {
     color: var(--clr-primary-navy);
 }
+
+/* Product shots on a white background: show the whole item instead of cropping it */
+.hire-item-img img.img-contain,
+.hire-item-detail-img img.img-contain {
+    object-fit: contain;
+    background: #fff;
+}
