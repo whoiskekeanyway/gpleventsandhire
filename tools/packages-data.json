@@ -151,7 +151,6 @@
             "tier": "Essential",
             "name": "Essential Wedding",
             "price": "R15,000",
-            "guests": "10–50 guests",
             "guestsMax": 50,
             "desc": "Elegant styling for intimate ceremonies and receptions.",
             "includes": [
@@ -168,7 +167,6 @@
             "tier": "Signature",
             "name": "Signature Wedding",
             "price": "R22,000",
-            "guests": "50–100 guests",
             "guestsMax": 100,
             "desc": "A complete, cohesive look from ceremony to reception.",
             "plus": "Everything in Essential, plus:",
@@ -185,7 +183,6 @@
             "tier": "Luxe",
             "name": "Luxe Wedding",
             "price": "R38,000",
-            "guests": "100–150 guests",
             "guestsMax": 150,
             "desc": "Full venue styling for a truly grand celebration.",
             "plus": "Everything in Signature, plus:",
@@ -362,7 +359,7 @@
       ],
       [
         "How do I know which package suits my guest count?",
-        "Our birthday, baby shower and wedding packages show a guest guide, and corporate packages are tailored to your team and venue. If you're between sizes, use the 'Help me choose' tool above or WhatsApp us — we can scale any package up or down."
+        "Our birthday and baby shower packages show a guest guide, and wedding and corporate packages are tailored to your guest list and venue. If you're between sizes, use the 'Help me choose' tool above or WhatsApp us — we can scale any package up or down."
       ],
       [
         "What areas do you cover?",

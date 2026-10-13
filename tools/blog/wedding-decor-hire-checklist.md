@@ -71,9 +71,9 @@ Delivery and collection are quoted separately based on your venue, and you can a
 
 **A wedding package** suits couples who'd rather hand it over. We design the look, deliver everything, set it up before guests arrive and collect afterwards — setup is included:
 
-- **Essential** (10–50 guests): from R15,000, with a floral ceremony arch, aisle décor, the couple's table and centrepieces.
-- **Signature** (50–100 guests): from R22,000, adding a reception backdrop, MR & MRS marquee letters and a champagne wall.
-- **Luxe** (100–150 guests): from R38,000, with full ceremony and reception styling and premium florals.
+- **Essential**: from R15,000, with a floral ceremony arch, aisle décor, the couple's table and centrepieces.
+- **Signature**: from R22,000, adding a reception backdrop, MR & MRS marquee letters and a champagne wall.
+- **Luxe**: from R38,000, with full ceremony and reception styling and premium florals.
 
 Delivery and collection for packages is usually around R1,600 for most Gauteng venues. Wedding packages range from R15,000 to R100,000, depending on your guest count, venue and styling. See the full details on our [wedding packages](event-packages.html#wedding).
 
