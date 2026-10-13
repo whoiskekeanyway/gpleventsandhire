@@ -211,7 +211,6 @@
             "tier": "Essential",
             "name": "Essential Corporate",
             "price": "R5,000",
-            "guests": "10–50 guests",
             "guestsMax": 50,
             "desc": "A professional, branded welcome for your guests.",
             "includes": [
@@ -227,7 +226,6 @@
             "tier": "Signature",
             "name": "Signature Corporate",
             "price": "R10,000",
-            "guests": "50–100 guests",
             "guestsMax": 100,
             "desc": "A VIP experience in your brand colours.",
             "plus": "Everything in Essential, plus:",
@@ -243,7 +241,6 @@
             "tier": "Luxe",
             "name": "Luxe Corporate",
             "price": "R20,000",
-            "guests": "100–150 guests",
             "guestsMax": 150,
             "desc": "Full brand-themed styling for major functions.",
             "plus": "Everything in Signature, plus:",
@@ -365,7 +362,7 @@
       ],
       [
         "How do I know which package suits my guest count?",
-        "Each package shows a guest guide. If you're between sizes, use the 'Help me choose' tool above or WhatsApp us — we can scale any package up or down."
+        "Our birthday, baby shower and wedding packages show a guest guide, and corporate packages are tailored to your team and venue. If you're between sizes, use the 'Help me choose' tool above or WhatsApp us — we can scale any package up or down."
       ],
       [
         "What areas do you cover?",

@@ -619,7 +619,7 @@ Content in `tools/item-extras.json` → `python3 tools/build-item-extras.py` —
 
 ## Package Update — 2026-10-13
 
-- [x] Every package's first tier starts at 10 guests (10–20 / 10–50)
+- [x] Every package's first tier starts at 10 guests (10–20 / 10–50); corporate packages show no guest numbers (guestsMax kept only for the "Help me choose" tool)
 - [x] Wedding Essential R15,000; wedding intro states the R15,000–R100,000 range
 - [x] Table counts removed from all package inclusions ("Table décor", "Centrepieces"), incl. blog posts and Google posts
 - [x] New "Restaurant" category: Restaurant Table Setup from R2,500 (balloons, personalised backdrop, centrepieces, runner, setup — all included; plates/cutlery/glasses by the restaurant). Single-card categories are centred. Homepage "Event Packages" card now "From R2,500"

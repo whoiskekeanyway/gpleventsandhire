@@ -72,11 +72,11 @@ Your team should enjoy the function — not spend the afternoon blowing up ballo
 
 ## What does year-end function décor cost?
 
-| Package | Guests | From | What's included |
-| --- | --- | --- | --- |
-| Essential | 10–50 | R5,000 | Branded welcome board on an easel, styled entrance or registration area, panel photo backdrop, setup before your guests arrive |
-| Signature | 50–100 | R10,000 | Everything in Essential, plus a VIP red carpet with gold stanchions, a balloon arch in your brand colours and table décor |
-| Luxe | 100–150 | R20,000 | Everything in Signature, plus full brand-themed venue styling, your initials or logo letters in marquee lights (up to 4), a champagne wall, crockery & glassware hire and a styling consultation |
+| Package | From | What's included |
+| --- | --- | --- |
+| Essential | R5,000 | Branded welcome board on an easel, styled entrance or registration area, panel photo backdrop, setup before your guests arrive |
+| Signature | R10,000 | Everything in Essential, plus a VIP red carpet with gold stanchions, a balloon arch in your brand colours and table décor |
+| Luxe | R20,000 | Everything in Signature, plus full brand-themed venue styling, your initials or logo letters in marquee lights (up to 4), a champagne wall, crockery & glassware hire and a styling consultation |
 
 Setup is included in every package. Delivery and collection is charged separately — usually around R1,600 for most Gauteng venues. See the full details on our [year-end functions page](year-end-functions.html).
 

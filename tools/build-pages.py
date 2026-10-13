@@ -258,7 +258,7 @@ def year_end():
                         <p class="ye-tier">{esc(t['tier'])}{' · Most popular' if t['tier'] == 'Signature' else ''}</p>
                         <h3>{esc(t['name'])}</h3>
                         <p class="loc-price"><span>From</span> {esc(t['price'])}</p>
-                        <p class="loc-meta">{esc(t['guests'])} · setup included</p>{plus}
+                        <p class="loc-meta">{esc(t['guests']) + ' · ' if t.get('guests') else ''}Setup included</p>{plus}
                         <ul class="ye-list">{inc}
                         </ul>
                         <div class="loc-card-actions">

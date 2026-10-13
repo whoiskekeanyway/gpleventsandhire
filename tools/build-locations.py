@@ -52,13 +52,14 @@ def gift_fact(area):
 def package_card(area, cat_id):
     c = PACKAGES[cat_id]
     first = c["tiers"][0]["price"]
-    top = c["tiers"][-1]["guestsMax"]
+    # Guest ranges are shown only for package types that list them (corporate doesn't)
+    guests = f' · up to {c["tiers"][-1]["guestsMax"]} guests' if all(t.get("guests") for t in c["tiers"]) else ""
     msg = f"Hi GPL Events, I'm planning a {c['tab'].lower()} event in {area['name']}. My date is: "
     return f'''
                     <article class="loc-card">
                         <h3>{esc(c['title'])}</h3>
                         <p class="loc-price"><span>From</span> {esc(first)}</p>
-                        <p class="loc-meta">Essential, Signature &amp; Luxe · up to {top} guests · setup included</p>
+                        <p class="loc-meta">Essential, Signature &amp; Luxe{guests} · setup included</p>
                         <p>{esc(c['intro'])}</p>
                         <div class="loc-card-actions">
                             <a class="loc-btn loc-btn-outline" href="../event-packages.html#{cat_id}">Compare packages</a>
