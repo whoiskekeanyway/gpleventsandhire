@@ -578,7 +578,7 @@
           {
             "tier": "Essential",
             "name": "Essential Bouquet",
-            "price": "R550",
+            "price": "R750",
             "desc": "A fresh, hand-tied bouquet of 20 roses.",
             "includes": [
               "20 fresh roses",
@@ -590,7 +590,7 @@
           {
             "tier": "Signature",
             "name": "Signature Bouquet",
-            "price": "R1,000",
+            "price": "R1,400",
             "desc": "A statement bouquet of 40 premium roses.",
             "includes": [
               "40 premium roses",
@@ -602,7 +602,7 @@
           {
             "tier": "Luxe",
             "name": "Luxe Flower Box",
-            "price": "R1,500",
+            "price": "R2,000",
             "desc": "A grand arrangement of 60 roses they'll never forget.",
             "includes": [
               "60 premium roses",
