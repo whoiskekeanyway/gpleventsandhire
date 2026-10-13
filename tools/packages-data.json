@@ -30,7 +30,6 @@
             "tier": "Essential",
             "name": "Essential Birthday",
             "price": "R3,500",
-            "guests": "10–20 guests",
             "guestsMax": 20,
             "desc": "A beautiful, simple setup for intimate birthdays.",
             "includes": [
@@ -45,7 +44,6 @@
             "tier": "Signature",
             "name": "Signature Birthday",
             "price": "R6,500",
-            "guests": "20–50 guests",
             "guestsMax": 50,
             "desc": "A fully styled look for bigger celebrations.",
             "plus": "Everything in Essential, plus:",
@@ -61,7 +59,6 @@
             "tier": "Luxe",
             "name": "Luxe Birthday",
             "price": "R12,000",
-            "guests": "50–80 guests",
             "guestsMax": 80,
             "desc": "A full themed transformation for milestone birthdays.",
             "plus": "Everything in Signature, plus:",
@@ -356,7 +353,7 @@
       ],
       [
         "How do I know which package suits my guest count?",
-        "Our birthday packages show a guest guide, and baby shower, wedding and corporate packages are tailored to your guest list and venue. If you're between sizes, use the 'Help me choose' tool above or WhatsApp us — we can scale any package up or down."
+        "Every package is tailored to your guest list and venue. Use the 'Help me choose' tool above or WhatsApp us — we can scale any package up or down."
       ],
       [
         "What areas do you cover?",
