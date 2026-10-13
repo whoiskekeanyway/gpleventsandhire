@@ -267,7 +267,7 @@
         "id": "restaurant",
         "tab": "Restaurant",
         "title": "Restaurant Table Setup",
-        "intro": "Celebrating at a restaurant? We style your table with balloons, napkins, a centrepiece and a runner. Plates, cutlery and glasses are provided by the restaurant.",
+        "intro": "Celebrating at a restaurant? We style your table with balloons, a centrepiece and a runner, and a personalised backdrop can be added. Plates, cutlery and glasses are provided by the restaurant.",
         "tiers": [
           {
             "tier": "Restaurant",
@@ -276,10 +276,10 @@
             "desc": "Balloons and table styling for a birthday, date night or small celebration at your chosen restaurant.",
             "includes": [
               "Balloon décor",
-              "Napkins",
               "Centrepieces",
               "Table runner",
-              "Setup at the restaurant by our team"
+              "Setup at the restaurant by our team",
+              "Personalised backdrop available as an add-on"
             ],
             "photo": ""
           }
