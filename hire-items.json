@@ -288,6 +288,14 @@
     "image": "assets/giant-jenga.jpeg"
   },
   {
+    "name": "Ring Toss Set",
+    "category": "Lawn Games",
+    "categoryUrl": "hire/lawn-games.html",
+    "itemUrl": "hire/items/ring-toss-game.html",
+    "price": "R250",
+    "image": "assets/ring-toss-set-800.webp"
+  },
+  {
     "name": "Giant Tic Tac Toe",
     "category": "Lawn Games",
     "categoryUrl": "hire/lawn-games.html",

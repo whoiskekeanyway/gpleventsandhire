@@ -73,7 +73,6 @@ Everything hidden with `style="display:none"` — ready to re-enable when needed
 | Item | Line (approx) | Notes |
 |---|---|---|
 | Cornhole Board Set | ~201 | Temporarily hidden |
-| Ring Toss Game | ~214 | Temporarily hidden |
 
 ---
 
@@ -97,7 +96,6 @@ Pages that still exist but are kept out of search until the item is in stock.
 | `hire/items/ghost-chairs.html` | Hidden by owner 2026-10-09 | Change robots meta to `index, follow`, add back to `sitemap.xml`, un-hide card in `hire/furniture.html`, add back to furniture hero copy |
 | `hire/items/cocktail-table.html` | Hidden by owner 2026-10-09 | Change robots meta to `index, follow`, add back to `sitemap.xml`, un-hide card in `hire/furniture.html`, add back to furniture hero copy |
 | `hire/items/cornhole-board-set.html` | Hidden by owner 2026-10-09 | Change robots meta to `index, follow`, add back to `sitemap.xml`, un-hide card in `hire/lawn-games.html`, add back to lawn-games hero copy |
-| `hire/items/ring-toss-game.html` | Hidden by owner 2026-10-09 | Change robots meta to `index, follow`, add back to `sitemap.xml`, un-hide card in `hire/lawn-games.html`, add back to lawn-games hero copy |
 | `hire/items/white-champagne-board.html` | Hidden by owner 2026-10-09 | Change robots meta to `index, follow`, add back to `sitemap.xml`, un-hide card in `— (no card exists; add one to `hire/drinks-boards.html`)` |
 
 ---

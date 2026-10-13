@@ -625,6 +625,7 @@ Content in `tools/item-extras.json` → `python3 tools/build-item-extras.py` —
 - [x] New "Restaurant" category: Restaurant Table Setup from R2,500 (balloons, personalised backdrop, centrepieces, runner, setup — all included; plates/cutlery/glasses by the restaurant). Single-card categories are centred. Homepage "Event Packages" card now "From R2,500"
 - [ ] Owner may update the restaurant setup details
 
+- [x] Ring Toss Set un-hidden: R250 per day, own photo (assets/ring-toss-set*.webp), set contents in "What's included"; back in sitemap, search and Lawn Games copy *(2026-10-13)*
 - [x] Audio guestbook R1,800 per day, instruction stand only (no welcome board or easel) *(2026-10-13)*
 
 ## Future Category Pages — From Competitor Research (2026-06-20)

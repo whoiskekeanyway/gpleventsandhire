@@ -1864,6 +1864,61 @@
           "The cabana tent is beige, a neutral colour that suits most themes and décor."
         ]
       ]
+    },
+    "ring-toss-game": {
+      "title": "Ring Toss Set for Hire in Midrand | GPL Events & Hire",
+      "description": "Hire a ring toss set in Midrand for R250 per day — 5 rope rings, a wooden base with point markings and a carry case. For parties and outdoor events.",
+      "included": [
+        "5 durable rope rings",
+        "1 sturdy wooden base with point markings",
+        "1 carrying case",
+        "Playing instructions",
+        "R250 per day"
+      ],
+      "perfect": [
+        "Garden parties",
+        "Kids' parties",
+        "Weddings",
+        "Family days",
+        "Year-end functions",
+        "Picnics"
+      ],
+      "pair": [
+        [
+          "Giant Jenga",
+          "giant-jenga.html"
+        ],
+        [
+          "Giant Tic Tac Toe",
+          "giant-tic-tac-toe.html"
+        ],
+        [
+          "Cabana Tent",
+          "cabana-tent.html"
+        ],
+        [
+          "Kids Table & 10 Chairs",
+          "kids-table-and-10-chairs.html"
+        ]
+      ],
+      "faqs": [
+        [
+          "How much does the ring toss set cost to hire?",
+          "The ring toss set is R250 per day. Delivery and collection are quoted separately, or you can collect from our Midrand warehouse free of charge, by appointment."
+        ],
+        [
+          "What's included in the ring toss set?",
+          "Five durable rope rings, a sturdy wooden base with point markings, a carrying case and playing instructions."
+        ],
+        [
+          "Is the ring toss game suitable for children?",
+          "Yes — ring toss is great for mixed-age groups. It's simple enough for kids but competitive enough to keep adults entertained."
+        ],
+        [
+          "Is setup included?",
+          "The game is quick to put together — slot the pegs into the base and you're ready to play. Setup isn't included with hire-only orders."
+        ]
+      ]
     }
   }
 }
