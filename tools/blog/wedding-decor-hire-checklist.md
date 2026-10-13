@@ -36,7 +36,7 @@ A simple rule of thumb:
 - **A backdrop behind the couple's table.** Our [step arch backdrop](hire/items/step-arch-backdrop.html) (pictured above) is R1,200, the [arch backdrop](hire/items/arch-backdrop.html) is R550 and the [panel backdrop set](hire/items/panel-backdrop-set.html) is from R900.
 - **Your names — or "MR & MRS" — in lights.** Our [MR & MRS marquee set](hire/items/popular-marquee-sets.html) is R1,500, or spell out your initials with [marquee letters](hire/items/marquee-letters-az.html) at R300 per letter.
 - **Welcome drinks.** A [champagne wall](hire/items/champagne-wall.html) is R950 per day. Glasses are hired separately.
-- **A guestbook guests will actually use.** Our [audio guestbook](hire/items/retro-telephone-guestbook.html) lets guests leave voice messages on a retro telephone. It's R2,500 per day and comes with an instruction stand, a welcome board and an easel.
+- **A guestbook guests will actually use.** Our [audio guestbook](hire/items/retro-telephone-guestbook.html) lets guests leave voice messages on a retro telephone. It's R1,800 per day and comes with an instruction stand.
 - **Shade for a garden wedding.** Our beige [cabana tent](hire/items/cabana-tent.html) (3×6m, about 20 guests) is R2,500 per day, with draping and installation included. It isn't waterproof, so have a back-up plan for rain.
 
 ## Table checklist

@@ -56,7 +56,7 @@ A theme gives everyone something to dress up for. Popular choices for year-end f
 
 ## 9. Collect messages with an audio guestbook
 
-Instead of a card, let your team leave voice messages on a retro telephone — perfect for a farewell, a retirement or simply a record of the year. Our [audio guestbook](hire/items/retro-telephone-guestbook.html) comes with an instruction stand, a welcome board and an easel, from R2,500 per day.
+Instead of a card, let your team leave voice messages on a retro telephone — perfect for a farewell, a retirement or simply a record of the year. Our [audio guestbook](hire/items/retro-telephone-guestbook.html) comes with an instruction stand, from R1,800 per day.
 
 ## 10. Play games at a daytime or outdoor function
 

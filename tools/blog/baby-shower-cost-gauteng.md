@@ -18,15 +18,15 @@ This guide covers what baby shower décor costs with us in 2026, what you get at
 
 ## The quick answer
 
-A fully styled baby shower setup from GPL Events & Hire starts at **R6,500 for 10–20 guests**, **R9,500 for 20–50 guests** and **R14,500 for 50–80 guests**. Setup on the day is included in every package. Delivery and collection is charged separately — usually around **R1,600** for most Gauteng venues.
+A fully styled baby shower setup from GPL Events & Hire starts at **R6,500** for our Essential package, **R9,500** for Signature and **R14,500** for Luxe. Setup on the day is included in every package. Delivery and collection is charged separately — usually around **R1,600** for most Gauteng venues.
 
 ## Baby shower décor package prices
 
-| Package | Guests | From | What's included |
-| --- | --- | --- | --- |
-| Essential | 10–20 | R6,500 | Arch backdrop with balloon garland, personalised welcome board, styled dessert & gift table, setup on the day |
-| Signature | 20–50 | R9,500 | Everything in Essential, plus a themed balloon installation, BABY marquee letters, a plinth set for cake & treats and table décor |
-| Luxe | 50–80 | R14,500 | Everything in Signature, plus floral styling throughout, a welcome flower box, a champagne or drinks display, centrepieces and a styling consultation |
+| Package | From | What's included |
+| --- | --- | --- |
+| Essential | R6,500 | Arch backdrop with balloon garland, personalised welcome board, styled dessert & gift table, setup on the day |
+| Signature | R9,500 | Everything in Essential, plus a themed balloon installation, BABY marquee letters, a plinth set for cake & treats and table décor |
+| Luxe | R14,500 | Everything in Signature, plus floral styling throughout, a welcome flower box, a champagne or drinks display, centrepieces and a styling consultation |
 
 These are starting prices — your final quote depends on your theme, guest count and venue. You can add or swap items to suit your plans. [See all baby shower packages](event-packages.html#baby-shower).
 
@@ -43,7 +43,7 @@ Décor is one part of the total. When you plan your budget, leave room for:
 
 ## How to make your budget go further
 
-- **Choose the right guest range.** Packages are priced by guest numbers, so a firm guest list helps you pick the right level from the start.
+- **Firm up your guest list early.** Your guest count shapes how much décor and table styling you need, so knowing your numbers helps us quote accurately from the start.
 - **Host at home or in a garden.** You save on venue hire, and we bring the full setup to you.
 - **Pick one statement piece.** A balloon arch with BABY marquee letters makes a bigger impact in photos than lots of small décor spread around the room.
 - **Hire instead of buying.** If you're happy to set up yourself, you can hire individual items — [marquee letters](hire/marquee-letters.html), [backdrops](hire/backdrops.html), plinths and more — priced per item, per day. Delivery is quoted separately and setup isn't included with hire-only orders.
