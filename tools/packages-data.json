@@ -585,15 +585,15 @@
         "id": "flowers",
         "tab": "Flowers",
         "title": "Flower Bouquets",
-        "intro": "Fresh flowers, hand-tied by us — same-day delivery when you order before 12:00.",
+        "intro": "Fresh roses, hand-tied by us — same-day delivery when you order before 12:00.",
         "tiers": [
           {
             "tier": "Essential",
             "name": "Essential Bouquet",
-            "price": "R700",
-            "desc": "A fresh, hand-tied bouquet of seasonal blooms.",
+            "price": "R550",
+            "desc": "A fresh, hand-tied bouquet of 20 roses.",
             "includes": [
-              "20 fresh seasonal stems",
+              "20 fresh roses",
               "Hand-tied and wrapped",
               "Personalised message card"
             ],
@@ -602,10 +602,10 @@
           {
             "tier": "Signature",
             "name": "Signature Bouquet",
-            "price": "R1,200",
-            "desc": "Premium blooms for a statement gift.",
+            "price": "R1,000",
+            "desc": "A statement bouquet of 40 premium roses.",
             "includes": [
-              "40+ premium stems (roses or lisianthus)",
+              "40 premium roses",
               "Luxury wrap or presentation box",
               "Personalised message card"
             ],
@@ -614,10 +614,10 @@
           {
             "tier": "Luxe",
             "name": "Luxe Flower Box",
-            "price": "R2,000",
-            "desc": "A grand arrangement they'll never forget.",
+            "price": "R1,500",
+            "desc": "A grand arrangement of 60 roses they'll never forget.",
             "includes": [
-              "60+ premium fresh stems",
+              "60 premium roses",
               "Keepsake flower box",
               "Personalised message card",
               "Optional chocolates add-on"
