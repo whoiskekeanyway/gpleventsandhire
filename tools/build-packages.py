@@ -144,7 +144,7 @@ def events_block():
                     <div class="form-group">
                         <label for="chooser-guests">How many guests?</label>
                         <select id="chooser-guests" name="guests">
-                            <option value="20">Up to 20</option>
+                            <option value="20">10–20</option>
                             <option value="50">21–50</option>
                             <option value="80">51–80</option>
                             <option value="100">81–100</option>

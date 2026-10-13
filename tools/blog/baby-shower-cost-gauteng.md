@@ -18,15 +18,15 @@ This guide covers what baby shower décor costs with us in 2026, what you get at
 
 ## The quick answer
 
-A fully styled baby shower setup from GPL Events & Hire starts at **R6,500 for up to 20 guests**, **R9,500 for 20–50 guests** and **R14,500 for 50–80 guests**. Setup on the day is included in every package. Delivery and collection is charged separately — usually around **R1,600** for most Gauteng venues.
+A fully styled baby shower setup from GPL Events & Hire starts at **R6,500 for 10–20 guests**, **R9,500 for 20–50 guests** and **R14,500 for 50–80 guests**. Setup on the day is included in every package. Delivery and collection is charged separately — usually around **R1,600** for most Gauteng venues.
 
 ## Baby shower décor package prices
 
 | Package | Guests | From | What's included |
 | --- | --- | --- | --- |
-| Essential | Up to 20 | R6,500 | Arch backdrop with balloon garland, personalised welcome board, styled dessert & gift table, setup on the day |
-| Signature | 20–50 | R9,500 | Everything in Essential, plus a themed balloon installation, BABY marquee letters, a plinth set for cake & treats and table décor for up to 6 guest tables |
-| Luxe | 50–80 | R14,500 | Everything in Signature, plus floral styling throughout, a welcome flower box, a champagne or drinks display, centrepieces for up to 10 tables and a styling consultation |
+| Essential | 10–20 | R6,500 | Arch backdrop with balloon garland, personalised welcome board, styled dessert & gift table, setup on the day |
+| Signature | 20–50 | R9,500 | Everything in Essential, plus a themed balloon installation, BABY marquee letters, a plinth set for cake & treats and table décor |
+| Luxe | 50–80 | R14,500 | Everything in Signature, plus floral styling throughout, a welcome flower box, a champagne or drinks display, centrepieces and a styling consultation |
 
 These are starting prices — your final quote depends on your theme, guest count and venue. You can add or swap items to suit your plans. [See all baby shower packages](event-packages.html#baby-shower).
 

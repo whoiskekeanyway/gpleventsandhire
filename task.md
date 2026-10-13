@@ -617,6 +617,14 @@ Content in `tools/item-extras.json` → `python3 tools/build-item-extras.py` —
 - [x] Arch prices: Round Circle R400/day, Balloon R250/day, Square R600/day, Gold Balloon/Flower R700/day *(2026-10-11)*
 - [x] Fixed social share image: og:image/twitter:image on every page pointed at a Cloudinary account that now returns 401 (dhvalxorx). Now the champagne-table hero at 1200×630 from dp24kap9x; LocalBusiness logo now the current logo
 
+## Package Update — 2026-10-13
+
+- [x] Every package's first tier starts at 10 guests (10–20 / 10–50)
+- [x] Wedding Essential R15,000; wedding intro states the R15,000–R100,000 range
+- [x] Table counts removed from all package inclusions ("Table décor", "Centrepieces"), incl. blog posts and Google posts
+- [x] New "Restaurant" category: Restaurant Table Setup from R2,500 (balloons, napkins, centrepieces, runner, setup; plates/cutlery/glasses by the restaurant). Single-card categories are centred. Homepage "Event Packages" card now "From R2,500"
+- [ ] Owner may update the restaurant setup details
+
 ## Future Category Pages — From Competitor Research (2026-06-20)
 
 Ideas sourced from Backdrop & Decor Hub and Cherri Hire. Not yet built — log here for future sprints.

@@ -3412,6 +3412,10 @@ body.has-enquiry .sticky-whatsapp {
     gap: 1.5rem;
     align-items: stretch;
 }
+.pkg-cards:has(> .pkg-card:only-child) {
+    grid-template-columns: minmax(0, 24rem);
+    justify-content: center;
+}
 .pkg-card {
     position: relative;
     display: flex;
@@ -3933,6 +3937,9 @@ body.has-enquiry .sticky-whatsapp {
 .pkg-cat-link a {
     color: var(--clr-primary-navy);
     font-weight: 700;
+}
+.pkg-category:has(.pkg-card:only-child) .pkg-swipe-hint {
+    display: none;
 }
 
 /* --- locations.css --- */

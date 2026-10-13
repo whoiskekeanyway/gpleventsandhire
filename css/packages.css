@@ -108,6 +108,12 @@
     align-items: stretch;
 }
 
+/* A category with a single package (e.g. restaurant setup): one centred card */
+.pkg-cards:has(> .pkg-card:only-child) {
+    grid-template-columns: minmax(0, 24rem);
+    justify-content: center;
+}
+
 /* ----- Card ----- */
 
 .pkg-card {
@@ -733,4 +739,8 @@
 .pkg-cat-link a {
     color: var(--clr-primary-navy);
     font-weight: 700;
+}
+
+.pkg-category:has(.pkg-card:only-child) .pkg-swipe-hint {
+    display: none;
 }

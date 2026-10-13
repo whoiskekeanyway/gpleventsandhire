@@ -43,7 +43,7 @@ A clean, styled backdrop gives you professional-looking team photos and award sh
 
 ## 7. Style the tables, not just the entrance
 
-Guests spend most of the evening seated, so table styling matters. Coordinated centrepieces, quality [crockery and glassware](hire/crockery.html) and a consistent colour palette make a hired venue feel premium. Our Signature package includes table décor for up to 12 tables.
+Guests spend most of the evening seated, so table styling matters. Coordinated centrepieces, quality [crockery and glassware](hire/crockery.html) and a consistent colour palette make a hired venue feel premium. Our Signature package includes table décor.
 
 ## 8. Pick a theme your team will love
 
@@ -74,8 +74,8 @@ Your team should enjoy the function — not spend the afternoon blowing up ballo
 
 | Package | Guests | From | What's included |
 | --- | --- | --- | --- |
-| Essential | Up to 50 | R5,000 | Branded welcome board on an easel, styled entrance or registration area, panel photo backdrop, setup before your guests arrive |
-| Signature | 50–100 | R10,000 | Everything in Essential, plus a VIP red carpet with gold stanchions, a balloon arch in your brand colours and table décor for up to 12 tables |
+| Essential | 10–50 | R5,000 | Branded welcome board on an easel, styled entrance or registration area, panel photo backdrop, setup before your guests arrive |
+| Signature | 50–100 | R10,000 | Everything in Essential, plus a VIP red carpet with gold stanchions, a balloon arch in your brand colours and table décor |
 | Luxe | 100–150 | R20,000 | Everything in Signature, plus full brand-themed venue styling, your initials or logo letters in marquee lights (up to 4), a champagne wall, crockery & glassware hire and a styling consultation |
 
 Setup is included in every package. Delivery and collection is charged separately — usually around R1,600 for most Gauteng venues. See the full details on our [year-end functions page](year-end-functions.html).

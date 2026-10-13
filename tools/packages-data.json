@@ -30,7 +30,7 @@
             "tier": "Essential",
             "name": "Essential Birthday",
             "price": "R3,500",
-            "guests": "Up to 20 guests",
+            "guests": "10–20 guests",
             "guestsMax": 20,
             "desc": "A beautiful, simple setup for intimate birthdays.",
             "includes": [
@@ -53,7 +53,7 @@
               "Larger balloon installation with floral accents",
               "2 marquee numbers (e.g. 21, 30, 40)",
               "3-piece acrylic plinth set for cake & treats",
-              "Table décor for up to 6 guest tables"
+              "Table décor"
             ],
             "photo": ""
           },
@@ -70,7 +70,7 @@
               "Up to 4 marquee letters or numbers",
               "Champagne wall",
               "Red or white carpet entrance with gold stanchions",
-              "Centrepieces for up to 10 guest tables",
+              "Centrepieces",
               "Styling consultation to plan your theme"
             ],
             "photo": ""
@@ -91,7 +91,7 @@
             "tier": "Essential",
             "name": "Essential Baby Shower",
             "price": "R6,500",
-            "guests": "Up to 20 guests",
+            "guests": "10–20 guests",
             "guestsMax": 20,
             "desc": "A sweet, simple setup for intimate showers.",
             "includes": [
@@ -114,7 +114,7 @@
               "Themed balloon installation",
               "BABY marquee letters",
               "Plinth set for cake & treats",
-              "Table décor for up to 6 guest tables"
+              "Table décor"
             ],
             "photo": ""
           },
@@ -130,7 +130,7 @@
               "Floral styling throughout",
               "Welcome flower box at the entrance",
               "Champagne or drinks display",
-              "Centrepieces for up to 10 guest tables",
+              "Centrepieces",
               "Styling consultation to plan your theme"
             ],
             "photo": ""
@@ -141,7 +141,7 @@
         "id": "wedding",
         "tab": "Wedding",
         "title": "Wedding Packages",
-        "intro": "Ceremony and reception styling, from intimate to grand.",
+        "intro": "Ceremony and reception styling, from intimate to grand. Wedding packages range from R15,000 to R100,000, depending on your guest count, venue and styling.",
         "link": [
           "Planning your wedding décor? Read our hire checklist →",
           "blog/wedding-decor-hire-checklist.html"
@@ -150,8 +150,8 @@
           {
             "tier": "Essential",
             "name": "Essential Wedding",
-            "price": "R12,000",
-            "guests": "Up to 50 guests",
+            "price": "R15,000",
+            "guests": "10–50 guests",
             "guestsMax": 50,
             "desc": "Elegant styling for intimate ceremonies and receptions.",
             "includes": [
@@ -159,7 +159,7 @@
               "Welcome board on an easel",
               "Aisle décor accents",
               "Couple's table styling",
-              "Centrepieces for up to 6 guest tables",
+              "Centrepieces",
               "Setup on the day by our team"
             ],
             "photo": ""
@@ -175,7 +175,7 @@
             "includes": [
               "Reception backdrop behind the couple's table",
               "MR & MRS marquee letters",
-              "Centrepieces for up to 12 guest tables",
+              "Centrepieces",
               "Table runners, votives & table numbers",
               "Champagne wall"
             ],
@@ -194,7 +194,7 @@
               "Premium floral installations",
               "Carpet entrance with gold stanchions",
               "Gold-rim glassware for the bridal table",
-              "Centrepieces for up to 18 guest tables",
+              "Centrepieces",
               "Planning & styling consultation"
             ],
             "photo": ""
@@ -211,7 +211,7 @@
             "tier": "Essential",
             "name": "Essential Corporate",
             "price": "R5,000",
-            "guests": "Up to 50 guests",
+            "guests": "10–50 guests",
             "guestsMax": 50,
             "desc": "A professional, branded welcome for your guests.",
             "includes": [
@@ -234,7 +234,7 @@
             "includes": [
               "VIP red carpet with gold stanchions",
               "Balloon arch in your brand colours",
-              "Table décor for up to 12 tables"
+              "Table décor"
             ],
             "photo": "https://res.cloudinary.com/dp24kap9x/image/upload/f_auto,q_auto,c_fill,g_auto,w_1200,h_900/v1791606018/JNO1_fwougk.jpg",
             "photoAlt": "Equinix JNO grand opening ribbon between gold stanchions — VIP entrance styling"
@@ -261,6 +261,28 @@
         "link": [
           "Planning a year-end function? See year-end décor →",
           "year-end-functions.html"
+        ]
+      },
+      {
+        "id": "restaurant",
+        "tab": "Restaurant",
+        "title": "Restaurant Table Setup",
+        "intro": "Celebrating at a restaurant? We style your table with balloons, napkins, a centrepiece and a runner. Plates, cutlery and glasses are provided by the restaurant.",
+        "tiers": [
+          {
+            "tier": "Restaurant",
+            "name": "Restaurant Table Setup",
+            "price": "R2,500",
+            "desc": "Balloons and table styling for a birthday, date night or small celebration at your chosen restaurant.",
+            "includes": [
+              "Balloon décor",
+              "Napkins",
+              "Centrepieces",
+              "Table runner",
+              "Setup at the restaurant by our team"
+            ],
+            "photo": ""
+          }
         ]
       }
     ],
