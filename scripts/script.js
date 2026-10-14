@@ -116,7 +116,7 @@ function setupAnimations() {
 
   // Observe elements for animation
   const animatedElements = document.querySelectorAll(
-    ".service-card, .step, .testimonial-card, .area-card, .benefit-item"
+    ".service-card, .step, .testimonial-card, .area-card"
   );
   animatedElements.forEach((el) => {
     el.style.opacity = "0";

@@ -259,71 +259,150 @@
 /* Why Choose Section */
 
 .why-choose {
-    min-height: 100dvh;
-    padding: 3rem 1rem;
+    padding: 5.5rem 0;
+    background: #fff;
 }
 
-.why-choose-div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 4rem;
-    padding: 2rem 0;
-    min-height: 100vh;
-
+.why-choose .section-header .eyebrow {
+    margin-bottom: 0.4rem;
+    font-size: 0.8rem;
 }
 
-.why-choose-content {
+.why-layout {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 380px);
+    gap: 2.5rem;
     align-items: center;
-    gap: 4rem;
-
+    margin-top: 2.5rem;
 }
 
-.why-choose-text {
-    display: flex;
+.why-grid {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.25rem;
 }
 
-.benefit-list {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
+.why-card {
+    padding: 1.5rem;
+    border-radius: 18px;
+    background: var(--clr-surface-warm);
+    display: grid;
+    gap: 0.55rem;
+    align-content: start;
 }
 
-.benefit-item {
-    display: flex;
-    align-items: flex-start;
-    gap: 1rem;
+.why-card > i {
+    width: 44px;
+    height: 44px;
+    display: grid;
+    place-items: center;
+    border-radius: 12px;
+    background: #fff;
+    color: var(--clr-gold-text) !important;
+    font-size: 1.15rem;
+    box-shadow: 0 2px 8px rgba(26, 35, 126, 0.08);
 }
 
-.benefit-item i {
-    width: 50px;
-    height: 50px;
-    background: var(--clr-primary-red);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 1.5rem;
-    flex-shrink: 0;
+.why-card h3 {
+    margin: 0.35rem 0 0;
+    font-family: var(--ff-secondary);
+    font-size: 1.25rem;
+    line-height: 1.25;
+    color: var(--clr-primary-navy);
 }
 
-.benefit-item p {
-    margin-bottom: 0.50rem !important;
+.why-card p {
+    margin: 0;
+    font-size: 0.97rem;
+    line-height: 1.6;
+    color: #444;
 }
 
-.why-choose-image {
-    display: flex;
-    justify-content: center;
-    padding: 1rem;
+.why-photo {
+    margin: 0;
 }
 
-.image-placeholder img {
+.why-photo img {
+    display: block;
     width: 100%;
-    max-width: 400px;
+    height: auto;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    border-radius: 20px;
+    background: var(--clr-placeholder);
+}
+
+.why-photo figcaption {
+    margin-top: 0.6rem;
+    font-size: 0.85rem;
+    color: #555;
+    text-align: center;
+}
+
+.why-proof {
+    list-style: none;
+    margin: 2.5rem 0 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+}
+
+.why-proof a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.6rem 1.1rem;
     border-radius: 50px;
+    border: 1px solid rgba(26, 35, 126, 0.15);
+    color: var(--clr-primary-navy);
+    font-weight: 600;
+    font-size: 0.92rem;
+    text-decoration: none;
+    transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.why-proof a:hover,
+.why-proof a:focus-visible {
+    background: var(--clr-surface-warm);
+    border-color: var(--clr-gold);
+}
+
+.why-proof .fas {
+    color: var(--clr-gold-text) !important;
+}
+
+@media (max-width: 900px) {
+    .why-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .why-photo {
+        max-width: 420px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .why-choose {
+        padding: 3.5rem 0;
+    }
+
+    .why-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .why-photo img {
+        aspect-ratio: 4 / 3;
+    }
+
+    .why-proof {
+        justify-content: flex-start;
+    }
 }
 
 /* Service Areas Section */
@@ -624,11 +703,6 @@
 
     .services-grid {
         grid-template-columns: 1fr;
-    }
-
-    .why-choose-content {
-        grid-template-columns: 1fr;
-        gap: 2rem;
     }
 
     .contact-content {

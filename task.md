@@ -628,6 +628,11 @@ Content in `tools/item-extras.json` → `python3 tools/build-item-extras.py` —
 - [x] Ring Toss Set un-hidden: R250 per day, own photo (assets/ring-toss-set*.webp), set contents in "What's included"; back in sitemap, search and Lawn Games copy *(2026-10-13)*
 - [x] Audio guestbook R1,800 per day, instruction stand only (no welcome board or easel) *(2026-10-13)*
 
+## Homepage "Why Choose" Redesign — 2026-10-14
+
+- [x] Four specific reasons (prices upfront, setup included, everything in one place, quick replies 7 days) as cards; Equinix ribbon photo; proof chips (Google rating, Equinix, service areas, our work). Removed inaccurate/over-promising copy ("guaranteed timelines", "we handle everything", vendor rates) and the full-screen min-height
+- [ ] Owner: the hero's "200+ events styled" figure isn't accurate — kept at owner's request; replace with a real number when possible
+
 ## Future Category Pages — From Competitor Research (2026-06-20)
 
 Ideas sourced from Backdrop & Decor Hub and Cherri Hire. Not yet built — log here for future sprints.
